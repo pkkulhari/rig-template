@@ -1,0 +1,148 @@
+#navbar {
+    position: relative;    
+    min-height: 60px;
+    width: 100%;
+    background-color: $white;
+    border-bottom: 1px solid $lightGray;    
+    text-align: center;    
+    padding: 0 30px;
+    padding-left: 250px;
+
+    a {
+        border: 1px solid $brightBlue;
+        color: $brightBlue;
+        background: transparent;
+        padding: 6px 12px;
+        margin: 13px 2px;
+        border-radius: 2px;
+        display: inline-block;
+        transition: all 0.2s;
+
+        &:hover {
+            background-color: $brightBlue;
+            color: $white;
+            border-color: $veryDarkBlue;
+        }
+
+        i {
+            padding-right: 5px;
+        }        
+    }
+
+    ul.item-left {
+        float: left;
+        margin: 13px;
+        margin-left: 5px;
+
+        li {            
+            a {
+                background: transparent;
+                color: $veryDarkBlue;
+                i {
+                    background: transparent;
+                    border: none;
+                    font-size: 26px;
+                }
+            }
+        }
+    }
+
+    ul {        
+        display: inline;
+        float: right;
+        padding: 0;        
+        
+        li {
+            display: inline-block;
+            position: relative;
+            margin-left: 5px;
+            a {
+                position: relative;
+                display: block;
+                color: $veryDarkBlue !important;
+                padding: 0;               
+                margin: 0;
+                border: none;
+                background: none;                
+
+                i {
+                    border: 1px solid #f2f2f2;
+                    border-radius: 2px;
+                    padding: 3px 0px;
+                    width: 36px;
+                    height: 36px;
+                    margin: 0;
+                    font-size: 22px;
+                    text-align: center;
+                    background-color: #f5f5f5;
+                }
+
+                span.lable {
+                    position: absolute;
+                    font-size: 10px;
+                    font-weight: 500;
+                    background-color: #e5343d;
+                    color: $white;
+                    border-radius: 50%;
+                    line-height: 18px;
+                    height: 18px;
+                    width: 18px;
+                    text-align: center;                    
+                    top: -10px;
+                    right: -7px;                   
+                }
+            }
+
+            ul {
+                display: block;
+                background-color: $white;
+                text-align: left;                
+                border-radius: 2px;
+                // padding: 5px 0; 
+                position: absolute;
+                right: 0px;
+                top: 45px;
+                width: max-content;
+                height: 0;
+                overflow: hidden
+                ;
+
+                li {
+                    display: block;
+                    margin: 0;                                    
+
+                    a {
+                        font-size: 14px;                        
+                        padding: 7px 10px;
+                        padding-right: 12px;                       
+                        margin: 0;
+                        border-radius: 0; 
+                        
+                        &:hover {
+                            background-color: $veryLightBlue;
+                        }
+
+                        i {
+                            border: none;
+                            background: none;
+                            padding: 0;                            
+                            font-size: 14px;                             
+                            margin-right: 5px;                           
+                        }
+                    }
+                }
+            }
+
+            a.tree.active ~ ul.tree-menu {
+                padding: 5px 0;
+                border: 1px solid $lightGray;
+                height: auto;
+            }
+        }
+    }
+}
+
+// Full nav width
+#navbar.full-nav {
+    padding-left: 50px;
+}
