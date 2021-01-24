@@ -55,6 +55,8 @@ document.querySelector('a.sidebar-toggle').addEventListener('click', function ()
         document.querySelector('#navbar').classList.add('full-nav');
         _setTop();
         targetOffsetTop_find();
-        document.querySelector('#sidebar').addEventListener('scroll', scrollTarget);
+        document.querySelector('#sidebar').addEventListener('scroll', scrollTarget);        
     }
+
+    document.getElementById('content-wrapper').classList.toggle('full');
 });

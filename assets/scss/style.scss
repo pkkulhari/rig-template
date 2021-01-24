@@ -1,7 +1,10 @@
 @import "variables";
 @import "mixins";
-@import "globals";
+@import "global";
+@import "date-picker";
 
 @import "navbar";
 @import "sidebar";
-@import "content-header";
+@import "content";
+
+@import "pages/dashboard";

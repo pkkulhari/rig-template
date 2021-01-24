@@ -1,6 +1,5 @@
 /*<--- Set top(style) to ul.tree-menu-1 --->*/
 function _setTop() {
-
     document.querySelectorAll('#sidebar a.tree').forEach(function (e) {
         if (e.closest('li').querySelector('ul')) {
             e.closest('li').querySelector('ul').style.top = 'unset';

@@ -13,6 +13,9 @@
 
     <!-- Icon -->
     <link rel="stylesheet" href="assets/css/vendor/icon.css" type="text/css">
+
+    <!-- Morris Chart CSS -->
+    <link rel="stylesheet" href="assets/css/vendor/morris.css" type="text/css">
 </head>
 
 <body>
@@ -78,7 +81,7 @@
                         </li>
                         <li>
                             <a href="#">
-                                <i class="icon-settings"></i>
+                                <i class="icon-power"></i>
                                 <span>Logout</span>
                             </a>
                         </li>
@@ -1005,7 +1008,186 @@
 
             <!-- Main content -->
             <div class="content">
-                
+
+                <!-- Media-box -->
+                <div class="content-row r-1">                    
+                    <div class="media-box nouch">
+                        <div class="icon">
+                            <i class="icon-medkit"></i>
+                        </div>
+                        <div class="data">
+                            <h4>Total Medicine</h4>
+                            <h4>250</h4>
+                        </div>
+                    </div>
+                    <div class="media-box nouch">
+                        <div class="icon">
+                            <i class="icon-stack-overflow"></i>
+                        </div>
+                        <div class="data">
+                            <h4>Out of Stock</h4>
+                            <h4>10</h4>
+                        </div>
+                    </div>
+                    <div class="media-box nouch">
+                        <div class="icon">
+                            <i class="icon-expired"></i>
+                        </div>
+                        <div class="data">
+                            <h4>Expired</h4>
+                            <h4>6</h4>
+                        </div>
+                    </div>
+                    <div class="media-box nouch">
+                        <div class="icon">
+                            <i class="icon-invoice"></i>
+                        </div>
+                        <div class="data">
+                            <h4>Total Invoice</h4>
+                            <h4>135</h4>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Monthly Progress Report -->
+                <div class="content-row r-2">
+                    <div class="column c-1 nouch">
+                        <div class="column-head">
+                            <div class="title">
+                                <h4>Monthly Progress Report</h4>
+                            </div>
+                            <form action="#" method="post" class="form-horizontal">
+                                <div class="date-picker dp-1">
+                                    <input type="text" name="" class="selected-date" readonly>
+                                    <div class="dates">
+                                        <div class="year">
+                                            <div class="arrow pre-yr">&lt;</div>
+                                            <div class="yr"></div>
+                                            <div class="arrow next-yr">&gt;</div>
+                                        </div>
+                                        <div class="months"></div>
+                                    </div>
+                                </div>
+                                <button type="submit">
+                                    <i class="icon-search-alt"></i>
+                                </button>
+                            </form>
+                        </div>
+                        <div class="column-body">
+                            <div class="labels">
+                                <div class="sales">
+                                    <i class="icon-circle"></i>
+                                    <span>Sale</span>
+                                </div>
+                                <div class="purchase">
+                                    <i class="icon-circle"></i>
+                                    <span>Purchases</span>
+                                </div>                                
+                            </div>
+                            <div id="multi-line-mp"></div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Monthly Income Expense Statement and Today Report-->
+                <div class="content-row r-3">
+
+                    <!-- Monthly Income Expense Statement-->
+                    <div class="column c-1 nouch">
+                        <div class="column-head">
+                            <div class="title">
+                                <h4>Monthly Income Expense Statement</h4>
+                            </div>
+                            <form action="#" method="post" class="form-horizontal">
+                                <div class="date-picker dp-2">
+                                    <input type="text" name="" class="selected-date" readonly>
+                                    <div class="dates">
+                                        <div class="year">
+                                            <div class="arrow pre-yr">&lt;</div>
+                                            <div class="yr"></div>
+                                            <div class="arrow next-yr">&gt;</div>
+                                        </div>
+                                        <div class="months"></div>
+                                    </div>
+                                </div>
+                                <button type="submit">
+                                    <i class="icon-search-alt"></i>
+                                </button>
+                            </form>
+                        </div>
+                        <div class="column-body">
+                            <div class="labels">
+                                <div class="total-expense">
+                                    <i class="icon-circle"></i>
+                                    <span>Total Expense</span>
+                                </div>
+                                <div class="total-purchase">
+                                    <i class="icon-circle"></i>
+                                    <span>Total Purchase</span>
+                                </div>
+                                <div class="employee-salary">
+                                    <i class="icon-circle"></i>
+                                    <span>Employee Salary</span>
+                                </div>
+                                <div class="service">
+                                    <i class="icon-circle"></i>
+                                    <span>Service</span>
+                                </div>
+                                <div class="total-sale">
+                                    <i class="icon-circle"></i>
+                                    <span>Total Sale</span>
+                                </div>                             
+                            </div>
+                            <div id="donut-mie"></div>
+                        </div>
+                    </div>
+
+                    <!-- Today Report -->
+                    <div class="column c-2 nouch">
+                        <div class="column-head">
+                            <div class="title">
+                                <h4>Todays Report</h4>
+                            </div>                            
+                        </div>
+                        <div class="column-body">
+                            <table class="data-table today-report">
+                                <thead>
+                                    <tr>
+                                        <th>Todays Report</th>
+                                        <th>Amount</th>                                        
+                                    </tr>
+                                </thead>
+                                <tbody>
+                                    <tr>
+                                        <td>Total Sales</td>
+                                        <td>$ 126.18</td>                                       
+                                    </tr>
+                                    <tr>
+                                        <td>Total Purchase</td>
+                                        <td>$ 0</td>                                        
+                                    </tr>
+                                    <tr>
+                                        <td>Cash Received</td>
+                                        <td>$ 126.18</td>                                      
+                                    </tr>
+                                    <tr>
+                                        <td>Bank Received</td>
+                                        <td>$ 0</td>                                      
+                                    </tr>
+                                    <tr>
+                                        <td>Invoice Due</td>
+                                        <td>$ 0</td>                                      
+                                    </tr>
+                                    <tr>
+                                        <td>Total Service</td>
+                                        <td>$ 0</td>                                      
+                                    </tr>
+                                </tbody>                                
+                            </table>
+                        </div>
+                    </div>
+                </div>
+
             </div>
 
         </div>
@@ -1016,6 +1198,16 @@
 
     <!-- Main Script -->
     <script src="assets/js/script.js"></script>
+
+    <!-- jQuery -->
+    <script src="assets/js/vendor/jquery.js"></script>
+
+    <!-- Raphael -->
+    <script src="assets/js/vendor/raphael.js"></script>
+
+    <!-- Morris - Chart -->
+    <script src="assets/js/vendor/morris.js"></script>
+
 </body>
 
 </html>

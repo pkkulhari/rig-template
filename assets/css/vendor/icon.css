@@ -83,3 +83,8 @@
 .icon-pencil-alt:before { content: '\e82c'; } /* '' */
 .icon-angle-left:before { content: '\e82d'; } /* '' */
 .icon-paypal-alt:before { content: '\e82e'; } /* '' */
+.icon-medkit:before { content: '\e82f'; } /* '' */
+.icon-stack-overflow:before { content: '\e830'; } /* '' */
+.icon-expired:before { content: '\e831'; } /* '' */
+.icon-invoice:before { content: '\e833'; } /* '' */
+.icon-power:before { content: '\e834'; } /* '' */
