@@ -92,7 +92,7 @@
         <!-- End Navbar -->
 
         <!-- Start sidebar -->
-        <div id="sidebar">
+        <div id="sidebar" class="shrinked">
             <aside>
                 <!-- Logo -->
                 <div class="logo">
@@ -987,11 +987,11 @@
             <!-- Content header -->
             <div class="content-header">
                 <div class="icon">
-                    <i class="icon-world"></i>
+                    <i class="icon-note"></i>
                 </div>
                 <div class="title">
-                    <h2>Dashboard</h2>
-                    <small>Home</small>
+                    <h2>New Invoice</h2>
+                    <small>Add New Invoice</small>
                 </div>
                 <ol class="nav-breadcrumb">
                     <li>                        
@@ -1000,8 +1000,11 @@
                             <span>Home</span>
                         </a>
                     </li>
+                    <li>                    
+                        <span>Invoice</span>                        
+                    </li>
                     <li class="active">
-                        <span>Dashboard</span>
+                        <span>New Invoice</span>
                     </li>
                 </ol>
             </div>
@@ -1009,44 +1012,16 @@
             <!-- Main content -->
             <div class="content">
 
-                <!-- Media-box -->
+                <!-- Quick Buttons -->
                 <div class="content-row r-1">                    
-                    <div class="media-box nouch">
-                        <div class="icon">
-                            <i class="icon-medkit"></i>
-                        </div>
-                        <div class="data">
-                            <h4>Total Medicine</h4>
-                            <h4>250</h4>
-                        </div>
-                    </div>
-                    <div class="media-box nouch">
-                        <div class="icon">
-                            <i class="icon-stack-overflow"></i>
-                        </div>
-                        <div class="data">
-                            <h4>Out of Stock</h4>
-                            <h4>10</h4>
-                        </div>
-                    </div>
-                    <div class="media-box nouch">
-                        <div class="icon">
-                            <i class="icon-expired"></i>
-                        </div>
-                        <div class="data">
-                            <h4>Expired</h4>
-                            <h4>6</h4>
-                        </div>
-                    </div>
-                    <div class="media-box nouch">
-                        <div class="icon">
-                            <i class="icon-invoice"></i>
-                        </div>
-                        <div class="data">
-                            <h4>Total Invoice</h4>
-                            <h4>135</h4>
-                        </div>
-                    </div>
+                    <a href="#" class="quick-btn">
+                        <i class="icon-align-justify"></i>
+                        <span>Manage Invoice</span>
+                    </a>
+                    <a href="#" class="quick-btn">
+                        <i class="icon-align-justify"></i>
+                        <span>POS Invoie</span>
+                    </a>
                 </div>
 
                 <!-- Monthly Progress Report -->
@@ -1054,140 +1029,154 @@
                     <div class="column c-1 nouch">
                         <div class="column-head">
                             <div class="title">
-                                <h4>Monthly Progress Report</h4>
-                            </div>
-                            <form action="#" method="post" class="form-horizontal">
-                                <div class="date-picker dp-1">
-                                    <input type="text" name="" class="selected-date" readonly>
-                                    <div class="dates">
-                                        <div class="year">
-                                            <div class="arrow pre-yr">&lt;</div>
-                                            <div class="yr"></div>
-                                            <div class="arrow next-yr">&gt;</div>
-                                        </div>
-                                        <div class="months"></div>
-                                    </div>
-                                </div>
-                                <button type="submit">
-                                    <i class="icon-search-alt"></i>
-                                </button>
-                            </form>
-                        </div>
-                        <div class="column-body">
-                            <div class="labels">
-                                <div class="sales">
-                                    <i class="icon-circle"></i>
-                                    <span>Sale</span>
-                                </div>
-                                <div class="purchase">
-                                    <i class="icon-circle"></i>
-                                    <span>Purchases</span>
-                                </div>                                
-                            </div>
-                            <div id="multi-line-mp"></div>
-                        </div>
-                    </div>
-                </div>
-
-                <!-- Monthly Income Expense Statement and Today Report-->
-                <div class="content-row r-3">
-
-                    <!-- Monthly Income Expense Statement-->
-                    <div class="column c-1 nouch">
-                        <div class="column-head">
-                            <div class="title">
-                                <h4>Monthly Income Expense Statement</h4>
-                            </div>
-                            <form action="#" method="post" class="form-horizontal">
-                                <div class="date-picker dp-2">
-                                    <input type="text" name="" class="selected-date" readonly>
-                                    <div class="dates">
-                                        <div class="year">
-                                            <div class="arrow pre-yr">&lt;</div>
-                                            <div class="yr"></div>
-                                            <div class="arrow next-yr">&gt;</div>
-                                        </div>
-                                        <div class="months"></div>
-                                    </div>
-                                </div>
-                                <button type="submit">
-                                    <i class="icon-search-alt"></i>
-                                </button>
-                            </form>
-                        </div>
-                        <div class="column-body">
-                            <div class="labels">
-                                <div class="total-expense">
-                                    <i class="icon-circle"></i>
-                                    <span>Total Expense</span>
-                                </div>
-                                <div class="total-purchase">
-                                    <i class="icon-circle"></i>
-                                    <span>Total Purchase</span>
-                                </div>
-                                <div class="employee-salary">
-                                    <i class="icon-circle"></i>
-                                    <span>Employee Salary</span>
-                                </div>
-                                <div class="service">
-                                    <i class="icon-circle"></i>
-                                    <span>Service</span>
-                                </div>
-                                <div class="total-sale">
-                                    <i class="icon-circle"></i>
-                                    <span>Total Sale</span>
-                                </div>                             
-                            </div>
-                            <div id="donut-mie"></div>
-                        </div>
-                    </div>
-
-                    <!-- Today Report -->
-                    <div class="column c-2 nouch">
-                        <div class="column-head">
-                            <div class="title">
-                                <h4>Todays Report</h4>
+                                <h4>New Invoice</h4>
                             </div>                            
                         </div>
                         <div class="column-body">
-                            <table class="data-table today-report">
-                                <thead>
-                                    <tr>
-                                        <th>Todays Report</th>
-                                        <th>Amount</th>                                        
-                                    </tr>
-                                </thead>
-                                <tbody>
-                                    <tr>
-                                        <td>Total Sales</td>
-                                        <td>$ 126.18</td>                                       
-                                    </tr>
-                                    <tr>
-                                        <td>Total Purchase</td>
-                                        <td>$ 0</td>                                        
-                                    </tr>
-                                    <tr>
-                                        <td>Cash Received</td>
-                                        <td>$ 126.18</td>                                      
-                                    </tr>
-                                    <tr>
-                                        <td>Bank Received</td>
-                                        <td>$ 0</td>                                      
-                                    </tr>
-                                    <tr>
-                                        <td>Invoice Due</td>
-                                        <td>$ 0</td>                                      
-                                    </tr>
-                                    <tr>
-                                        <td>Total Service</td>
-                                        <td>$ 0</td>                                      
-                                    </tr>
-                                </tbody>                                
-                            </table>
+                            <form action="#" method="post">
+                                <div class="content-row cr-1">
+                                    <div class="column co-1">
+                                        <div class="input i-1">
+                                            <label for="customer-name">Customer Name<i class="required">*</i></label>
+                                            <div class="input-button">
+                                                <input type="text" name="#" id="customer-name" value="Walking Customer">
+                                                <button type="button" class="add-new-customer">
+                                                    <i class="icon-plus"></i>
+                                                </button>
+                                            </div>
+                                        </div>
+                                        <div class="input i-2">
+                                            <label for="date">Date<i class="required">*</i></label>
+                                            <input type="date" name="#" id="date" value="2021-01-25">
+                                        </div>
+                                    </div>
+                                    <div class="column co-2">
+                                        <div class="input i-1">
+                                            <label for="payment-type">Payment Type<i class="required">*</i></label>
+                                            <select name="#" id="payment-type">
+                                                <option value="Cash Payment" selected>Cash Payment</option>
+                                                <option value="Bank Payment">Bank Payment</option>
+                                            </select>
+                                        </div>
+                                        <div class="input i-2">
+                                            <label for="bank">Bank<i class="required">*</i></label>
+                                            <select name="#" id="bank">
+                                                <option value="SBI Bank" selected>SBI Bank</option>
+                                                <option value="HDFC Bank">HDFC Bank</option>
+                                                <option value="IDBI Bank">IDBI Bank</option>
+                                            </select>
+                                        </div>
+                                    </div>                                    
+                                </div>
+                                <div class="content-row cr-2">
+                                    <div class="column co-1">
+                                        <div class="input i-1">
+                                            <label for="medicine-name">Medicine Name<i class="required">*</i></label>
+                                            <input type="text" name="#" id="medicine-name" placeholder="Medicine Name">
+                                        </div>
+                                        <div class="input i-2">
+                                            <label for="batch">Batch<i class="required">*</i></label>
+                                            <select name="#" id="batch">
+                                                <option selected disabled hidden>Select</option>                                            
+                                                <option value="2546">2546</option>
+                                                <option value="8654">8654</option>
+                                            </select>
+                                        </div>
+                                        <div class="input i-3">
+                                            <label for="avarage">Ava. Qty</label>
+                                            <input type="text" name="#" id="avarage" placeholder="0.00" readonly>
+                                        </div>
+                                        <div class="input i-4">
+                                            <label for="expiry-date">Expiry Date</label>
+                                            <input type="text" name="#" id="expiry-date" readonly>
+                                        </div>
+                                        <div class="input i-5">
+                                            <label for="unit">Unit<i class="required">*</i></label>
+                                            <input type="text" name="#" id="unit" placeholder="None">
+                                        </div>
+                                        <div class="input i-6">
+                                            <label for="quantity">Quantity<i class="required">*</i></label>
+                                            <input type="text" name="#" id="quantity" placeholder="0.00">
+                                        </div>
+                                        <div class="input i-7">
+                                            <label for="price">Price<i class="required">*</i></label>
+                                            <input type="text" name="#" id="price" placeholder="0.00">
+                                        </div>
+                                        <div class="input i-8">
+                                            <label for="discount">Discount %</label>
+                                            <input type="text" name="#" id="discount" placeholder="0.00">
+                                        </div>
+                                        <div class="input i-9">
+                                            <label for="Total">Total</label>
+                                            <input type="text" name="#" id="Total" placeholder="0.00" readonly>
+                                        </div>
+                                        <div class="input i-10">
+                                           <button type="button">
+                                               <i class="icon-times"></i>
+                                           </button>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="content-row cr-3">
+                                    <div class="column co-1">
+                                        <div class="invoice-detail">
+                                            <label for="invoice-detail">Invoice Detail</label>
+                                            <textarea name="#" id="invoice-detail"></textarea>
+                                        </div>
+                                        <div class="submit-button">
+                                            <button type="button" class="full-paid">Full Paid</button>
+                                            <button type="submit">Submit</button>
+                                        </div>                                        
+                                    </div>
+                                    <div class="column co-2">
+                                        <div class="input i-1">
+                                            <label for="invoice-discount">Invoice Discount:</label>
+                                            <input type="text" name="#" id="invoice-discount" placeholder="0.00">
+                                            <button type="button">
+                                                <i class="icon-plus"></i>
+                                            </button>
+                                        </div>                                       
+                                        <div class="input i-2">
+                                            <label for="total-discount">Total Discount:</label>
+                                            <input type="text" name="#" id="total-discount" placeholder="0.00" readonly>                                            
+                                        </div>                                       
+                                        <div class="input i-3">
+                                            <label for="total-tax">Total Tax:</label>
+                                            <input type="text" name="#" id="total-tax" placeholder="0.00" readonly>
+                                            <button type="button">
+                                                <i class="icon-angle-double-up"></i>
+                                            </button>                                            
+                                        </div>                                       
+                                        <div class="input i-4">
+                                            <label for="grand-total">Grand Total:</label>
+                                            <input type="text" name="#" id="grand-total" placeholder="0.00" readonly>                                            
+                                        </div>                                       
+                                        <div class="input i-5">
+                                            <label for="previous">Previous:</label>
+                                            <input type="text" name="#" id="previous" placeholder="0.00" readonly>                                            
+                                        </div>                                       
+                                        <div class="input i-6">
+                                            <label for="net-total">Net Total:</label>
+                                            <input type="text" name="#" id="net-total" placeholder="0.00" readonly>                                            
+                                        </div>                                       
+                                        <div class="input i-7">
+                                            <label for="paid-amount">Paid Amount:</label>
+                                            <input type="text" name="#" id="paid-amount" placeholder="0.00">                                            
+                                        </div>                                       
+                                        <div class="input i-8">
+                                            <label for="due">Due:</label>
+                                            <input type="text" name="#" id="due" placeholder="0.00" readonly>                                            
+                                        </div>                                       
+                                        <div class="input i-9">
+                                            <label for="change">Change:</label>
+                                            <input type="text" name="#" id="change" placeholder="0.00" readonly>                                            
+                                        </div>                                       
+                                    </div>
+                                </div>
+                            </form>
                         </div>
                     </div>
-                </div>
-
+                </div>               
             </div>
 
         </div>
@@ -1196,18 +1185,9 @@
     </div>
     <!-- END main-container -->
 
-    <!-- Main Script -->
+    <!-- Main Scripts -->
     <script src="assets/js/script.js"></script>
-
-    <!-- jQuery -->
-    <script src="assets/js/vendor/jquery.js"></script>
-
-    <!-- Raphael -->
-    <script src="assets/js/vendor/raphael.js"></script>
-
-    <!-- Morris - Chart -->
-    <script src="assets/js/vendor/morris.js"></script>
-
+    <script src="assets/js/new-invoice.js"></script>    
 </body>
 
 </html>

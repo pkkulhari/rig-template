@@ -68,16 +68,18 @@
                 }
             }
 
-            li.active {
-                font-weight: 900;
-                color: $brightBlue;
-                margin: 0;
-
+            li:not(:first-child) {
                 &::before {
                     content: '/';
                     color: $gray;
                     padding: 0 5px;
                 }
+            }
+
+            li.active {
+                font-weight: 900;
+                color: $brightBlue;
+                margin: 0;
             }
         }
     }

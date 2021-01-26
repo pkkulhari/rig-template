@@ -1,5 +1,5 @@
 /* Google Font */
-@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700;900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;500;700;900&display=swap');
 
 html {
     font-size: 100%;
@@ -75,12 +75,19 @@ form {
     margin: 0;
     padding: 0;
 
-    input {
+    input, select, textarea {
         border-radius: 2px;
         border: 1px solid $lightGray;
         outline: none;
         transition: all 0.15s;
-    }
+        padding: 6px 12px;
+        font-size: 14px;
+        font-family: 'Roboto', sans-serif;
+
+        &:focus {
+            border-color: $brightBlue;
+        }
+    }    
 
     button {
         padding: 0;
@@ -93,7 +100,7 @@ form {
         color: $white;
         transition: all 0.15s;
 
-        &:hover {
+        &:active {
             background-color: $darkBlue !important;
         }
     }

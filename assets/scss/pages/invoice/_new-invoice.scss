@@ -1,0 +1,313 @@
+.content-row {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+
+// Row 1
+.r-1 {
+    justify-content: flex-start;
+    margin: 10px;
+
+    a {
+        border: 1px solid $brightBlue;
+        color: $white;
+        background: $brightBlue;
+        padding: 6px 12px;
+        margin: 0;
+        margin-right: 10px;
+        border-radius: 2px;
+        display: inline-block;
+        transition: all 0.2s;
+
+        &:hover {
+            background-color: $darkBlue;
+            border-color: $veryDarkBlue;
+        }
+
+        i {
+            padding-right: 10px;
+        }
+    }
+
+}
+
+// Row 2
+.r-2 {
+    .column {
+        display: flex;
+        position: relative;
+        flex-wrap: wrap;
+        justify-content: space-around;
+        margin: 10px;
+        border: 1px solid $lightGray;
+        border-radius: 2px;
+    }
+
+    .c-1 {
+        background-color: $white;
+        width: 100%;
+
+        .column-head {
+            display: flex;
+            background-color: $white;
+            width: 100%;
+            height: 45px;
+            align-items: center;
+            padding: 0 15px;
+            border-bottom: 1px solid $lightGray;
+
+            h4 {
+                font-size: 18px;
+                font-weight: 500;
+                margin: 0;
+            }
+        }
+
+        .column-body {
+            padding: 15px;
+            width: 100%;
+
+            form {
+                .content-row {
+                    justify-content: flex-start;
+                    flex: 1 1;                    
+
+                    .column {
+                        display: flex;
+                        flex-direction: column;
+                        flex-grow: 1;
+                        border: none;
+
+                        .input {
+                            display: flex;
+                            flex-direction: column;
+
+                            label {
+                                font-size: 14px;
+                                font-weight: 600;
+                                margin-bottom: 7px;
+
+                                i {
+                                    font-size: 12px;
+                                    color: red;
+                                }
+                            }
+
+                            input:read-only {
+                                background-color: #FAFAFA;
+
+                                &:focus {
+                                    border-color: $lightGray;
+                                }
+                            }
+
+                            button {
+                                padding: 6.4px 12px;
+                            }
+
+                        }
+                    }
+                }
+
+                .cr-1 {
+                    .co-1 {
+                        .i-1 {
+                            height: 60px;
+                            margin-bottom: 10px;
+
+                            .input-button {
+                                input {
+                                    max-width: 300px;
+                                    width: 100%;
+                                }
+
+                                button {
+                                    margin-left: 7px;
+                                }
+                            }
+                        }
+
+                        .i-2 {
+                            margin-bottom: 10px;
+                            max-width: 300px;
+                            width: 100%;
+
+                            input {
+                                max-width: 300px !important;
+                                width: 100%;
+                            }
+                        }
+                    }
+
+                    .co-2 {
+                        .i-1 {
+                            height: 60px;
+                            margin-bottom: 10px;
+
+                            select {
+                                max-width: 300px;
+                                width: 100%;
+                            }
+                        }
+
+                        .i-2 {
+                            margin-bottom: 10px;
+                            max-width: 300px;
+                            width: 100%;
+
+                            select {
+                                max-width: 300px;
+                                width: 100%;
+                            }
+                        }
+                    }
+                }
+
+                .cr-2 {
+
+                    .co-1 {
+                        flex-direction: row;
+                        justify-content: flex-start;
+
+                        .input {
+                            margin-right: 10px;
+                            flex: 1 1;
+                            min-width: 0;
+                        }
+
+                        .i-1 {
+                            min-width: 200px;
+                        }
+
+                        .i-9 {
+                            max-width: 100px;
+                        }
+
+                        .i-10 {
+                            margin-top: auto;
+                            margin-bottom: 0.3px;
+                            margin-right: 0px;
+                            max-width: 39.33px;
+
+                            button {
+                                background-color: #E5343D;
+
+                                &:hover {
+                                    background-color: #E5343D !important;
+                                }
+
+                                &:active {
+                                    background-color: #b5171f !important;
+                                }
+                            }
+                        }
+                    }
+                }
+
+                .cr-3 {
+                    .co-1 {
+                        margin-right: 172px;
+
+                        .invoice-detail {
+                            display: flex;
+                            flex-direction: column;                            
+                            flex: 1;
+                            
+                            label {
+                                font-size: 14px;
+                                font-weight: 600;
+                                margin-bottom: 7px;
+                            }
+
+                            textarea {
+                                width: 100%;
+                                height: 100%;
+                                margin-bottom: 25px;
+                            }
+                        }
+
+                        .submit-button {
+                            button {
+                                padding: 6px 12px;
+                                font-size: 15px;                               
+                                letter-spacing: 0.5px;
+                                
+                                &.full-paid {
+                                    background-color: #fb8e06;
+
+                                    &:active {
+                                        background-color: #e27e03 !important;
+                                    }
+                                }                                                              
+                            }
+                        }
+                    }
+
+                    .co-2 {                        
+                        align-items: flex-end;                       
+                        max-width: fit-content;                                                                    
+
+                        .input {
+                            flex-direction: row;                           
+                            align-items: center;
+                            margin-bottom: 10px;
+
+                            &:last-child {
+                                margin-bottom: 0;
+                            }
+
+                            label {
+                                margin: 0;
+                            }
+
+                            &:not(:nth-child(1)):not(:nth-child(3)) {
+                                input {
+                                    margin-right: 49px;                                    
+                                }
+                            }
+
+                            input {
+                                max-width: 100px;
+                                margin-left: 10px;                                
+                            }
+                            
+                            button {
+                                margin-left: 10px;
+                            }
+
+                            &.i-1 {
+                                button {
+                                    background-color: #4CAF50;
+
+                                    &:hover {
+                                        background-color:  #4CAF50 !important;
+                                    }
+
+                                    &:active {
+                                        background-color:  #3e8e41 !important;
+                                    }
+                                }                               
+                            }
+
+                            &.i-3 {
+                                button {
+                                    background-color: #fb8e06;
+
+                                    &:hover {
+                                        background-color:  #fb8e06 !important;
+                                    }
+
+                                    &:active {
+                                        background-color:  #e27e03 !important;
+                                    }
+                                }                               
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
