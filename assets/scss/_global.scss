@@ -87,22 +87,22 @@ form {
         &:focus {
             border-color: $brightBlue;
         }
-    }    
+    }
+}
 
-    button {
-        padding: 0;
-        margin: 0;
-        border: 1px solid $lightGray;
-        border-radius: 2px;
-        outline: none;
-        cursor: pointer;
-        background-color: $brightBlue;
-        color: $white;
-        transition: all 0.15s;
+button {
+    padding: 0;
+    margin: 0;
+    border: 1px solid $lightGray;
+    border-radius: 2px;
+    outline: none;
+    cursor: pointer;
+    background-color: $brightBlue;
+    color: $white;
+    transition: all 0.15s;
 
-        &:active {
-            background-color: $darkBlue !important;
-        }
+    &:active {
+        background-color: $darkBlue !important;
     }
 }
 

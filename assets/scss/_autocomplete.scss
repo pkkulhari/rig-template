@@ -1,0 +1,33 @@
+.autocomplete {
+    display: inline-block;
+    position: relative;
+
+    .autocomplete-items {
+        position: absolute;
+        top: 100%;
+        right: 0;
+        left: 0;
+        z-index: 5;
+        border: 1px solid $lightGray;
+        border-top: none;        
+        width: 189.2px;
+        max-height: 300px;
+        overflow-y: auto;
+        background-color: $white;
+        display: none;
+
+        &.show {
+            display: block;
+        }
+
+        div {
+            padding: 6px 12px;
+            cursor: pointer;
+           
+            
+            &:hover,  &.active {
+                background-color: $veryLightBlue;
+            }
+        }
+    }
+}

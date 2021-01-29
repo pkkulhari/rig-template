@@ -1024,7 +1024,7 @@
                     </a>
                 </div>
 
-                <!-- Monthly Progress Report -->
+                <!-- New Invoice -->
                 <div class="content-row r-2">
                     <div class="column c-1 nouch">
                         <div class="column-head">
@@ -1033,7 +1033,7 @@
                             </div>                            
                         </div>
                         <div class="column-body">
-                            <form action="#" method="post">
+                            <form action="#" method="post" id="ani-from">
                                 <div class="content-row cr-1">
                                     <div class="column co-1">
                                         <div class="input i-1">
@@ -1047,7 +1047,7 @@
                                         </div>
                                         <div class="input i-2">
                                             <label for="date">Date<i class="required">*</i></label>
-                                            <input type="date" name="#" id="date" value="2021-01-25">
+                                            <input type="date" name="#" id="date">
                                         </div>
                                     </div>
                                     <div class="column co-2">
@@ -1069,46 +1069,47 @@
                                     </div>                                    
                                 </div>
                                 <div class="content-row cr-2">
-                                    <div class="column co-1">
+                                    <div class="column co-1 medicine-info">
                                         <div class="input i-1">
                                             <label for="medicine-name">Medicine Name<i class="required">*</i></label>
-                                            <input type="text" name="#" id="medicine-name" placeholder="Medicine Name">
+                                            <div class="autocomplete">
+                                                <input type="text" name="#" id="medicine-name" placeholder="Medicine Name">
+                                                <div class="autocomplete-items"></div>
+                                            </div>                                            
                                         </div>
                                         <div class="input i-2">
                                             <label for="batch">Batch<i class="required">*</i></label>
                                             <select name="#" id="batch">
-                                                <option selected disabled hidden>Select</option>                                            
-                                                <option value="2546">2546</option>
-                                                <option value="8654">8654</option>
+                                                <option selected hidden>Select</option>
                                             </select>
                                         </div>
                                         <div class="input i-3">
                                             <label for="avarage">Ava. Qty</label>
-                                            <input type="text" name="#" id="avarage" placeholder="0.00" readonly>
+                                            <input type="text" name="#" id="available-quantity" placeholder="0.00" readonly>
                                         </div>
                                         <div class="input i-4">
                                             <label for="expiry-date">Expiry Date</label>
                                             <input type="text" name="#" id="expiry-date" readonly>
                                         </div>
                                         <div class="input i-5">
-                                            <label for="unit">Unit<i class="required">*</i></label>
-                                            <input type="text" name="#" id="unit" placeholder="None">
+                                            <label for="unit">Unit</label>
+                                            <input type="text" name="#" id="unit" value="None" readonly>
                                         </div>
                                         <div class="input i-6">
                                             <label for="quantity">Quantity<i class="required">*</i></label>
-                                            <input type="text" name="#" id="quantity" placeholder="0.00">
+                                            <input type="text" name="#" id="quantity" placeholder="0.00" onkeypress="return isNumber(event, value)">
                                         </div>
                                         <div class="input i-7">
                                             <label for="price">Price<i class="required">*</i></label>
-                                            <input type="text" name="#" id="price" placeholder="0.00">
+                                            <input type="text" name="#" id="price" placeholder="0.00" onkeypress="return isNumber(event, value)">
                                         </div>
                                         <div class="input i-8">
                                             <label for="discount">Discount %</label>
-                                            <input type="text" name="#" id="discount" placeholder="0.00">
+                                            <input type="text" name="#" id="discount" placeholder="0.00" onkeypress="return isNumber(event, value)">
                                         </div>
                                         <div class="input i-9">
                                             <label for="Total">Total</label>
-                                            <input type="text" name="#" id="Total" placeholder="0.00" readonly>
+                                            <input type="text" name="#" id="total" value="0.00" readonly>
                                         </div>
                                         <div class="input i-10">
                                            <button type="button">
@@ -1123,53 +1124,55 @@
                                             <label for="invoice-detail">Invoice Detail</label>
                                             <textarea name="#" id="invoice-detail"></textarea>
                                         </div>
-                                        <div class="submit-button">
-                                            <button type="button" class="full-paid">Full Paid</button>
-                                            <button type="submit">Submit</button>
+                                        <div class="submit-button">                                            
+                                            <button type="submit" class="ani-submit">Submit</button>
                                         </div>                                        
                                     </div>
-                                    <div class="column co-2">
+                                    <div class="column co-2 medicine-info">
                                         <div class="input i-1">
                                             <label for="invoice-discount">Invoice Discount:</label>
-                                            <input type="text" name="#" id="invoice-discount" placeholder="0.00">
+                                            <input type="text" name="#" id="invoice-discount" placeholder="0.00" onkeypress="return isNumber(event, value)">
                                             <button type="button">
-                                                <i class="icon-plus"></i>
+                                                <i class="icon-plus add-medi-row"></i>
                                             </button>
                                         </div>                                       
                                         <div class="input i-2">
                                             <label for="total-discount">Total Discount:</label>
-                                            <input type="text" name="#" id="total-discount" placeholder="0.00" readonly>                                            
+                                            <input type="text" name="#" id="total-discount" value="0.00" readonly>                                            
                                         </div>                                       
                                         <div class="input i-3">
                                             <label for="total-tax">Total Tax:</label>
-                                            <input type="text" name="#" id="total-tax" placeholder="0.00" readonly>
+                                            <input type="text" name="#" id="total-tax" value="0.00" readonly>
                                             <button type="button">
                                                 <i class="icon-angle-double-up"></i>
                                             </button>                                            
                                         </div>                                       
                                         <div class="input i-4">
                                             <label for="grand-total">Grand Total:</label>
-                                            <input type="text" name="#" id="grand-total" placeholder="0.00" readonly>                                            
+                                            <input type="text" name="#" id="grand-total" value="0.00" readonly>                                            
                                         </div>                                       
                                         <div class="input i-5">
                                             <label for="previous">Previous:</label>
-                                            <input type="text" name="#" id="previous" placeholder="0.00" readonly>                                            
+                                            <input type="text" name="#" id="previous" value="0.00" readonly>                                            
                                         </div>                                       
                                         <div class="input i-6">
                                             <label for="net-total">Net Total:</label>
-                                            <input type="text" name="#" id="net-total" placeholder="0.00" readonly>                                            
+                                            <input type="text" name="#" id="net-total" value="0.00" readonly>                                            
                                         </div>                                       
                                         <div class="input i-7">
                                             <label for="paid-amount">Paid Amount:</label>
-                                            <input type="text" name="#" id="paid-amount" placeholder="0.00">                                            
+                                            <input type="text" name="#" id="paid-amount" placeholder="0.00" onkeypress="return isNumber(event, value)">
+                                            <button type="button" class="full-paid">
+                                                <i class="icon-plus"></i>
+                                            </button>
                                         </div>                                       
                                         <div class="input i-8">
                                             <label for="due">Due:</label>
-                                            <input type="text" name="#" id="due" placeholder="0.00" readonly>                                            
+                                            <input type="text" name="#" id="due" value="0.00" readonly>                                            
                                         </div>                                       
                                         <div class="input i-9">
                                             <label for="change">Change:</label>
-                                            <input type="text" name="#" id="change" placeholder="0.00" readonly>                                            
+                                            <input type="text" name="#" id="change" value="0.00" readonly>                                            
                                         </div>                                       
                                     </div>
                                 </div>
@@ -1179,15 +1182,67 @@
                 </div>               
             </div>
 
+            <!-- Pop up Boxes -->
+            <div id="anc-pop-up-box" class="pop-up-box">
+                <div class="inner nouch">
+                    <div class="head">
+                        <h4>Add New Invoice</h4>
+                        <i class="icon-times anc-close"></i>
+                    </div>
+                    <form action="#" method="POST" id="anc-form" onsubmit="return false">
+                        <div class="body">                        
+                            <div class="input i-1">
+                                <label for="anc-name">Name<i class="required">*</i></label>
+                                <input type="text" name="#" id="anc-name">
+                            </div>
+                            <div class="input i-2">
+                                <label for="anc-email">E-Mail</label>
+                                <input type="email" name="#" id="anc-email">
+                            </div>
+                            <div class="input i-3">
+                                <label for="anc-mobile">Mobile</label>
+                                <input type="text" name="#" id="anc-customer-name">
+                            </div>
+                            <div class="input i-4">
+                                <label for="anc-address">Address</label>
+                                <input type="text" name="#" id="anc-address">
+                            </div>                        
+                        </div>
+                        <div class="footer">
+                            <button type="button" class="anc-close">Cancle</button>
+                            <button type="submit" class="anc-close">Submit</button>
+                        </div>
+                    </form>
+                </div>
+            </div>
+            
+            <div id="pni-pop-up-box" class="pop-up-box">
+                <div class="inner nouch">
+                    <div class="head">
+                        <h4>Print</h4>
+                        <i class="icon-times pni-close"></i>
+                    </div>                    
+                    <div class="body">                        
+                        <h4>Successfully Inserted.</h4>                    
+                        <h5>Do you want to print?</h5>                    
+                    </div>
+                    <div class="footer">
+                        <button type="button" class="pni-close">No</button>
+                        <button type="button" class="pni-close">Yes</button>
+                    </div>                    
+                </div>
+            </div>
+
         </div>
         <!-- End Content -->
-
     </div>
     <!-- END main-container -->
 
     <!-- Main Scripts -->
-    <script src="assets/js/script.js"></script>
-    <script src="assets/js/new-invoice.js"></script>    
+    <script src="assets/js/script.js"></script>    
+    <script src="assets/js/helpers/xhr.js"></script>    
+    <script src="assets/js/helpers/autocomplete.js"></script>
+    <script src="assets/js/new-invoice.js"></script>
 </body>
 
 </html>

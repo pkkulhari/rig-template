@@ -21,9 +21,8 @@
         display: inline-block;
         transition: all 0.2s;
 
-        &:hover {
+        &:active {
             background-color: $darkBlue;
-            border-color: $veryDarkBlue;
         }
 
         i {
@@ -72,7 +71,7 @@
             form {
                 .content-row {
                     justify-content: flex-start;
-                    flex: 1 1;                    
+                    flex: 1 1;
 
                     .column {
                         display: flex;
@@ -156,6 +155,11 @@
                             margin-bottom: 10px;
                             max-width: 300px;
                             width: 100%;
+                            visibility: hidden;
+
+                            &.active {
+                                visibility: visible;
+                            }
 
                             select {
                                 max-width: 300px;
@@ -212,9 +216,9 @@
 
                         .invoice-detail {
                             display: flex;
-                            flex-direction: column;                            
+                            flex-direction: column;
                             flex: 1;
-                            
+
                             label {
                                 font-size: 14px;
                                 font-weight: 600;
@@ -231,26 +235,18 @@
                         .submit-button {
                             button {
                                 padding: 6px 12px;
-                                font-size: 15px;                               
+                                font-size: 15px;
                                 letter-spacing: 0.5px;
-                                
-                                &.full-paid {
-                                    background-color: #fb8e06;
-
-                                    &:active {
-                                        background-color: #e27e03 !important;
-                                    }
-                                }                                                              
                             }
                         }
                     }
 
-                    .co-2 {                        
-                        align-items: flex-end;                       
-                        max-width: fit-content;                                                                    
+                    .co-2 {
+                        align-items: flex-end;
+                        max-width: fit-content;
 
                         .input {
-                            flex-direction: row;                           
+                            flex-direction: row;
                             align-items: center;
                             margin-bottom: 10px;
 
@@ -262,17 +258,17 @@
                                 margin: 0;
                             }
 
-                            &:not(:nth-child(1)):not(:nth-child(3)) {
+                            &:not(:nth-child(1)):not(:nth-child(3)):not(:nth-child(7)) {
                                 input {
-                                    margin-right: 49px;                                    
+                                    margin-right: 49px;
                                 }
                             }
 
                             input {
                                 max-width: 100px;
-                                margin-left: 10px;                                
+                                margin-left: 10px;
                             }
-                            
+
                             button {
                                 margin-left: 10px;
                             }
@@ -282,32 +278,273 @@
                                     background-color: #4CAF50;
 
                                     &:hover {
-                                        background-color:  #4CAF50 !important;
+                                        background-color: #4CAF50 !important;
                                     }
 
                                     &:active {
-                                        background-color:  #3e8e41 !important;
+                                        background-color: #3e8e41 !important;
                                     }
-                                }                               
+                                }
                             }
 
                             &.i-3 {
                                 button {
-                                    background-color: #fb8e06;
+                                    background-color: #FFB61E;
 
                                     &:hover {
-                                        background-color:  #fb8e06 !important;
+                                        background-color: #FFB61E !important;
                                     }
 
                                     &:active {
-                                        background-color:  #e27e03 !important;
+                                        background-color: #e69d00 !important;
                                     }
-                                }                               
+                                }
+                            }
+
+                            &.i-7 {
+                                button {
+                                    background-color: #FFB61E;
+
+                                    &:active {
+                                        background-color: #e69d00 !important;
+                                    }
+                                }
                             }
                         }
                     }
                 }
             }
         }
+    }
+}
+
+// Add New Customer
+#anc-pop-up-box {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: fixed;
+    z-index: 99;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    overflow-y: auto;
+    background-color: rgba(0, 0, 0, 0.4);
+    display: none;
+
+    &.show {
+        display: flex;
+    }
+
+    .inner {
+        position: relative;
+        background-color: $white;
+        min-width: 400px;
+        width: max-content;
+        height: max-content;
+        border-radius: 2px;
+        border: 1px solid $lightGray;
+
+        .head {
+            display: flex;
+            background-color: $white;
+            width: 100%;
+            height: 100%;
+            align-items: center;
+            padding: 15px;
+            border-bottom: 1px solid $lightGray;
+
+            h4 {
+                font-size: 18px;
+                font-weight: 500;
+                margin: 0;
+            }
+
+            i {
+                margin-left: auto;
+                cursor: pointer;
+                border-radius: 100%;
+                padding: 3px;
+                font-size: 14px;
+
+                &:hover {
+                    color: #000;
+                }
+            }
+        }
+
+        form {
+            margin: 0;
+            padding: 0;
+
+            .body {
+                display: flex;
+                flex-direction: column;
+                justify-content: center;
+                align-items: center;
+                padding: 15px;
+
+                .input {
+                    display: flex;
+                    flex-direction: column;
+                    justify-content: center;
+                    margin-bottom: 15px;
+                    width: 100%;
+
+                    label {
+                        font-size: 14px;
+                        font-weight: 600;
+                        margin-bottom: 7px;
+
+                        i {
+                            font-size: 12px;
+                            color: red;
+                        }
+                    }
+
+                    input {
+                        width: 100%;
+                    }
+                }
+            }
+
+            .footer {
+                display: flex;
+                justify-content: flex-end;
+                width: 100%;
+                border-top: 1px solid $lightGray;
+                padding: 15px;
+
+                button {
+                    padding: 6.4px 12px;
+                    letter-spacing: 0.5px;
+
+                    &[type="button"] {
+                        margin-right: 10px;
+                        background-color: #E5343D;
+
+                        &:hover {
+                            background-color: #E5343D !important;
+                        }
+
+                        &:active {
+                            background-color: #b5171f !important;
+                        }
+                    }
+                }
+            }
+        }
+    }
+
+
+}
+
+// Print New Invoice
+#pni-pop-up-box {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: fixed;
+    z-index: 99;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    overflow-y: auto;
+    background-color: rgba(0, 0, 0, 0.4);
+    display: none;
+
+
+    &.show {
+        display: flex;
+    }
+
+    .inner {
+        position: relative;
+        background-color: $white;
+        min-width: 300px;
+        width: max-content;
+        height: fit-content;
+        border-radius: 2px;
+        border: 1px solid $lightGray;
+
+        .head {
+            display: flex;
+            background-color: $white;
+            width: 100%;
+            height: 100%;
+            align-items: center;
+            padding: 15px;
+            border-bottom: 1px solid $lightGray;
+
+            h4 {
+                font-size: 18px;
+                font-weight: 500;
+                margin: 0;
+            }
+
+            i {
+                margin-left: auto;
+                cursor: pointer;
+                border-radius: 100%;
+                padding: 3px;
+                font-size: 14px;
+
+                &:hover {
+                    color: #000;
+                }
+            }
+        }
+
+
+
+        .body {
+            display: flex;
+            flex-direction: column;
+            justify-content: center;            
+            padding: 15px;
+
+            h4, h5 {
+                margin: 5px;
+            }
+            
+            h4 {
+                font-size: 24px;                
+                font-weight: 400;
+            }
+
+            h5 {
+                font-size: 18px;                
+                font-weight: 400;
+            }
+            
+        }
+
+        .footer {
+            display: flex;
+            justify-content: flex-end;
+            width: 100%;
+            border-top: 1px solid $lightGray;
+            padding: 15px;
+
+            button {
+                padding: 6.4px 12px;
+                letter-spacing: 0.5px;               
+                border-radius: 2px;
+
+                &:first-child {
+                    margin-right: 10px;
+                    background-color: transparent;
+                    border-color: $lightGray;
+                    color: inherit;
+
+                    &:active {
+                        background-color: #f2f2f2 !important;
+                    }                    
+                }
+            }
+        }
+
     }
 }
