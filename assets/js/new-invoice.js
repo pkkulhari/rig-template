@@ -6,7 +6,7 @@ const el_bank = document.querySelector('#bank');
 // Add Style
 el_medicineInfo.forEach((el) => {
     el.querySelectorAll('input').forEach((e) => {
-        if (e.getAttribute('id') == 'medicine-name' || e.getAttribute('id') == 'expiry-date') {
+        if (e.getAttribute('class') == 'medicine-name' || e.getAttribute('class') == 'expiry-date') {
             return false;
         } else {
             e.style.textAlign = 'right';
@@ -36,12 +36,12 @@ function toggleBank(e) {
 
 // Get Input Elements
 const input_cName = document.querySelector('#customer-name');
-const input_medicineName = document.querySelector('#medicine-name');
-const input_batch = document.querySelector('#batch');
-const input_avaQuantity = document.querySelector('#available-quantity');
-const input_expiry = document.querySelector('#expiry-date');
-const input_unit = document.querySelector('#unit');
-const input_price = document.querySelector('#price');
+const input_medicineName = document.querySelector('.medicine-name');
+const input_batch = document.querySelector('.batch');
+const input_avaQuantity = document.querySelector('.available-quantity');
+const input_expiry = document.querySelector('.expiry-date');
+const input_unit = document.querySelector('.unit');
+const input_price = document.querySelector('.price');
 const input_previous = document.querySelector('#previous');
 
 
@@ -120,9 +120,9 @@ function getInputValue(response) {
 /*------------------------------- Calculations -------------------------------*/
 
 // Geting Input Elements
-const input_quantity = document.querySelector('#quantity');
-const input_discount = document.querySelector('#discount');
-const input_total = document.querySelector('#total');
+const input_quantity = document.querySelector('.quantity');
+const input_discount = document.querySelector('.discount');
+const input_total = document.querySelector('.total');
 const input_invDiscount = document.querySelector('#invoice-discount');
 const input_totalDiscount = document.querySelector('#total-discount');
 const input_totalTax = document.querySelector('#total-tax');
@@ -308,7 +308,7 @@ function closePni() {
 document.querySelectorAll('.pop-up-box').forEach((e) => {
     e.onclick = (e) => {
         if (e.target.closest('div.inner')) return;
-        document.querySelectorAll('.pop-up-box').forEach( (e) => {
+        document.querySelectorAll('.pop-up-box').forEach((e) => {
             e.classList.remove('show');
         });
     }
@@ -316,4 +316,62 @@ document.querySelectorAll('.pop-up-box').forEach((e) => {
 
 
 /*---------------------------- Add and Remove Medi Row -------------------------*/
-const el_mediRow = document.querySelector('.medi-row');
+
+// Elements
+const mediRow = document.querySelector('.medicine-info');
+const parentMediRow = document.querySelector('.parent-medicine-info');
+const btn_addMediRow = document.querySelector('.add-medi-row');
+
+// Events
+btn_addMediRow.addEventListener('click', newMediRow);
+
+// FUNCTIONS
+function newMediRow() {
+    const mediRow_clone = mediRow.cloneNode(true);
+
+    newMediRow_resetValue(mediRow_clone); 
+
+    mediRow_clone.childNodes[19].childNodes[1].addEventListener('click', removeMediRow);
+    parentMediRow.appendChild(mediRow_clone);
+}
+
+function removeMediRow(e) {
+    e.target.closest('div.medicine-info').remove();
+}
+
+// HELPER FUNCTIONS
+function newMediRow_resetValue(mediRow_clone) {
+    for (let i = 0; i < mediRow_clone.children.length; i++) {
+        for (let j = 0; j < mediRow_clone.children[i].children.length; j++) {
+            if (mediRow_clone.children[i].children[j].className == 'autocomplete') {
+                for (let k = 0; k < mediRow_clone.children[i].children[j].children.length; k++) {
+                    if (mediRow_clone.children[i].children[j].children[k].tagName == 'INPUT') {
+                        mediRow_clone.children[i].children[j].children[k].value = '';
+                    }
+                }
+            }
+
+            if (mediRow_clone.children[i].children[j].tagName == 'SELECT') {
+                for (let k = 0; k < mediRow_clone.children[i].children[j].children.length; k++) {
+                    if (!mediRow_clone.children[i].children[j].children[k].hasAttribute('hidden')) {
+                        mediRow_clone.children[i].children[j].children[k].remove();
+                    }
+                }
+
+            }
+
+            if (mediRow_clone.children[i].children[j].tagName == 'INPUT') {
+                if (mediRow_clone.children[i].children[j].className == 'unit') {
+                    mediRow_clone.children[i].children[j].value = 'None';
+                }
+                if (mediRow_clone.children[i].children[j].className == 'total') {
+                    mediRow_clone.children[i].children[j].value = '0.00';
+                }
+                if (!(mediRow_clone.children[i].children[j].className == 'unit' || mediRow_clone.children[i].children[j].className == 'total')) {
+                    mediRow_clone.children[i].children[j].value = '';
+                }
+            }
+
+        }
+    }
+}

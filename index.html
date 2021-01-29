@@ -191,7 +191,7 @@
                     <li>
                         <a href="javascript:void(0)" class="tree">
                             <i class="icon-bag"></i>
-                            <span>Medicine</span>
+                            <span></span>
                             <i class="icon-angle-left"></i>
                         </a>
                         <ul class="tree-menu tree-menu-1">
@@ -202,7 +202,7 @@
                             </li>
                             <li>
                                 <a href="#">
-                                    <span>Medicine Type</span>
+                                    <span> Type</span>
                                 </a>
                             </li>
                             <li>
@@ -225,17 +225,17 @@
                             </li>
                             <li>
                                 <a href="#">
-                                    <span>Add Medicine</span>
+                                    <span>Add </span>
                                 </a>
                             </li>
                             <li>
                                 <a href="#">
-                                    <span>Import Medicine (CSV)</span>
+                                    <span>Import  (CSV)</span>
                                 </a>
                             </li>
                             <li>
                                 <a href="#">
-                                    <span>Manage Medicine</span>
+                                    <span>Manage </span>
                                 </a>
                             </li>
                         </ul>
@@ -370,7 +370,7 @@
                             </li>
                             <li>
                                 <a href="#">
-                                    <span>Sales Report (Medicine Wise)</span>
+                                    <span>Sales Report ( Wise)</span>
                                 </a>
                             </li>
                             <li>
@@ -391,7 +391,7 @@
                                     </li>
                                     <li>
                                         <a href="#">
-                                            <span>Medicine Wise</span>
+                                            <span> Wise</span>
                                         </a>
                                     </li>
                                 </ul>
@@ -850,7 +850,7 @@
                         <ul class="tree-menu tree-menu-1">
                             <li>
                                 <a href="#">
-                                    <span>Medicine</span>
+                                    <span></span>
                                 </a>
                             </li>
                             <li>
@@ -1068,51 +1068,51 @@
                                         </div>
                                     </div>                                    
                                 </div>
-                                <div class="content-row cr-2">
+                                <div class="content-row cr-2 parent-medicine-info">
                                     <div class="column co-1 medicine-info">
                                         <div class="input i-1">
-                                            <label for="medicine-name">Medicine Name<i class="required">*</i></label>
+                                            <label>Medicine Name<i class="required">*</i></label>
                                             <div class="autocomplete">
-                                                <input type="text" name="#" id="medicine-name" placeholder="Medicine Name">
+                                                <input type="text" name="#" class="medicine-name" placeholder=" Name">
                                                 <div class="autocomplete-items"></div>
                                             </div>                                            
                                         </div>
                                         <div class="input i-2">
-                                            <label for="batch">Batch<i class="required">*</i></label>
-                                            <select name="#" id="batch">
+                                            <label>Batch<i class="required">*</i></label>
+                                            <select name="#" class="batch">
                                                 <option selected hidden>Select</option>
                                             </select>
                                         </div>
                                         <div class="input i-3">
-                                            <label for="avarage">Ava. Qty</label>
-                                            <input type="text" name="#" id="available-quantity" placeholder="0.00" readonly>
+                                            <label>Ava. Qty</label>
+                                            <input type="text" name="#" class="available-quantity" placeholder="0.00" readonly>
                                         </div>
                                         <div class="input i-4">
-                                            <label for="expiry-date">Expiry Date</label>
-                                            <input type="text" name="#" id="expiry-date" readonly>
+                                            <label>Expiry Date</label>
+                                            <input type="text" name="#" class="expiry-date" readonly>
                                         </div>
                                         <div class="input i-5">
-                                            <label for="unit">Unit</label>
-                                            <input type="text" name="#" id="unit" value="None" readonly>
+                                            <label>Unit</label>
+                                            <input type="text" name="#" class="unit" value="None" readonly>
                                         </div>
                                         <div class="input i-6">
-                                            <label for="quantity">Quantity<i class="required">*</i></label>
-                                            <input type="text" name="#" id="quantity" placeholder="0.00" onkeypress="return isNumber(event, value)">
+                                            <label>Quantity<i class="required">*</i></label>
+                                            <input type="text" name="#" class="quantity" placeholder="0.00" onkeypress="return isNumber(event, value)">
                                         </div>
                                         <div class="input i-7">
-                                            <label for="price">Price<i class="required">*</i></label>
-                                            <input type="text" name="#" id="price" placeholder="0.00" onkeypress="return isNumber(event, value)">
+                                            <label>Price<i class="required">*</i></label>
+                                            <input type="text" name="#" class="price" placeholder="0.00" onkeypress="return isNumber(event, value)">
                                         </div>
                                         <div class="input i-8">
-                                            <label for="discount">Discount %</label>
-                                            <input type="text" name="#" id="discount" placeholder="0.00" onkeypress="return isNumber(event, value)">
+                                            <label>Discount %</label>
+                                            <input type="text" name="#" class="discount" placeholder="0.00" onkeypress="return isNumber(event, value)">
                                         </div>
                                         <div class="input i-9">
-                                            <label for="Total">Total</label>
-                                            <input type="text" name="#" id="total" value="0.00" readonly>
+                                            <label>Total</label>
+                                            <input type="text" name="#" class="total" value="0.00" readonly>
                                         </div>
                                         <div class="input i-10">
-                                           <button type="button">
+                                           <button type="button" class="remove-medi-row">
                                                <i class="icon-times"></i>
                                            </button>
                                         </div>
@@ -1128,12 +1128,12 @@
                                             <button type="submit" class="ani-submit">Submit</button>
                                         </div>                                        
                                     </div>
-                                    <div class="column co-2 medicine-info">
+                                    <div class="column co-2 -info">
                                         <div class="input i-1">
                                             <label for="invoice-discount">Invoice Discount:</label>
                                             <input type="text" name="#" id="invoice-discount" placeholder="0.00" onkeypress="return isNumber(event, value)">
-                                            <button type="button">
-                                                <i class="icon-plus add-medi-row"></i>
+                                            <button type="button" class="add-medi-row">
+                                                <i class="icon-plus"></i>
                                             </button>
                                         </div>                                       
                                         <div class="input i-2">
