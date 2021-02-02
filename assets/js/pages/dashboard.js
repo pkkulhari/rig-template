@@ -52,7 +52,9 @@ function morrisLine_init() {
         }
     });
 }
-morrisLine_init();
+setTimeout(() => {
+    morrisLine_init();
+}, 50);
 
 /*<--------------------- Donut Chart - Monthly Income Expense Statement ---------------------->*/
 _data = [{
@@ -104,6 +106,8 @@ morrisDonut_init();
 document.querySelector('.sidebar-toggle').addEventListener('click', function () {
     document.querySelector('#multi-line-mp').firstElementChild.remove();
     document.querySelector('#donut-mie').firstElementChild.remove();
-    morrisLine_init();
+    setTimeout(() => {
+        morrisLine_init();
+    }, 0);
     morrisDonut_init();
 });

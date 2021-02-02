@@ -1,0 +1,262 @@
+<!-- Start Content -->
+<div id="content-wrapper">
+
+    <!-- Content header -->
+    <div class="content-header">
+        <div class="icon">
+            <i class="icon-note"></i>
+        </div>
+        <div class="title">
+            <h2>New Invoice</h2>
+            <small>Add New Invoice</small>
+        </div>
+        <ol class="nav-breadcrumb">
+            <li>
+                <a href="index.html">
+                    <i class="icon-home-alt"></i>
+                    <span>Home</span>
+                </a>
+            </li>
+            <li>
+                <span>Invoice</span>
+            </li>
+            <li class="active">
+                <span>New Invoice</span>
+            </li>
+        </ol>
+    </div>
+
+    <!-- Main content -->
+    <div class="content">
+
+        <!-- Quick Buttons -->
+        <div class="content-row r-1">
+            <a href="#" class="quick-btn">
+                <i class="icon-align-justify"></i>
+                <span>Manage Invoice</span>
+            </a>
+            <a href="#" class="quick-btn">
+                <i class="icon-align-justify"></i>
+                <span>POS Invoie</span>
+            </a>
+        </div>
+
+        <!-- New Invoice -->
+        <div class="content-row r-2">
+            <div class="column c-1 nouch">
+                <div class="column-head">
+                    <div class="title">
+                        <h4>New Invoice</h4>
+                    </div>
+                </div>
+                <div class="column-body">
+                    <form action="#" method="post" id="ani-from">
+                        <div class="content-row cr-1">
+                            <div class="column co-1">
+                                <div class="input i-1">
+                                    <label for="customer-name">Customer Name<i class="required">*</i></label>
+                                    <div class="input-button">
+                                        <input type="text" name="#" id="customer-name" value="Walking Customer">
+                                        <button type="button" class="add-new-customer">
+                                            <i class="icon-plus"></i>
+                                        </button>
+                                    </div>
+                                </div>
+                                <div class="input i-2">
+                                    <label for="date">Date<i class="required">*</i></label>
+                                    <input type="date" name="#" id="date">
+                                </div>
+                            </div>
+                            <div class="column co-2">
+                                <div class="input i-1">
+                                    <label for="payment-type">Payment Type<i class="required">*</i></label>
+                                    <select name="#" id="payment-type">
+                                        <option value="Cash Payment" selected>Cash Payment</option>
+                                        <option value="Bank Payment">Bank Payment</option>
+                                    </select>
+                                </div>
+                                <div class="input i-2">
+                                    <label for="bank">Bank<i class="required">*</i></label>
+                                    <select name="#" id="bank">
+                                        <option value="SBI Bank" selected>SBI Bank</option>
+                                        <option value="HDFC Bank">HDFC Bank</option>
+                                        <option value="IDBI Bank">IDBI Bank</option>
+                                    </select>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="content-row cr-2 medi-row-parent">
+                            <div class="column co-1 medicine-info medi-row-1">
+                                <div class="input i-1">
+                                    <label>Medicine Name<i class="required">*</i></label>
+                                    <div class="autocomplete">
+                                        <input type="text" name="#" class="medicine-name" placeholder=" Name">
+                                        <div class="autocomplete-items"></div>
+                                    </div>
+                                </div>
+                                <div class="input i-2">
+                                    <label>Batch<i class="required">*</i></label>
+                                    <select name="#" class="batch">
+                                        <option selected hidden>Select</option>
+                                    </select>
+                                </div>
+                                <div class="input i-3">
+                                    <label>Ava. Qty</label>
+                                    <input type="text" name="#" class="available-quantity" placeholder="0.00" readonly>
+                                </div>
+                                <div class="input i-4">
+                                    <label>Expiry Date</label>
+                                    <input type="text" name="#" class="expiry-date" readonly>
+                                </div>
+                                <div class="input i-5">
+                                    <label>Unit</label>
+                                    <input type="text" name="#" class="unit" value="None" readonly>
+                                </div>
+                                <div class="input i-6">
+                                    <label>Quantity<i class="required">*</i></label>
+                                    <input type="text" name="#" class="quantity" placeholder="0.00"
+                                        onkeypress="return isNumber(event, value)">
+                                </div>
+                                <div class="input i-7">
+                                    <label>Price<i class="required">*</i></label>
+                                    <input type="text" name="#" class="price" placeholder="0.00"
+                                        onkeypress="return isNumber(event, value)">
+                                </div>
+                                <div class="input i-8">
+                                    <label>Discount %</label>
+                                    <input type="text" name="#" class="discount" placeholder="0.00"
+                                        onkeypress="return isNumber(event, value)">
+                                </div>
+                                <div class="input i-9">
+                                    <label>Total</label>
+                                    <input type="text" name="#" class="total" value="0.00" readonly>
+
+                                    <!-- For calculation purpose only -->
+                                    <input type="text" class="total-without-discount" hidden>
+                                </div>
+                                <div class="input i-10">
+                                    <button type="button" class="remove-medi-row">
+                                        <i class="icon-times"></i>
+                                    </button>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="content-row cr-3">
+                            <div class="column co-1">
+                                <div class="invoice-detail">
+                                    <label for="invoice-detail">Invoice Detail</label>
+                                    <textarea name="#" id="invoice-detail"></textarea>
+                                </div>
+                                <div class="submit-button">
+                                    <button type="submit" class="ani-submit">Submit</button>
+                                </div>
+                            </div>
+                            <div class="column co-2 -info">
+                                <div class="input i-1">
+                                    <label for="invoice-discount">Invoice Discount:</label>
+                                    <input type="text" name="#" id="invoice-discount" placeholder="0.00"
+                                        onkeypress="return isNumber(event, value)">
+                                    <button type="button" class="add-medi-row">
+                                        <i class="icon-plus"></i>
+                                    </button>
+                                </div>
+                                <div class="input i-2">
+                                    <label for="total-discount">Total Discount:</label>
+                                    <input type="text" name="#" id="total-discount" value="0.00" readonly>
+                                </div>
+                                <div class="input i-3">
+                                    <label for="total-tax">Total Tax:</label>
+                                    <input type="text" name="#" id="total-tax" value="0.00" readonly>
+                                    <button type="button">
+                                        <i class="icon-angle-double-up"></i>
+                                    </button>
+                                </div>
+                                <div class="input i-4">
+                                    <label for="grand-total">Grand Total:</label>
+                                    <input type="text" name="#" id="grand-total" value="0.00" readonly>
+                                </div>
+                                <div class="input i-5">
+                                    <label for="previous">Previous:</label>
+                                    <input type="text" name="#" id="previous" value="0.00" readonly>
+                                </div>
+                                <div class="input i-6">
+                                    <label for="net-total">Net Total:</label>
+                                    <input type="text" name="#" id="net-total" value="0.00" readonly>
+                                </div>
+                                <div class="input i-7">
+                                    <label for="paid-amount">Paid Amount:</label>
+                                    <input type="text" name="#" id="paid-amount" placeholder="0.00"
+                                        onkeypress="return isNumber(event, value)">
+                                    <button type="button" class="full-paid">
+                                        <i class="icon-plus"></i>
+                                    </button>
+                                </div>
+                                <div class="input i-8">
+                                    <label for="due">Due:</label>
+                                    <input type="text" name="#" id="due" value="0.00" readonly>
+                                </div>
+                                <div class="input i-9">
+                                    <label for="change">Change:</label>
+                                    <input type="text" name="#" id="change" value="0.00" readonly>
+                                </div>
+                            </div>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Pop up Boxes -->
+    <div id="anc-pop-up-box" class="pop-up-box">
+        <div class="inner nouch">
+            <div class="head">
+                <h4>Add New Invoice</h4>
+                <i class="icon-times anc-close"></i>
+            </div>
+            <form action="#" method="POST" id="anc-form" onsubmit="return false">
+                <div class="body">
+                    <div class="input i-1">
+                        <label for="anc-name">Name<i class="required">*</i></label>
+                        <input type="text" name="#" id="anc-name">
+                    </div>
+                    <div class="input i-2">
+                        <label for="anc-email">E-Mail</label>
+                        <input type="email" name="#" id="anc-email">
+                    </div>
+                    <div class="input i-3">
+                        <label for="anc-mobile">Mobile</label>
+                        <input type="text" name="#" id="anc-customer-name">
+                    </div>
+                    <div class="input i-4">
+                        <label for="anc-address">Address</label>
+                        <input type="text" name="#" id="anc-address">
+                    </div>
+                </div>
+                <div class="footer">
+                    <button type="button" class="anc-close">Cancle</button>
+                    <button type="submit" class="anc-close">Submit</button>
+                </div>
+            </form>
+        </div>
+    </div>
+
+    <div id="pni-pop-up-box" class="pop-up-box">
+        <div class="inner nouch">
+            <div class="head">
+                <h4>Print</h4>
+                <i class="icon-times pni-close"></i>
+            </div>
+            <div class="body">
+                <h4>Successfully Inserted.</h4>
+                <h5>Do you want to print?</h5>
+            </div>
+            <div class="footer">
+                <button type="button" class="pni-close">No</button>
+                <button type="button" class="pni-close">Yes</button>
+            </div>
+        </div>
+    </div>
+
+</div>
+<!-- End Content -->

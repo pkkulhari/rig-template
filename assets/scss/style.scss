@@ -1,8 +1,6 @@
 @import "variables";
 @import "mixins";
 @import "global";
-@import "date-picker";
-@import "autocomplete";
 
 @import "navbar";
 @import "sidebar";
@@ -10,3 +8,6 @@
 
 @import "pages/dashboard";
 @import "pages/invoice/new-invoice";
+
+@import "helpers/date-picker";
+@import "helpers/autocomplete";

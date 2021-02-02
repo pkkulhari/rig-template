@@ -92,7 +92,7 @@
         <!-- End Navbar -->
 
         <!-- Start sidebar -->
-        <div id="sidebar" class="shrinked">
+        <div id="sidebar">
             <aside>
                 <!-- Logo -->
                 <div class="logo">
@@ -191,7 +191,7 @@
                     <li>
                         <a href="javascript:void(0)" class="tree">
                             <i class="icon-bag"></i>
-                            <span></span>
+                            <span>Medicine</span>
                             <i class="icon-angle-left"></i>
                         </a>
                         <ul class="tree-menu tree-menu-1">
@@ -230,7 +230,7 @@
                             </li>
                             <li>
                                 <a href="#">
-                                    <span>Import  (CSV)</span>
+                                    <span>Import (CSV)</span>
                                 </a>
                             </li>
                             <li>
@@ -982,267 +982,232 @@
         <!-- End Sidebar -->
 
         <!-- Start Content -->
-        <div id="content-wrapper">
+<div id="content-wrapper">
 
-            <!-- Content header -->
-            <div class="content-header">
+    <!-- Content header -->
+    <div class="content-header">
+        <div class="icon">
+            <i class="icon-world"></i>
+        </div>
+        <div class="title">
+            <h2>Dashboard</h2>
+            <small>Home</small>
+        </div>
+        <ol class="nav-breadcrumb">
+            <li>
+                <a href="index.html">
+                    <i class="icon-home-alt"></i>
+                    <span>Home</span>
+                </a>
+            </li>
+            <li class="active">
+                <span>Dashboard</span>
+            </li>
+        </ol>
+    </div>
+
+    <!-- Main content -->
+    <div class="content">
+
+        <!-- Media-box -->
+        <div class="content-row r-1">
+            <div class="media-box nouch">
                 <div class="icon">
-                    <i class="icon-note"></i>
+                    <i class="icon-medkit"></i>
                 </div>
-                <div class="title">
-                    <h2>New Invoice</h2>
-                    <small>Add New Invoice</small>
+                <div class="data">
+                    <h4>Total Medicine</h4>
+                    <h4>250</h4>
                 </div>
-                <ol class="nav-breadcrumb">
-                    <li>                        
-                        <a href="index.html">
-                            <i class="icon-home-alt"></i>
-                            <span>Home</span>
-                        </a>
-                    </li>
-                    <li>                    
-                        <span>Invoice</span>                        
-                    </li>
-                    <li class="active">
-                        <span>New Invoice</span>
-                    </li>
-                </ol>
             </div>
-
-            <!-- Main content -->
-            <div class="content">
-
-                <!-- Quick Buttons -->
-                <div class="content-row r-1">                    
-                    <a href="#" class="quick-btn">
-                        <i class="icon-align-justify"></i>
-                        <span>Manage Invoice</span>
-                    </a>
-                    <a href="#" class="quick-btn">
-                        <i class="icon-align-justify"></i>
-                        <span>POS Invoie</span>
-                    </a>
+            <div class="media-box nouch">
+                <div class="icon">
+                    <i class="icon-stack-overflow"></i>
                 </div>
-
-                <!-- New Invoice -->
-                <div class="content-row r-2">
-                    <div class="column c-1 nouch">
-                        <div class="column-head">
-                            <div class="title">
-                                <h4>New Invoice</h4>
-                            </div>                            
-                        </div>
-                        <div class="column-body">
-                            <form action="#" method="post" id="ani-from">
-                                <div class="content-row cr-1">
-                                    <div class="column co-1">
-                                        <div class="input i-1">
-                                            <label for="customer-name">Customer Name<i class="required">*</i></label>
-                                            <div class="input-button">
-                                                <input type="text" name="#" id="customer-name" value="Walking Customer">
-                                                <button type="button" class="add-new-customer">
-                                                    <i class="icon-plus"></i>
-                                                </button>
-                                            </div>
-                                        </div>
-                                        <div class="input i-2">
-                                            <label for="date">Date<i class="required">*</i></label>
-                                            <input type="date" name="#" id="date">
-                                        </div>
-                                    </div>
-                                    <div class="column co-2">
-                                        <div class="input i-1">
-                                            <label for="payment-type">Payment Type<i class="required">*</i></label>
-                                            <select name="#" id="payment-type">
-                                                <option value="Cash Payment" selected>Cash Payment</option>
-                                                <option value="Bank Payment">Bank Payment</option>
-                                            </select>
-                                        </div>
-                                        <div class="input i-2">
-                                            <label for="bank">Bank<i class="required">*</i></label>
-                                            <select name="#" id="bank">
-                                                <option value="SBI Bank" selected>SBI Bank</option>
-                                                <option value="HDFC Bank">HDFC Bank</option>
-                                                <option value="IDBI Bank">IDBI Bank</option>
-                                            </select>
-                                        </div>
-                                    </div>                                    
-                                </div>
-                                <div class="content-row cr-2 parent-medicine-info">
-                                    <div class="column co-1 medicine-info">
-                                        <div class="input i-1">
-                                            <label>Medicine Name<i class="required">*</i></label>
-                                            <div class="autocomplete">
-                                                <input type="text" name="#" class="medicine-name" placeholder=" Name">
-                                                <div class="autocomplete-items"></div>
-                                            </div>                                            
-                                        </div>
-                                        <div class="input i-2">
-                                            <label>Batch<i class="required">*</i></label>
-                                            <select name="#" class="batch">
-                                                <option selected hidden>Select</option>
-                                            </select>
-                                        </div>
-                                        <div class="input i-3">
-                                            <label>Ava. Qty</label>
-                                            <input type="text" name="#" class="available-quantity" placeholder="0.00" readonly>
-                                        </div>
-                                        <div class="input i-4">
-                                            <label>Expiry Date</label>
-                                            <input type="text" name="#" class="expiry-date" readonly>
-                                        </div>
-                                        <div class="input i-5">
-                                            <label>Unit</label>
-                                            <input type="text" name="#" class="unit" value="None" readonly>
-                                        </div>
-                                        <div class="input i-6">
-                                            <label>Quantity<i class="required">*</i></label>
-                                            <input type="text" name="#" class="quantity" placeholder="0.00" onkeypress="return isNumber(event, value)">
-                                        </div>
-                                        <div class="input i-7">
-                                            <label>Price<i class="required">*</i></label>
-                                            <input type="text" name="#" class="price" placeholder="0.00" onkeypress="return isNumber(event, value)">
-                                        </div>
-                                        <div class="input i-8">
-                                            <label>Discount %</label>
-                                            <input type="text" name="#" class="discount" placeholder="0.00" onkeypress="return isNumber(event, value)">
-                                        </div>
-                                        <div class="input i-9">
-                                            <label>Total</label>
-                                            <input type="text" name="#" class="total" value="0.00" readonly>
-                                        </div>
-                                        <div class="input i-10">
-                                           <button type="button" class="remove-medi-row">
-                                               <i class="icon-times"></i>
-                                           </button>
-                                        </div>
-                                    </div>
-                                </div>
-                                <div class="content-row cr-3">
-                                    <div class="column co-1">
-                                        <div class="invoice-detail">
-                                            <label for="invoice-detail">Invoice Detail</label>
-                                            <textarea name="#" id="invoice-detail"></textarea>
-                                        </div>
-                                        <div class="submit-button">                                            
-                                            <button type="submit" class="ani-submit">Submit</button>
-                                        </div>                                        
-                                    </div>
-                                    <div class="column co-2 -info">
-                                        <div class="input i-1">
-                                            <label for="invoice-discount">Invoice Discount:</label>
-                                            <input type="text" name="#" id="invoice-discount" placeholder="0.00" onkeypress="return isNumber(event, value)">
-                                            <button type="button" class="add-medi-row">
-                                                <i class="icon-plus"></i>
-                                            </button>
-                                        </div>                                       
-                                        <div class="input i-2">
-                                            <label for="total-discount">Total Discount:</label>
-                                            <input type="text" name="#" id="total-discount" value="0.00" readonly>                                            
-                                        </div>                                       
-                                        <div class="input i-3">
-                                            <label for="total-tax">Total Tax:</label>
-                                            <input type="text" name="#" id="total-tax" value="0.00" readonly>
-                                            <button type="button">
-                                                <i class="icon-angle-double-up"></i>
-                                            </button>                                            
-                                        </div>                                       
-                                        <div class="input i-4">
-                                            <label for="grand-total">Grand Total:</label>
-                                            <input type="text" name="#" id="grand-total" value="0.00" readonly>                                            
-                                        </div>                                       
-                                        <div class="input i-5">
-                                            <label for="previous">Previous:</label>
-                                            <input type="text" name="#" id="previous" value="0.00" readonly>                                            
-                                        </div>                                       
-                                        <div class="input i-6">
-                                            <label for="net-total">Net Total:</label>
-                                            <input type="text" name="#" id="net-total" value="0.00" readonly>                                            
-                                        </div>                                       
-                                        <div class="input i-7">
-                                            <label for="paid-amount">Paid Amount:</label>
-                                            <input type="text" name="#" id="paid-amount" placeholder="0.00" onkeypress="return isNumber(event, value)">
-                                            <button type="button" class="full-paid">
-                                                <i class="icon-plus"></i>
-                                            </button>
-                                        </div>                                       
-                                        <div class="input i-8">
-                                            <label for="due">Due:</label>
-                                            <input type="text" name="#" id="due" value="0.00" readonly>                                            
-                                        </div>                                       
-                                        <div class="input i-9">
-                                            <label for="change">Change:</label>
-                                            <input type="text" name="#" id="change" value="0.00" readonly>                                            
-                                        </div>                                       
-                                    </div>
-                                </div>
-                            </form>
-                        </div>
-                    </div>
-                </div>               
+                <div class="data">
+                    <h4>Out of Stock</h4>
+                    <h4>10</h4>
+                </div>
             </div>
+            <div class="media-box nouch">
+                <div class="icon">
+                    <i class="icon-expired"></i>
+                </div>
+                <div class="data">
+                    <h4>Expired</h4>
+                    <h4>6</h4>
+                </div>
+            </div>
+            <div class="media-box nouch">
+                <div class="icon">
+                    <i class="icon-invoice"></i>
+                </div>
+                <div class="data">
+                    <h4>Total Invoice</h4>
+                    <h4>135</h4>
+                </div>
+            </div>
+        </div>
 
-            <!-- Pop up Boxes -->
-            <div id="anc-pop-up-box" class="pop-up-box">
-                <div class="inner nouch">
-                    <div class="head">
-                        <h4>Add New Invoice</h4>
-                        <i class="icon-times anc-close"></i>
+        <!-- Monthly Progress Report -->
+        <div class="content-row r-2">
+            <div class="column c-1 nouch">
+                <div class="column-head">
+                    <div class="title">
+                        <h4>Monthly Progress Report</h4>
                     </div>
-                    <form action="#" method="POST" id="anc-form" onsubmit="return false">
-                        <div class="body">                        
-                            <div class="input i-1">
-                                <label for="anc-name">Name<i class="required">*</i></label>
-                                <input type="text" name="#" id="anc-name">
+                    <form action="#" method="post" class="form-horizontal">
+                        <div class="date-picker dp-1">
+                            <input type="text" name="" class="selected-date" readonly>
+                            <div class="dates">
+                                <div class="year">
+                                    <div class="arrow pre-yr">&lt;</div>
+                                    <div class="yr"></div>
+                                    <div class="arrow next-yr">&gt;</div>
+                                </div>
+                                <div class="months"></div>
                             </div>
-                            <div class="input i-2">
-                                <label for="anc-email">E-Mail</label>
-                                <input type="email" name="#" id="anc-email">
-                            </div>
-                            <div class="input i-3">
-                                <label for="anc-mobile">Mobile</label>
-                                <input type="text" name="#" id="anc-customer-name">
-                            </div>
-                            <div class="input i-4">
-                                <label for="anc-address">Address</label>
-                                <input type="text" name="#" id="anc-address">
-                            </div>                        
                         </div>
-                        <div class="footer">
-                            <button type="button" class="anc-close">Cancle</button>
-                            <button type="submit" class="anc-close">Submit</button>
-                        </div>
+                        <button type="submit">
+                            <i class="icon-search-alt"></i>
+                        </button>
                     </form>
                 </div>
-            </div>
-            
-            <div id="pni-pop-up-box" class="pop-up-box">
-                <div class="inner nouch">
-                    <div class="head">
-                        <h4>Print</h4>
-                        <i class="icon-times pni-close"></i>
-                    </div>                    
-                    <div class="body">                        
-                        <h4>Successfully Inserted.</h4>                    
-                        <h5>Do you want to print?</h5>                    
+                <div class="column-body">
+                    <div class="labels">
+                        <div class="sales">
+                            <i class="icon-circle"></i>
+                            <span>Sale</span>
+                        </div>
+                        <div class="purchase">
+                            <i class="icon-circle"></i>
+                            <span>Purchases</span>
+                        </div>
                     </div>
-                    <div class="footer">
-                        <button type="button" class="pni-close">No</button>
-                        <button type="button" class="pni-close">Yes</button>
-                    </div>                    
+                    <div id="multi-line-mp"></div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Monthly Income Expense Statement and Today Report-->
+        <div class="content-row r-3">
+
+            <!-- Monthly Income Expense Statement-->
+            <div class="column c-1 nouch">
+                <div class="column-head">
+                    <div class="title">
+                        <h4>Monthly Income Expense Statement</h4>
+                    </div>
+                    <form action="#" method="post" class="form-horizontal">
+                        <div class="date-picker dp-2">
+                            <input type="text" name="" class="selected-date" readonly>
+                            <div class="dates">
+                                <div class="year">
+                                    <div class="arrow pre-yr">&lt;</div>
+                                    <div class="yr"></div>
+                                    <div class="arrow next-yr">&gt;</div>
+                                </div>
+                                <div class="months"></div>
+                            </div>
+                        </div>
+                        <button type="submit">
+                            <i class="icon-search-alt"></i>
+                        </button>
+                    </form>
+                </div>
+                <div class="column-body">
+                    <div class="labels">
+                        <div class="total-expense">
+                            <i class="icon-circle"></i>
+                            <span>Total Expense</span>
+                        </div>
+                        <div class="total-purchase">
+                            <i class="icon-circle"></i>
+                            <span>Total Purchase</span>
+                        </div>
+                        <div class="employee-salary">
+                            <i class="icon-circle"></i>
+                            <span>Employee Salary</span>
+                        </div>
+                        <div class="service">
+                            <i class="icon-circle"></i>
+                            <span>Service</span>
+                        </div>
+                        <div class="total-sale">
+                            <i class="icon-circle"></i>
+                            <span>Total Sale</span>
+                        </div>
+                    </div>
+                    <div id="donut-mie"></div>
                 </div>
             </div>
 
+            <!-- Today Report -->
+            <div class="column c-2 nouch">
+                <div class="column-head">
+                    <div class="title">
+                        <h4>Todays Report</h4>
+                    </div>
+                </div>
+                <div class="column-body">
+                    <table class="data-table today-report">
+                        <thead>
+                            <tr>
+                                <th>Todays Report</th>
+                                <th>Amount</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td>Total Sales</td>
+                                <td>$ 126.18</td>
+                            </tr>
+                            <tr>
+                                <td>Total Purchase</td>
+                                <td>$ 0</td>
+                            </tr>
+                            <tr>
+                                <td>Cash Received</td>
+                                <td>$ 126.18</td>
+                            </tr>
+                            <tr>
+                                <td>Bank Received</td>
+                                <td>$ 0</td>
+                            </tr>
+                            <tr>
+                                <td>Invoice Due</td>
+                                <td>$ 0</td>
+                            </tr>
+                            <tr>
+                                <td>Total Service</td>
+                                <td>$ 0</td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+            </div>
         </div>
-        <!-- End Content -->
+
+    </div>
+
+</div>
+<!-- End Content -->
     </div>
     <!-- END main-container -->
 
-    <!-- Main Scripts -->
-    <script src="assets/js/script.js"></script>    
-    <script src="assets/js/helpers/xhr.js"></script>    
-    <script src="assets/js/helpers/autocomplete.js"></script>
-    <script src="assets/js/new-invoice.js"></script>
+    <!-- Scripts -->
+    <script src="assets/js/vendor/jquery.js"></script>
+    <script src="assets/js/vendor/raphael.js"></script>
+    <script src="assets/js/vendor/morris.js"></script>
+
+    <script src="assets/js/script.js"></script> 
+
+    <script src="assets/js/pages/dashboard.js"></script>
+    <script src="assets/js/pages/invoice/new-invoice.js"></script>
+
+    <script src="assets/js/helpers/date-picker.js"></script>
+    <script src="assets/js/helpers/xhr.js"></script>
+    <script src="assets/js/helpers/autocomplete.js"></script>    
 </body>
 
 </html>

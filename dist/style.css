@@ -75,7 +75,9 @@ form {
   padding: 0;
 }
 
-form input, form select, form textarea {
+form input,
+form select,
+form textarea {
   border-radius: 2px;
   border: 1px solid #e1e6ef;
   outline: none;
@@ -86,7 +88,9 @@ form input, form select, form textarea {
   font-family: 'Roboto', sans-serif;
 }
 
-form input:focus, form select:focus, form textarea:focus {
+form input:focus,
+form select:focus,
+form textarea:focus {
   border-color: #3366CC;
 }
 
@@ -132,140 +136,6 @@ button:active {
 
 .data-table tbody tr:nth-of-type(even) {
   background-color: #F9F9F9;
-}
-
-.date-picker {
-  position: absolute;
-  top: 0;
-  left: 0;
-  right: 0;
-  z-index: 3;
-  width: -webkit-fit-content;
-  width: -moz-fit-content;
-  width: fit-content;
-  height: -webkit-max-content;
-  height: -moz-max-content;
-  height: max-content;
-  background-color: #ffffff;
-  font-size: 12px;
-}
-
-.date-picker .dates {
-  border: 1px solid #e1e6ef;
-  border-top: none;
-  border-radius: 2px;
-  display: none;
-}
-
-.date-picker .dates.active {
-  display: block;
-}
-
-.date-picker .dates .year {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  border-bottom: 1px solid #e1e6ef;
-}
-
-.date-picker .dates .year .arrow {
-  width: 30px;
-  height: 30px;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  cursor: pointer;
-  border-radius: 50px;
-  line-height: 0px;
-  -webkit-user-select: none;
-     -moz-user-select: none;
-      -ms-user-select: none;
-          user-select: none;
-}
-
-.date-picker .dates .year .arrow:hover {
-  background-color: #DAE6FD;
-}
-
-.date-picker .dates .year .arrow:active {
-  background-color: #6A6DDE;
-}
-
-.date-picker .dates .months {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: space-evenly;
-      -ms-flex-pack: space-evenly;
-          justify-content: space-evenly;
-  -ms-flex-wrap: wrap;
-      flex-wrap: wrap;
-}
-
-.date-picker .dates .months .month {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  width: 40px;
-  height: 30px;
-  border-radius: 2px;
-  margin: 5px;
-  cursor: context-menu;
-}
-
-.date-picker .dates .months .month:hover, .date-picker .dates .months .month.active {
-  background-color: #DAE6FD;
-}
-
-.autocomplete {
-  display: inline-block;
-  position: relative;
-}
-
-.autocomplete .autocomplete-items {
-  position: absolute;
-  top: 100%;
-  right: 0;
-  left: 0;
-  z-index: 5;
-  border: 1px solid #e1e6ef;
-  border-top: none;
-  width: 189.2px;
-  max-height: 300px;
-  overflow-y: auto;
-  background-color: #ffffff;
-  display: none;
-}
-
-.autocomplete .autocomplete-items.show {
-  display: block;
-}
-
-.autocomplete .autocomplete-items div {
-  padding: 6px 12px;
-  cursor: pointer;
-}
-
-.autocomplete .autocomplete-items div:hover, .autocomplete .autocomplete-items div.active {
-  background-color: rgba(5, 86, 243, 0.15);
 }
 
 #navbar {
@@ -855,6 +725,10 @@ div#sidebar.shrinked ul.tree-menu-1 li a i.icon-angle-left {
       justify-content: space-around;
 }
 
+.r-1 {
+  gap: 20px;
+}
+
 .r-1 .media-box {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -866,7 +740,6 @@ div#sidebar.shrinked ul.tree-menu-1 li a i.icon-angle-left {
           flex-direction: row;
   height: 105px;
   background-color: #ffffff;
-  margin: 10px;
   border: 1px solid #e1e6ef;
   border-radius: 2px;
   -webkit-box-flex: 1;
@@ -980,6 +853,7 @@ div#sidebar.shrinked ul.tree-menu-1 li a i.icon-angle-left {
 
 .r-2 .c-1 .column-head form input {
   padding: 4px 10px;
+  max-width: 180px;
 }
 
 .r-2 .c-1 .column-head form input:focus {
@@ -987,7 +861,7 @@ div#sidebar.shrinked ul.tree-menu-1 li a i.icon-angle-left {
 }
 
 .r-2 .c-1 .column-head form button {
-  padding: 5.2px 10px;
+  padding: 5.7px 10px;
   font-size: 12px;
   font-weight: bolder;
   z-index: 4;
@@ -1106,6 +980,7 @@ div#sidebar.shrinked ul.tree-menu-1 li a i.icon-angle-left {
 
 .r-3 .c-1 .column-head form input {
   padding: 4px 10px;
+  max-width: 180px;
 }
 
 .r-3 .c-1 .column-head form input:focus {
@@ -1113,7 +988,7 @@ div#sidebar.shrinked ul.tree-menu-1 li a i.icon-angle-left {
 }
 
 .r-3 .c-1 .column-head form button {
-  padding: 5.2px 10px;
+  padding: 5.7px 10px;
   font-size: 12px;
   font-weight: bolder;
   z-index: 4;
@@ -1532,6 +1407,7 @@ div#sidebar.shrinked ul.tree-menu-1 li a i.icon-angle-left {
 .r-2 .c-1 .column-body form .cr-3 .co-2 .input input {
   max-width: 100px;
   margin-left: 10px;
+  text-align: right;
 }
 
 .r-2 .c-1 .column-body form .cr-3 .co-2 .input button {
@@ -1812,7 +1688,8 @@ div#sidebar.shrinked ul.tree-menu-1 li a i.icon-angle-left {
   padding: 15px;
 }
 
-#pni-pop-up-box .inner .body h4, #pni-pop-up-box .inner .body h5 {
+#pni-pop-up-box .inner .body h4,
+#pni-pop-up-box .inner .body h5 {
   margin: 5px;
 }
 
@@ -1853,5 +1730,139 @@ div#sidebar.shrinked ul.tree-menu-1 li a i.icon-angle-left {
 
 #pni-pop-up-box .inner .footer button:first-child:active {
   background-color: #f2f2f2 !important;
+}
+
+.date-picker {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  z-index: 3;
+  width: -webkit-fit-content;
+  width: -moz-fit-content;
+  width: fit-content;
+  height: -webkit-max-content;
+  height: -moz-max-content;
+  height: max-content;
+  background-color: #ffffff;
+  font-size: 12px;
+}
+
+.date-picker .dates {
+  border: 1px solid #e1e6ef;
+  border-top: none;
+  border-radius: 2px;
+  display: none;
+}
+
+.date-picker .dates.active {
+  display: block;
+}
+
+.date-picker .dates .year {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  border-bottom: 1px solid #e1e6ef;
+}
+
+.date-picker .dates .year .arrow {
+  width: 30px;
+  height: 30px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  cursor: pointer;
+  border-radius: 50px;
+  line-height: 0px;
+  -webkit-user-select: none;
+     -moz-user-select: none;
+      -ms-user-select: none;
+          user-select: none;
+}
+
+.date-picker .dates .year .arrow:hover {
+  background-color: #DAE6FD;
+}
+
+.date-picker .dates .year .arrow:active {
+  background-color: #6A6DDE;
+}
+
+.date-picker .dates .months {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: space-evenly;
+      -ms-flex-pack: space-evenly;
+          justify-content: space-evenly;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+}
+
+.date-picker .dates .months .month {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  width: 40px;
+  height: 30px;
+  border-radius: 2px;
+  margin: 5px;
+  cursor: context-menu;
+}
+
+.date-picker .dates .months .month:hover, .date-picker .dates .months .month.active {
+  background-color: #DAE6FD;
+}
+
+.autocomplete {
+  display: inline-block;
+  position: relative;
+}
+
+.autocomplete .autocomplete-items {
+  position: absolute;
+  top: 100%;
+  right: 0;
+  left: 0;
+  z-index: 5;
+  border: 1px solid #e1e6ef;
+  border-top: none;
+  width: 189.2px;
+  max-height: 300px;
+  overflow-y: auto;
+  background-color: #ffffff;
+  display: none;
+}
+
+.autocomplete .autocomplete-items.show {
+  display: block;
+}
+
+.autocomplete .autocomplete-items div {
+  padding: 6px 12px;
+  cursor: pointer;
+}
+
+.autocomplete .autocomplete-items div:hover, .autocomplete .autocomplete-items div.active {
+  background-color: rgba(5, 86, 243, 0.15);
 }
 /*# sourceMappingURL=style.css.map */

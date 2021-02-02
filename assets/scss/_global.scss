@@ -75,7 +75,9 @@ form {
     margin: 0;
     padding: 0;
 
-    input, select, textarea {
+    input,
+    select,
+    textarea {
         border-radius: 2px;
         border: 1px solid $lightGray;
         outline: none;
@@ -111,7 +113,7 @@ button {
     font-size: 14px;
     background-color: #ffffff;
     border: 1px solid $lightGray;
-    border-radius: 2px;   
+    border-radius: 2px;
     width: 100%;
 
     thead th,

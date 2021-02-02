@@ -26,7 +26,7 @@ function date_picker(el_selectedDate, el_dates, el_selectedYear, el_preYr, el_ne
     ];
 
     let date = new Date();
-    let d_month = date.getMonth() + 1;
+    let d_month = date.getMonth();
     let d_year = date.getFullYear();
 
     el_selectedDate.value = monthsFullName[d_month] + ' ' + d_year;

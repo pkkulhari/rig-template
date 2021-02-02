@@ -1,6 +1,5 @@
 function autocomplete(el_input, data_array) {
-    const el_autocomplete_items = document.querySelector('.autocomplete-items');
-
+    const el_autocomplete_items = el_input.nextElementSibling;
     
         el_autocomplete_items.classList.add('show');
 

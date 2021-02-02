@@ -267,6 +267,7 @@
                             input {
                                 max-width: 100px;
                                 margin-left: 10px;
+                                text-align: right;
                             }
 
                             button {
@@ -502,23 +503,24 @@
         .body {
             display: flex;
             flex-direction: column;
-            justify-content: center;            
+            justify-content: center;
             padding: 15px;
 
-            h4, h5 {
+            h4,
+            h5 {
                 margin: 5px;
             }
-            
+
             h4 {
-                font-size: 24px;                
+                font-size: 24px;
                 font-weight: 400;
             }
 
             h5 {
-                font-size: 18px;                
+                font-size: 18px;
                 font-weight: 400;
             }
-            
+
         }
 
         .footer {
@@ -530,7 +532,7 @@
 
             button {
                 padding: 6.4px 12px;
-                letter-spacing: 0.5px;               
+                letter-spacing: 0.5px;
                 border-radius: 2px;
 
                 &:first-child {
@@ -541,7 +543,7 @@
 
                     &:active {
                         background-color: #f2f2f2 !important;
-                    }                    
+                    }
                 }
             }
         }
