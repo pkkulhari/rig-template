@@ -59,9 +59,11 @@ document.querySelector('a.sidebar-toggle').addEventListener('click', function ()
     }
 
     document.getElementById('content-wrapper').classList.toggle('full');
+    document.getElementById('footer').classList.toggle('full');
 });
 
 // Full content when navbar is shrinked
 if(document.querySelector('#sidebar').classList.contains('shrinked')) {
     document.getElementById('content-wrapper').classList.add('full');
+    document.getElementById('footer').classList.add('full');
 }

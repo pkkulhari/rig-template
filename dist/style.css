@@ -737,6 +737,29 @@ div#sidebar.shrinked ul.tree-menu-1 li a i.icon-angle-left {
   padding: 10px;
 }
 
+#footer {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  height: 50px;
+  width: 100%;
+  padding-left: 250px;
+  background: #ffffff;
+  border-top: 1px solid #e1e6ef;
+  font-size: 14px;
+}
+
+#footer .copyright-text {
+  margin: 0 20px;
+}
+
+#footer.full {
+  padding-left: 50px;
+}
+
 .content-row {
   display: -webkit-box;
   display: -ms-flexbox;

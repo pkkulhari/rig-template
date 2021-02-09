@@ -1,0 +1,18 @@
+#footer {
+    display: flex;   
+    align-items: center;
+    height: 50px;
+    width: 100%;
+    padding-left: 250px;
+    background: $white;
+    border-top: 1px solid $lightGray;
+    font-size: 14px;
+
+    .copyright-text {
+        margin: 0 20px;        
+    }
+
+    &.full {
+        padding-left: 50px;
+    }
+}
