@@ -74,21 +74,21 @@ li a {
 form {
     margin: 0;
     padding: 0;
+}
 
-    input,
-    select,
-    textarea {
-        border-radius: 2px;
-        border: 1px solid $lightGray;
-        outline: none;
-        transition: all 0.15s;
-        padding: 6px 12px;
-        font-size: 14px;
-        font-family: 'Roboto', sans-serif;
+input,
+select,
+textarea {
+    border-radius: 2px;
+    border: 1px solid $lightGray;
+    outline: none;
+    transition: all 0.15s;
+    padding: 6px 12px;
+    font-size: 14px;
+    font-family: 'Roboto', sans-serif;
 
-        &:focus {
-            border-color: $brightBlue;
-        }
+    &:focus {
+        border-color: $brightBlue;
     }
 }
 
@@ -135,3 +135,30 @@ button {
     }
 
 }
+
+// Tool Tip
+
+.tooltipRight {    
+    position: absolute;
+    top: 0;
+    right: 125%;
+    width: max-content;
+    background-color: #000;
+    color: $white;
+    padding: 3px 6px;
+    border-radius: 2px;
+    font-size: 12px;
+    display: none;
+
+    &::after {
+        content: '';
+        position: absolute;
+        top: 50%;
+        left: 100%;        
+        border-width: 5px;
+        border-style: solid;
+        border-color: transparent transparent transparent #000;
+        margin-top: -5px;
+    }
+}
+
