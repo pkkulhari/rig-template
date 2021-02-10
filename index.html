@@ -990,8 +990,8 @@
                     <i class="icon-note"></i>
                 </div>
                 <div class="title">
-                    <h2>Manage Invoice</h2>
-                    <small>Add Your Invoice</small>
+                    <h2>Customer</h2>
+                    <small>Manage Customer</small>
                 </div>
                 <ol class="nav-breadcrumb">
                     <li>
@@ -1001,10 +1001,10 @@
                         </a>
                     </li>
                     <li>
-                        <span>Invoice</span>
+                        <span>Customer</span>
                     </li>
                     <li class="active">
-                        <span>Manage Invoice</span>
+                        <span>Manage Customer</span>
                     </li>
                 </ol>
             </div>
@@ -1016,41 +1016,24 @@
                 <div class="content-row r-1">
                     <a href="#" class="quick-btn">
                         <i class="icon-plus"></i>
-                        <span>New Invoice</span>
+                        <span>Add Customer</span>
                     </a>
                     <a href="#" class="quick-btn">
                         <i class="icon-align-justify"></i>
-                        <span>POS Invoie</span>
+                        <span>Credit Customer</span>
+                    </a>
+                    <a href="#" class="quick-btn">
+                        <i class="icon-align-justify"></i>
+                        <span>Paid Customer</span>
                     </a>
                 </div>
 
-                <!-- Search Invoice Data -->
-                <div class="content-row r-2">
-                    <div class="column c-1 nouch">
-                        <div class="column-body">
-                            <form action="#" method="GET">
-                                <div class="input i-1">
-                                    <label for="start-date">Start Date</label>
-                                    <input type="date" name="#" id="start-date">
-                                </div>
-                                <div class="input i-2">
-                                    <label for="end-date">End Date</label>
-                                    <input type="date" name="#" id="end-date">
-                                    <button type="submit">
-                                        <i class="icon-search"></i>
-                                    </button>
-                                </div>
-                            </form>
-                        </div>
-                    </div>
-                </div>
-
                 <!-- New Invoice -->
-                <div class="content-row r-3">
+                <div class="content-row r-2">
                     <div class="column c-1 nouch">
                         <div class="column-head">
                             <div class="title">
-                                <h4>Invoice Data</h4>
+                                <h4>Customer Data</h4>
                             </div>
                         </div>
                         <div class="column-body">
@@ -1081,23 +1064,27 @@
                                 </div>
                             </div>
                             <div class="body">
-                                <table class="data-table" id="invoice-data">
+                                <table class="data-table" id="customer-data">
                                     <thead>
                                         <tr>
-                                            <th class="invoice-no">
-                                                Invoice No.
-                                                <i class="icon-sort-amount-down"></i>
-                                            </th>
                                             <th class="customer-name">
                                                 Customer Name
+                                                <i class="icon-sort-amount-down"></i>
+                                            </th>
+                                            <th class="email">
+                                                E-Mail
                                                 <i class="icon-sort"></i>
                                             </th>
-                                            <th class="date">
-                                                Date
+                                            <th class="mobile">
+                                                Mobile
                                                 <i class="icon-sort"></i>
                                             </th>
-                                            <th class="total-amount">
-                                                Total Amount
+                                            <th class="total-address">
+                                                Address
+                                                <i class="icon-sort"></i>
+                                            </th>
+                                            <th class="total-balance">
+                                                Balance
                                                 <i class="icon-sort"></i>
                                             </th>
                                             <th>Action</th>
@@ -1106,8 +1093,8 @@
                                     <tbody></tbody>
                                     <tfoot>
                                         <tr>
-                                            <td colspan="3">Total:</td>
-                                            <td class="total-amount"></td>
+                                            <td colspan="4">Total:</td>
+                                            <td class="balance"></td>
                                             <td></td>
                                         </tr>
                                     </tfoot>
@@ -1115,7 +1102,7 @@
                             </div>
                             <div class="footer">
                                 <div class="column co-1">
-                                    <div>Show 1 to 10 of 50 entries</div>
+                                    <div>Show <span class="first-row"></span> to <span class="last-row"></span> of <span class="total-rows"></span> entries</div>
                                 </div>
                                 <div class="column co-2">
                                     <ul class="pagination idt-pagination"></ul>
@@ -1154,7 +1141,8 @@
 
     <!-- <script src="assets/js/pages/dashboard.js"></script> -->
     <!-- <script src="assets/js/pages/invoice/new-invoice.js"></script> -->
-    <script src="assets/js/pages/invoice/manage-invoice.js"></script>
+    <!-- <script src="assets/js/pages/invoice/manage-invoice.js"></script> -->
+    <script src="assets/js/pages/customer/manage-customer.js"></script>
 
     <!-- <script src="assets/js/helpers/date-picker.js"></script> -->
     <!-- <script src="assets/js/helpers/autocomplete.js"></script> -->

@@ -1,0 +1,150 @@
+<!-- Start Content -->
+<div id="content-wrapper">
+
+    <!-- Content header -->
+    <div class="content-header">
+        <div class="icon">
+            <i class="icon-note"></i>
+        </div>
+        <div class="title">
+            <h2>Manage Invoice</h2>
+            <small>Add Your Invoice</small>
+        </div>
+        <ol class="nav-breadcrumb">
+            <li>
+                <a href="index.html">
+                    <i class="icon-home-alt"></i>
+                    <span>Home</span>
+                </a>
+            </li>
+            <li>
+                <span>Invoice</span>
+            </li>
+            <li class="active">
+                <span>Manage Invoice</span>
+            </li>
+        </ol>
+    </div>
+
+    <!-- Main content -->
+    <div class="content">
+
+        <!-- Quick Buttons -->
+        <div class="content-row r-1">
+            <a href="#" class="quick-btn">
+                <i class="icon-plus"></i>
+                <span>New Invoice</span>
+            </a>
+            <a href="#" class="quick-btn">
+                <i class="icon-align-justify"></i>
+                <span>POS Invoie</span>
+            </a>
+        </div>
+
+        <!-- Search Invoice Data -->
+        <div class="content-row r-2">
+            <div class="column c-1 nouch">
+                <div class="column-body">
+                    <form action="#" method="GET">
+                        <div class="input i-1">
+                            <label for="start-date">Start Date</label>
+                            <input type="date" name="#" id="start-date">
+                        </div>
+                        <div class="input i-2">
+                            <label for="end-date">End Date</label>
+                            <input type="date" name="#" id="end-date">
+                            <button type="submit">
+                                <i class="icon-search"></i>
+                            </button>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+
+        <!-- New Invoice -->
+        <div class="content-row r-3">
+            <div class="column c-1 nouch">
+                <div class="column-head">
+                    <div class="title">
+                        <h4>Invoice Data</h4>
+                    </div>
+                </div>
+                <div class="column-body">
+                    <div class="head">
+                        <div class="column co-1">
+                            <span>SHOW</span>
+                            <select id="show-data-entries">
+                                <option value="10" selected>10</option>
+                                <option value="25">25</option>
+                                <option value="50">50</option>
+                                <option value="100">100</option>
+                                <option value="250">250</option>
+                                <option value="500">500</option>
+                                <option value="all">All</option>
+                            </select>
+                            <span>ENTRIES</span>
+                        </div>
+                        <div class="column co-2">
+                            <button type="button" class="table-copy">Copy</button>
+                            <button type="button" class="table-export-excel">Exel</button>
+                            <button type="button" class="table-export-csv">CSV</button>
+                            <button type="button">PDF</button>
+                            <button type="button" class="print-table">Print</button>
+                        </div>
+                        <div class="column co-3">
+                            <label for="sort-table-data">SEARCH:</label>
+                            <input type="text" id="sort-table-data">
+                        </div>
+                    </div>
+                    <div class="body">
+                        <table class="data-table" id="invoice-data">
+                            <thead>
+                                <tr>
+                                    <th class="invoice-no">
+                                        Invoice No.
+                                        <i class="icon-sort-amount-down"></i>
+                                    </th>
+                                    <th class="customer-name">
+                                        Customer Name
+                                        <i class="icon-sort"></i>
+                                    </th>
+                                    <th class="date">
+                                        Date
+                                        <i class="icon-sort"></i>
+                                    </th>
+                                    <th class="total-amount">
+                                        Total Amount
+                                        <i class="icon-sort"></i>
+                                    </th>
+                                    <th>Action</th>
+                                </tr>
+                            </thead>
+                            <tbody></tbody>
+                            <tfoot>
+                                <tr>
+                                    <td colspan="3">Total:</td>
+                                    <td class="total-amount"></td>
+                                    <td></td>
+                                </tr>
+                            </tfoot>
+                        </table>
+                    </div>
+                    <div class="footer">
+                        <div class="column co-1">
+                            <div>Show <span class="first-row"></span> to <span class="last-row"></span> of <span class="total-rows"></span> entries</div>
+                        </div>
+                        <div class="column co-2">
+                            <ul class="pagination idt-pagination"></ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+
+    </div>
+    <!-- End Content -->
+
+</div>
+<!-- End Content -->

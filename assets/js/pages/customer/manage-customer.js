@@ -1,37 +1,38 @@
 /*
 *   Abbrivations - 
-    [mi => manage invoice],
+    [mc => manage customer],
     [t => table],
     [tp => table pagination]    
 
 *   Content - 
-    1. Create Invoice Data Table
+    1. Create Table
     2. Change Table Row Count
     3. Export Table Data 
-    4. Table Data Sorting 
+    4. Table Data Sorting
+    5. Current Rows and Total Rows 
 */
 
 
 /*----- GET ELEMENTS -----*/
-mi_table = document.querySelector('#invoice-data');
-mi_tbody = document.querySelector('#invoice-data tbody');
-mi_td_totalAmount = document.querySelector('#invoice-data tfoot .total-amount');
-mi_div_idtPagination = document.querySelector('.idt-pagination');
-mi_select_showDataEntries = document.querySelector('#show-data-entries');
-mi_th_InvoiceNo = document.querySelector('th.invoice-no');
-mi_btn_tableExportExcel = document.querySelector('.table-export-excel');
-mi_btn_tableExportCSV = document.querySelector('.table-export-csv');
-mi_btn_tableCopy = document.querySelector('.table-copy');
-mi_btn_printTableData = document.querySelector('.print-table');
+mc_table = document.querySelector('#customer-data');
+mc_tbody = document.querySelector('#customer-data tbody');
+mc_td_balance = document.querySelector('#customer-data tfoot .balance');
+mc_div_idtPagination = document.querySelector('.idt-pagination');
+mc_select_showDataEntries = document.querySelector('#show-data-entries');
+mc_th_InvoiceNo = document.querySelector('th.invoice-no');
+mc_btn_tableExportExcel = document.querySelector('.table-export-excel');
+mc_btn_tableExportCSV = document.querySelector('.table-export-csv');
+mc_btn_tableCopy = document.querySelector('.table-copy');
+mc_btn_printTableData = document.querySelector('.print-table');
 mc_span_firstRow = document.querySelector('.first-row');
 mc_span_lastRow = document.querySelector('.last-row');
 mc_span_totalRows = document.querySelector('.total-rows');
 
 
 /*------------------------------------------------------------------------------
-    1. Create Invoice Data Table
+    1. Create Table
 ------------------------------------------------------------------------------*/
-const showDataEntries = Number(mi_select_showDataEntries.value);
+const showDataEntries = Number(mc_select_showDataEntries.value);
 
 const tState = {
     data: [],
@@ -40,20 +41,20 @@ const tState = {
     maxButtons: 5
 }
 
-createInvoiceDataTable('http://127.0.0.1:5500/invoices.json');
+createTable('http://127.0.0.1:5500/data/customers.json');
 
 /*----- FUNCTIONS -----*/
-function createInvoiceDataTable(url) {
+function createTable(url) {
     xhr(url).then(response => {
         // Invoke tPagination() function to get trimmed data and total pages
         const tp = tPagination(response, tState.page, tState.rows);
 
         // Assign trimmmed Data to tState.data
-        tState.data = tp.trimmedData;
+        tState.data = tp.trimmedData;;
 
         // Create table row, compute total amount and create pagination buttons
-        createTableRow(tState.data);
-        computeTotalAmount();
+        createTableRow(tState.data); 
+        computeBalance();
         createPaginationButtons(tp.pages);
         displayRowInfo(response.length);
     });
@@ -68,15 +69,15 @@ function refreshTable(e) {
         tState.page = Number(e.target.getAttribute('data-page'));
     }
 
-    createInvoiceDataTable('http://127.0.0.1:5500/invoices.json');
+    createTable('http://127.0.0.1:5500/data/customers.json');
 }
 
 /*----- HELPER FUNCTIONS -----*/
 function tPagination(data, page, rows) {
     if (rows == 'all') rows = data.length;
 
-    trimStart = (page - 1) * rows;
-    trimEnd = trimStart + rows;
+    trimStart = (page - 1) * rows; // Global
+    trimEnd = trimStart + rows; // Global
 
     const trimmedData = data.slice(trimStart, trimEnd);
 
@@ -89,7 +90,7 @@ function tPagination(data, page, rows) {
 }
 
 function createTableRow(data) {
-    mi_tbody.innerHTML = '';
+    mc_tbody.innerHTML = '';
 
     for (let x in data) {
         // Create new elements
@@ -100,83 +101,75 @@ function createTableRow(data) {
         const td3 = document.createElement('td');
         const td4 = document.createElement('td');
         const td5 = document.createElement('td');
+        const td6 = document.createElement('td');
 
         const a1 = document.createElement('a');
-        const a2 = document.createElement('a');
-        const a3 = document.createElement('a');
+        const a2 = document.createElement('a');       
 
         const i1 = document.createElement('i');
-        const i2 = document.createElement('i');
-        const i3 = document.createElement('i');
+        const i2 = document.createElement('i');       
 
         const span1 = document.createElement('span');
-        const span2 = document.createElement('span');
-        const span3 = document.createElement('span');
+        const span2 = document.createElement('span');        
 
         // Set attributes
         a1.setAttribute('href', '#');
-        a2.setAttribute('href', '#');
-        a3.setAttribute('href', '#');
+        a2.setAttribute('href', '#');       
         a1.setAttribute('class', 'table-action-btn btn-1 tool-tip-parent');
-        a2.setAttribute('class', 'table-action-btn btn-2 tool-tip-parent');
-        a3.setAttribute('class', 'table-action-btn btn-3 tool-tip-parent');
+        a2.setAttribute('class', 'table-action-btn btn-2 tool-tip-parent');       
 
-        i1.setAttribute('class', 'icon-invoice');
-        i2.setAttribute('class', 'icon-fax');
-        i3.setAttribute('class', 'icon-pencil');
+        i1.setAttribute('class', 'icon-edit');
+        i2.setAttribute('class', 'icon-trash');      
 
         span1.classList.add('tooltipRight');
-        span2.classList.add('tooltipRight');
-        span3.classList.add('tooltipRight');
+        span2.classList.add('tooltipRight');   
 
         // Append the elements and set text data
-        span1.textContent = 'Invoice';
-        span2.textContent = 'POS Invoice';
-        span3.textContent = 'Update';
+        span1.textContent = 'Update';
+        span2.textContent = 'Delete';   
 
         a1.appendChild(i1);
-        a2.appendChild(i2);
-        a3.appendChild(i3);
+        a2.appendChild(i2);      
 
         a1.appendChild(span1);
-        a2.appendChild(span2);
-        a3.appendChild(span3);
+        a2.appendChild(span2);      
 
-        td1.textContent = data[x].invoice_no;
-        td2.textContent = data[x].customer_name;
-        td3.textContent = data[x].date;
-        td4.textContent = '$' + (data[x].amount).toFixed(2);
-        td5.appendChild(a1);
-        td5.appendChild(a2);
-        td5.appendChild(a3);
+        td1.textContent = data[x].customer_name;
+        td2.textContent = data[x].email;
+        td3.textContent = data[x].mobile;
+        td4.textContent = data[x].address;
+        td5.textContent = '$' + (data[x].balance).toFixed(2);
+        td6.appendChild(a1);
+        td6.appendChild(a2);  
 
-        td4.setAttribute('class', 'amount');
+        td5.setAttribute('class', 'balance');
 
         tr.appendChild(td1);
         tr.appendChild(td2);
         tr.appendChild(td3);
         tr.appendChild(td4);
         tr.appendChild(td5);
+        tr.appendChild(td6);
 
-        mi_tbody.appendChild(tr);
+        mc_tbody.appendChild(tr);
     }
 }
 
-function computeTotalAmount() {
-    const mi_td_amounts = mi_tbody.querySelectorAll('td.amount');
+function computeBalance() {
+    const mc_td_balances = mc_tbody.querySelectorAll('td.balance');
 
-    let totalAmount = 0;
+    let balance = 0;
 
-    mi_td_amounts.forEach((e) => {
+    mc_td_balances.forEach((e) => {
         const amount = (e.textContent).replace('$', '');
-        totalAmount += Number(amount);
+        balance += Number(amount);
     });
 
-    mi_td_totalAmount.textContent = '$' + totalAmount.toFixed(2);
+    mc_td_balance.textContent = '$' + balance.toFixed(2);
 }
 
 function createPaginationButtons(pages) {
-    mi_div_idtPagination.innerHTML = '';
+    mc_div_idtPagination.innerHTML = '';
 
     let maxLeftButtons = tState.page - Math.floor(tState.maxButtons / 2);
     let maxRightButtons = tState.page + Math.floor(tState.maxButtons / 2);
@@ -206,7 +199,7 @@ function createPaginationButtons(pages) {
     }
 
     li.appendChild(a);
-    mi_div_idtPagination.appendChild(li);
+    mc_div_idtPagination.appendChild(li);
 
     // Create 'First Page' button '...' Button
     if (maxLeftButtons > 2) {
@@ -218,7 +211,7 @@ function createPaginationButtons(pages) {
         a.textContent = '1';
         a.addEventListener('click', refreshTable);
         li.appendChild(a);
-        mi_div_idtPagination.appendChild(li);
+        mc_div_idtPagination.appendChild(li);
 
         li = document.createElement('li');
         a = document.createElement('a');
@@ -226,7 +219,7 @@ function createPaginationButtons(pages) {
         a.classList.add('dots');
         a.textContent = '...';
         li.appendChild(a);
-        mi_div_idtPagination.appendChild(li);
+        mc_div_idtPagination.appendChild(li);
     }
 
     // Create Pagination Buttons
@@ -246,7 +239,7 @@ function createPaginationButtons(pages) {
         a.addEventListener('click', refreshTable);
 
         li.appendChild(a);
-        mi_div_idtPagination.appendChild(li);
+        mc_div_idtPagination.appendChild(li);
     }
 
     // Create 'Last Page' button and '...' Button
@@ -257,7 +250,7 @@ function createPaginationButtons(pages) {
         a.classList.add('dots');
         a.textContent = '...';
         li.appendChild(a);
-        mi_div_idtPagination.appendChild(li);
+        mc_div_idtPagination.appendChild(li);
 
         li = document.createElement('li');
         a = document.createElement('a');
@@ -267,7 +260,7 @@ function createPaginationButtons(pages) {
         a.textContent = pages;
         a.addEventListener('click', refreshTable);
         li.appendChild(a);
-        mi_div_idtPagination.appendChild(li);
+        mc_div_idtPagination.appendChild(li);
     }
 
     // Create 'Next' Button
@@ -284,7 +277,7 @@ function createPaginationButtons(pages) {
     }
 
     li.appendChild(a);
-    mi_div_idtPagination.appendChild(li);
+    mc_div_idtPagination.appendChild(li);
 }
 
 function displayRowInfo(totalRows) {
@@ -298,7 +291,7 @@ function displayRowInfo(totalRows) {
     2. Change Table Row Count
 ------------------------------------------------------------------------------*/
 /*----- EVENTS -----*/
-mi_select_showDataEntries.addEventListener('change', (e) => {
+mc_select_showDataEntries.addEventListener('change', (e) => {
     let showDataEntries = 0;
 
     if (e.target.value == 'all') {
@@ -311,7 +304,7 @@ mi_select_showDataEntries.addEventListener('change', (e) => {
     tState.page = 1;
 
     // Recreate Table
-    createInvoiceDataTable('http://127.0.0.1:5500/invoices.json');
+    createTable('http://127.0.0.1:5500/data/customers.json');
 });
 
 
@@ -320,39 +313,39 @@ mi_select_showDataEntries.addEventListener('change', (e) => {
 ------------------------------------------------------------------------------*/
 /*------ EVENTS -----*/
 // To Excel
-mi_btn_tableExportExcel.addEventListener('click', () => {
+mc_btn_tableExportExcel.addEventListener('click', () => {
     tableExportToExcel(trimTable(), 'Invoice Data');
 });
 
 // To CSV
-mi_btn_tableExportCSV.addEventListener('click', () => {
+mc_btn_tableExportCSV.addEventListener('click', () => {
     tableExportToCSV(trimTable(), 'Invoice Data');
 });
 
 // Copy Table Data
-mi_btn_tableCopy.addEventListener('click', () => {
-    copytableData(mi_table)
+mc_btn_tableCopy.addEventListener('click', () => {
+    copytableData(mc_table)
 });
 
 // Print Table Data
-mi_btn_printTableData.addEventListener('click', () => {
+mc_btn_printTableData.addEventListener('click', () => {
     printTableData(trimTable());
 });
 
 /*------ FUNCTIONS -----*/
 function trimTable() {
     // Create a clone of table node and remove last column(action) from table
-    let mi_table_copy = mi_table.cloneNode(true);
-    mi_table_copy.querySelector('thead tr th:last-child').remove();
-    mi_table_copy.querySelectorAll('thead tr th').forEach((e) => {
+    let mc_table_copy = mc_table.cloneNode(true);
+    mc_table_copy.querySelector('thead tr th:last-child').remove();
+    mc_table_copy.querySelectorAll('thead tr th').forEach((e) => {
         e.children[0].remove();
     });
-    mi_table_copy.querySelectorAll('a.table-action-btn').forEach((e) => {
+    mc_table_copy.querySelectorAll('a.table-action-btn').forEach((e) => {
         e.parentNode.remove();
     });
-    mi_table_copy.querySelector('tfoot tr td:last-child').remove();
+    mc_table_copy.querySelector('tfoot tr td:last-child').remove();
 
-    return mi_table_copy;
+    return mc_table_copy;
 }
 
 
