@@ -991,7 +991,7 @@
                 </div>
                 <div class="title">
                     <h2>Customer</h2>
-                    <small>Manage Customer</small>
+                    <small>Add New Customer</small>
                 </div>
                 <ol class="nav-breadcrumb">
                     <li>
@@ -1004,7 +1004,7 @@
                         <span>Customer</span>
                     </li>
                     <li class="active">
-                        <span>Manage Customer</span>
+                        <span>Add Customer</span>
                     </li>
                 </ol>
             </div>
@@ -1026,6 +1026,10 @@
                         <i class="icon-align-justify"></i>
                         <span>Paid Customer</span>
                     </a>
+                    <a href="#" class="quick-btn upload-nc-csv-btn">
+                        <i class="icon-align-justify"></i>
+                        <span>Upload Customer CSV</span>
+                    </a>
                 </div>
 
                 <!-- New Invoice -->
@@ -1033,88 +1037,91 @@
                     <div class="column c-1 nouch">
                         <div class="column-head">
                             <div class="title">
-                                <h4>Customer Data</h4>
+                                <h4>Add Customer</h4>
                             </div>
                         </div>
                         <div class="column-body">
-                            <div class="head">
-                                <div class="column co-1">
-                                    <span>SHOW</span>
-                                    <select id="show-data-entries">
-                                        <option value="10" selected>10</option>
-                                        <option value="25">25</option>
-                                        <option value="50">50</option>
-                                        <option value="100">100</option>
-                                        <option value="250">250</option>
-                                        <option value="500">500</option>
-                                        <option value="all">All</option>
-                                    </select>
-                                    <span>ENTRIES</span>
+                            <form action="" method="POST">
+                                <div class="body">
+                                    <div class="column co-1">
+                                        <div class="input">
+                                            <label for="customer-name">Customer Name <i class="required">*</i></label>
+                                            <input type="text" name="" id="customer-name">
+                                        </div>
+                                        <div class="input">
+                                            <label for="email">Email</label>
+                                            <input type="email" name="" id="email">
+                                        </div>
+                                        <div class="input">
+                                            <label for="mobile">Mobile <i class="required">*</i></label>
+                                            <input type="text" name="" id="mobile">
+                                        </div>
+                                        <div class="input">
+                                            <label for="previous-balance">Previous Balance</label>
+                                            <input type="text" name="" id="previous-balance">
+                                        </div>
+                                        <div class="input">
+                                            <label for="country">Country</label>
+                                            <select name="" id="country">
+                                                <option selected hidden disabled>Select Country</option>
+                                                <option value="India">India</option>
+                                                <option value="USA">USA</option>
+                                                <option value="Brazil">Brazil</option>
+                                            </select>
+                                        </div>
+                                    </div>
+                                    <div class="column co-2">
+                                        <div class="input">
+                                            <label for="state">State</label>
+                                            <input type="text" name="" id="state">
+                                        </div>
+                                        <div class="input">
+                                            <label for="city">City</label>
+                                            <input type="text" name="" id="city">
+                                        </div>
+                                        <div class="input">
+                                            <label for="zip-code">Zip Code</label>
+                                            <input type="text" name="" id="zip-code">
+                                        </div>
+                                        <div class="input">
+                                            <label for="address">Address</label>
+                                            <textarea name="#" id="address"></textarea>
+                                        </div>
+                                    </div>
                                 </div>
-                                <div class="column co-2">
-                                    <button type="button" class="table-copy">Copy</button>
-                                    <button type="button" class="table-export-excel">Exel</button>
-                                    <button type="button" class="table-export-csv">CSV</button>
-                                    <button type="button">PDF</button>
-                                    <button type="button" class="print-table">Print</button>
+                                <div class="footer">
+                                    <div class="column co-1">
+                                        <button type="submit">Save</button>
+                                    </div>
                                 </div>
-                                <div class="column co-3">
-                                    <label for="sort-table-data">SEARCH:</label>
-                                    <input type="text" id="sort-table-data">
-                                </div>
-                            </div>
-                            <div class="body">
-                                <table class="data-table" id="customer-data">
-                                    <thead>
-                                        <tr>
-                                            <th class="customer-name">
-                                                Customer Name
-                                                <i class="icon-sort-amount-down"></i>
-                                            </th>
-                                            <th class="email">
-                                                E-Mail
-                                                <i class="icon-sort"></i>
-                                            </th>
-                                            <th class="mobile">
-                                                Mobile
-                                                <i class="icon-sort"></i>
-                                            </th>
-                                            <th class="total-address">
-                                                Address
-                                                <i class="icon-sort"></i>
-                                            </th>
-                                            <th class="total-balance">
-                                                Balance
-                                                <i class="icon-sort"></i>
-                                            </th>
-                                            <th>Action</th>
-                                        </tr>
-                                    </thead>
-                                    <tbody></tbody>
-                                    <tfoot>
-                                        <tr>
-                                            <td colspan="4">Total:</td>
-                                            <td class="balance"></td>
-                                            <td></td>
-                                        </tr>
-                                    </tfoot>
-                                </table>
-                            </div>
-                            <div class="footer">
-                                <div class="column co-1">
-                                    <div>Show <span class="first-row"></span> to <span class="last-row"></span> of <span class="total-rows"></span> entries</div>
-                                </div>
-                                <div class="column co-2">
-                                    <ul class="pagination idt-pagination"></ul>
-                                </div>
-                            </div>
+                            </form>
                         </div>
                     </div>
                 </div>
 
-
             </div>
-            <!-- End Content -->
+
+            <!-- Pop up Boxes -->
+            <div id="anc-csv-pop-up-box" class="pop-up-box">
+                <div class="inner nouch">
+                    <div class="head">
+                        <h4>Upload Customer CSV</h4>
+                        <i class="icon-times pop-up-box-close"></i>
+                    </div>
+                    <form action="#" method="POST" id="anc-form" onsubmit="return false">
+                        <div class="body">
+                            <div class="input">
+                                <label for="anc-csv-name">Upload CSV File <i class="required">*</i></label>
+                                <input type="file" name="#" id="anc-csv-name" required>
+                            </div>
+                        </div>
+                        <div class="footer">
+                            <button type="button" class="pop-up-box-close">Cancle</button>
+                            <button type="submit" class="pop-up-box-close">Submit</button>
+                        </div>
+                    </form>
+                </div>
+            </div>
 
         </div>
         <!-- End Content -->
@@ -1124,7 +1131,7 @@
             <div class="copyright-text">
                 <span>Copyright © 2020 <a href="https://pkkulhari.com/">PK Kulhari</a> | All Right Reserved.</span>
             </div>
-        </footer>        
+        </footer>
         <!-- End Footer -->
 
     </div>
@@ -1143,6 +1150,7 @@
     <!-- <script src="assets/js/pages/invoice/new-invoice.js"></script> -->
     <!-- <script src="assets/js/pages/invoice/manage-invoice.js"></script> -->
     <!-- <script src="assets/js/pages/customer/manage-customer.js"></script> -->
+    <script src="assets/js/pages/customer/new-customer.js"></script>
 
     <!-- <script src="assets/js/helpers/date-picker.js"></script> -->
     <!-- <script src="assets/js/helpers/autocomplete.js"></script> -->
