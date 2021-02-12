@@ -1,5 +1,6 @@
 /*
 *   Abbrivations -  
+    [nc => new customer]
 *   Contents - 
     1. Toggle Upload Customer CSV
 */

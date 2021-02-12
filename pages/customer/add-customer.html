@@ -1,0 +1,144 @@
+ <!-- Start Content -->
+ <div id="content-wrapper">
+
+    <!-- Content header -->
+    <div class="content-header">
+        <div class="icon">
+            <i class="icon-note"></i>
+        </div>
+        <div class="title">
+            <h2>Customer</h2>
+            <small>Add New Customer</small>
+        </div>
+        <ol class="nav-breadcrumb">
+            <li>
+                <a href="index.html">
+                    <i class="icon-home-alt"></i>
+                    <span>Home</span>
+                </a>
+            </li>
+            <li>
+                <span>Customer</span>
+            </li>
+            <li class="active">
+                <span>Add Customer</span>
+            </li>
+        </ol>
+    </div>
+
+    <!-- Main content -->
+    <div class="content">
+
+        <!-- Quick Buttons -->
+        <div class="content-row r-1">
+            <a href="#" class="quick-btn">
+                <i class="icon-plus"></i>
+                <span>Add Customer</span>
+            </a>
+            <a href="#" class="quick-btn">
+                <i class="icon-align-justify"></i>
+                <span>Credit Customer</span>
+            </a>
+            <a href="#" class="quick-btn">
+                <i class="icon-align-justify"></i>
+                <span>Paid Customer</span>
+            </a>
+            <a href="#" class="quick-btn upload-nc-csv-btn">
+                <i class="icon-align-justify"></i>
+                <span>Upload Customer CSV</span>
+            </a>
+        </div>
+
+        <!-- New Invoice -->
+        <div class="content-row r-2">
+            <div class="column c-1 nouch">
+                <div class="column-head">
+                    <div class="title">
+                        <h4>Add Customer</h4>
+                    </div>
+                </div>
+                <div class="column-body">
+                    <form action="" method="POST">
+                        <div class="body">
+                            <div class="column co-1">
+                                <div class="input">
+                                    <label for="customer-name">Customer Name <i class="required">*</i></label>
+                                    <input type="text" name="" id="customer-name">
+                                </div>
+                                <div class="input">
+                                    <label for="email">Email</label>
+                                    <input type="email" name="" id="email">
+                                </div>
+                                <div class="input">
+                                    <label for="mobile">Mobile <i class="required">*</i></label>
+                                    <input type="text" name="" id="mobile">
+                                </div>
+                                <div class="input">
+                                    <label for="previous-balance">Previous Balance</label>
+                                    <input type="text" name="" id="previous-balance">
+                                </div>
+                                <div class="input">
+                                    <label for="country">Country</label>
+                                    <select name="" id="country">
+                                        <option selected hidden disabled>Select Country</option>
+                                        <option value="India">India</option>
+                                        <option value="USA">USA</option>
+                                        <option value="Brazil">Brazil</option>
+                                    </select>
+                                </div>
+                            </div>
+                            <div class="column co-2">
+                                <div class="input">
+                                    <label for="state">State</label>
+                                    <input type="text" name="" id="state">
+                                </div>
+                                <div class="input">
+                                    <label for="city">City</label>
+                                    <input type="text" name="" id="city">
+                                </div>
+                                <div class="input">
+                                    <label for="zip-code">Zip Code</label>
+                                    <input type="text" name="" id="zip-code">
+                                </div>
+                                <div class="input">
+                                    <label for="address">Address</label>
+                                    <textarea name="#" id="address"></textarea>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="footer">
+                            <div class="column co-1">
+                                <button type="submit">Save</button>
+                            </div>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+
+    </div>
+
+    <!-- Pop up Boxes -->
+    <div id="anc-csv-pop-up-box" class="pop-up-box">
+        <div class="inner nouch">
+            <div class="head">
+                <h4>Upload Customer CSV</h4>
+                <i class="icon-times pop-up-box-close"></i>
+            </div>
+            <form action="#" method="POST" id="anc-form" onsubmit="return false">
+                <div class="body">
+                    <div class="input">
+                        <label for="anc-csv-name">Upload CSV File <i class="required">*</i></label>
+                        <input type="file" name="#" id="anc-csv-name" required>
+                    </div>
+                </div>
+                <div class="footer">
+                    <button type="button" class="pop-up-box-close">Cancle</button>
+                    <button type="submit" class="pop-up-box-close">Submit</button>
+                </div>
+            </form>
+        </div>
+    </div>
+
+</div>
+<!-- End Content -->

@@ -1,0 +1,198 @@
+<!-- Start Content -->
+<div id="content-wrapper">
+
+    <!-- Content header -->
+    <div class="content-header">
+        <div class="icon">
+            <i class="icon-note"></i>
+        </div>
+        <div class="title">
+            <h2>Medicine</h2>
+            <small>Add New Medicine</small>
+        </div>
+        <ol class="nav-breadcrumb">
+            <li>
+                <a href="index.html">
+                    <i class="icon-home-alt"></i>
+                    <span>Home</span>
+                </a>
+            </li>
+            <li>
+                <span>Medicine</span>
+            </li>
+            <li class="active">
+                <span>New Medicine</span>
+            </li>
+        </ol>
+    </div>
+
+    <!-- Main content -->
+    <div class="content">
+
+        <!-- Quick Buttons -->
+        <div class="content-row r-1">
+            <a href="#" class="quick-btn">
+                <i class="icon-plus"></i>
+                <span>Import Medicine (CSV)</span>
+            </a>
+            <a href="#" class="quick-btn">
+                <i class="icon-align-justify"></i>
+                <span>Manage Medicine</span>
+            </a>
+        </div>
+
+        <!-- New Invoice -->
+        <div class="content-row r-2">
+            <div class="column c-1 nouch">
+                <div class="column-head">
+                    <div class="title">
+                        <h4>New Medicine</h4>
+                    </div>
+                </div>
+                <div class="column-body">
+                    <form action="" method="POST">
+                        <div class="body">
+                            <div class="column co-1">
+                                <div class="input">
+                                    <label for="barcode-qrcode">Barcode or QR Code</label>
+                                    <input type="text" name="" id="barcode-qrcode">
+                                </div>
+                                <div class="input">
+                                    <label for="medicine-name">Medicine Name <i class="required">*</i></label>
+                                    <input type="email" name="" id="medicine-name" required>
+                                </div>
+                                <div class="input">
+                                    <label for="strenght">Strength</label>
+                                    <input type="text" name="" id="strenght">
+                                </div>
+                                <div class="input">
+                                    <label for="generic-name">Generic Name <i class="required">*</i></label>
+                                    <input type="text" name="" id="generic-name" required>
+                                </div>
+                                <div class="input">
+                                    <label for="box-size">Box Size <i class="required">*</i></label>
+                                    <input type="text" name="" id="box-size" required>
+                                </div>
+                                <div class="input">
+                                    <label for="unit-dose">Unit Dose <i class="required">*</i></label>
+                                    <input type="text" name="" id="unit-dose" required>
+                                </div>
+                                <div class="input">
+                                    <label for="medicine-shelf">Medicine Shelf</label>
+                                    <input type="text" name="" id="medicine-shelf">
+                                </div>
+                                <div class="input">
+                                    <label for="medicine-type">Medicine Type <i class="required">*</i></label>
+                                    <select name="" id="medicine-type" required>
+                                        <option selected hidden disabled>Select Option</option>
+                                        <option value="Stimulants">Stimulants</option>
+                                        <option value="Opioids">Opioids</option>
+                                        <option value="Depressants">Depressants</option>
+                                        <option value="Hallucinogens">Hallucinogens</option>
+                                        <option value="Dissociatives">Dissociatives</option>
+                                    </select>
+                                </div>
+                                <div class="input">
+                                    <label for="category">Category</label>
+                                    <select name="" id="category">
+                                        <option selected hidden disabled>Select Option</option>
+                                        <option value="Tablet">Tablet</option>
+                                        <option value="Liquid">Liquid</option>
+                                        <option value="Drops">Drops</option>
+                                        <option value="Inhalers">Inhalers</option>
+                                        <option value="Injections">Injections</option>
+                                    </select>
+                                </div>
+                            </div>
+                            <div class="column co-2">
+                                <div class="input">
+                                    <label for="image">Image</label>
+                                    <input type="file" name="" id="image">
+                                </div>
+                                <div class="input">
+                                    <label for="manufacturer">Manufacturer <i class="required">*</i></label>
+                                    <div class="input-and-button">
+                                        <select name="" id="manufacturer">
+                                            <option selected hidden disabled>Select Option</option>
+                                            <option value="Sun Pharmaceutical Industries Limited">Sun Pharmaceutical
+                                                Industries Limited</option>
+                                            <option value="Aurobindo Pharma Limited">Aurobindo Pharma Limited
+                                            </option>
+                                            <option value="Lupin Limited">Lupin Limited</option>
+                                            <option value="Cipla Limited">Cipla Limited</option>
+                                            <option value="Dr. Reddy’s Laboratories">Dr. Reddy’s Laboratories
+                                            </option>
+                                        </select>
+                                        <button type="button" class="add-new-manufacturer-btn">Add</button>
+                                    </div>
+                                </div>
+                                <div class="input">
+                                    <label for="sell-price">Sell Price <i class="required">*</i></label>
+                                    <input type="text" name="" id="sell-price" required>
+                                </div>
+                                <div class="input">
+                                    <label for="manufacturer-price">Manufacturer Price <i class="required">*</i></label>
+                                    <input type="text" name="" id="manufacturer-price">
+                                </div>
+                                <div class="input">
+                                    <label for="vat">Vat (%)</label>
+                                    <input type="text" name="" id="vat">
+                                </div>
+                                <div class="input">
+                                    <label for="tax">Tax (%)</label>
+                                    <input type="text" name="" id="tax">
+                                </div>
+                                <div class="input">
+                                    <label for="details">Details</label>
+                                    <textarea name="#" id="details"></textarea>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="footer">
+                            <div class="column co-1">
+                                <button type="submit">Save</button>
+                            </div>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+
+    </div>
+
+    <!-- Pop up Boxes -->
+    <div id="anm-pop-up-box" class="pop-up-box">
+        <div class="inner nouch">
+            <div class="head">
+                <h4>Add New Manufacturer</h4>
+                <i class="icon-times pop-up-box-close"></i>
+            </div>
+            <form action="#" method="POST" id="anc-form" onsubmit="return false">
+                <div class="body">
+                    <div class="input">
+                        <label for="anm-manufacturer-name">Manufacturer Name<i class="required">*</i></label>
+                        <input type="text" name="#" id="anm-manufacturer-name" required>
+                    </div>
+                    <div class="input">
+                        <label for="anm-mobile">Mobile</label>
+                        <input type="text" name="#" id="anm-mobile">
+                    </div>
+                    <div class="input">
+                        <label for="anm-address">Address</label>
+                        <textarea name="#" id="anm-address"></textarea>
+                    </div>
+                    <div class="input">
+                        <label for="anm-detail">Detail</label>
+                        <textarea name="#" id="anm-detail"></textarea>
+                    </div>
+                </div>
+                <div class="footer">
+                    <button type="button" class="pop-up-box-close">Cancle</button>
+                    <button type="submit" class="pop-up-box-close">Save</button>
+                </div>
+            </form>
+        </div>
+    </div>
+
+</div>
+<!-- End Content -->
