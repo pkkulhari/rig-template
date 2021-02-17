@@ -7,8 +7,8 @@
             <i class="icon-note"></i>
         </div>
         <div class="title">
-            <h2>Manage Invoice</h2>
-            <small>Add Your Invoice</small>
+            <h2>Medicine</h2>
+            <small>Manage Medicine</small>
         </div>
         <ol class="nav-breadcrumb">
             <li>
@@ -18,10 +18,10 @@
                 </a>
             </li>
             <li>
-                <span>Invoice</span>
+                <span>Medicine</span>
             </li>
             <li class="active">
-                <span>Manage Invoice</span>
+                <span>Manage Medicine</span>
             </li>
         </ol>
     </div>
@@ -33,62 +33,20 @@
         <div class="content-row r-1">
             <a href="#" class="quick-btn">
                 <i class="icon-plus"></i>
-                <span>New Invoice</span>
+                <span>Add Medicine</span>
             </a>
             <a href="#" class="quick-btn">
-                <i class="icon-align-justify"></i>
-                <span>POS Invoie</span>
+                <i class="icon-plus"></i>
+                <span>Import Medinine (CSV)</span>
             </a>
-        </div>
-
-        <!-- Search Invoice Data -->
-        <div class="content-row r-2">
-            <div class="column c-1 nouch">
-                <div class="column-body">
-                    <form action="#" method="GET">
-                        <div class="input i-1">
-                            <label for="start-date">Start Date</label>
-                            <input type="date" name="#" id="start-date">
-                        </div>
-                        <div class="input i-2">
-                            <label for="end-date">End Date</label>
-                            <input type="date" name="#" id="end-date">
-                            <button type="submit">
-                                <i class="icon-search"></i>
-                            </button>
-                        </div>
-                    </form>
-                </div>
-            </div>
-        </div>
-
-        <!-- Search Invoice Data -->
-        <div class="content-row r-2">
-            <div class="column c-1 nouch">
-                <div class="column-body">
-                    <form action="#" method="GET">
-                        <div class="input i-1">
-                            <label for="start-date">Start Date</label>
-                            <input type="date" name="#" id="start-date">
-                        </div>
-                        <div class="input i-2">
-                            <label for="end-date">End Date</label>
-                            <input type="date" name="#" id="end-date">
-                            <button type="submit">
-                                <i class="icon-search"></i>
-                            </button>
-                        </div>
-                    </form>
-                </div>
-            </div>
         </div>
 
         <!-- New Invoice -->
-        <div class="content-row r-3">
+        <div class="content-row r-2">
             <div class="column c-1 nouch">
                 <div class="column-head">
                     <div class="title">
-                        <h4>Invoice Data</h4>
+                        <h4>Medicine Data</h4>
                     </div>
                 </div>
                 <div class="column-body">
@@ -119,44 +77,57 @@
                         </div>
                     </div>
                     <div class="body">
-                        <table class="data-table" id="invoice-data">
+                        <table class="data-table" id="medicine-data">
                             <thead>
                                 <tr>
-                                    <th class="invoice-no">
-                                        Invoice No.
+                                    <th class="medicine-name">
+                                        Medicine Name
                                         <i class="icon-sort-amount-down"></i>
                                     </th>
-                                    <th class="customer-name">
-                                        Customer Name
+                                    <th class="generic-name">
+                                        Generic Name
                                         <i class="icon-sort"></i>
                                     </th>
-                                    <th class="date">
-                                        Date
+                                    <th class="strength">
+                                        Strength
                                         <i class="icon-sort"></i>
                                     </th>
-                                    <th class="total-amount">
-                                        Total Amount
+                                    <th class="category">
+                                        Category
                                         <i class="icon-sort"></i>
+                                    </th>
+                                    <th class="menufacturer">
+                                        Manufacturer
+                                        <i class="icon-sort"></i>
+                                    </th>
+                                    <th class="shelf">
+                                        Shelf
+                                        <i class="icon-sort"></i>
+                                    </th>
+                                    <th class="sell-price">
+                                        Sell Price
+                                        <i class="icon-sort"></i>
+                                    </th>
+                                    <th class="purchase-price">
+                                        Purchase Price
+                                        <i class="icon-sort"></i>
+                                    </th>
+                                    <th class="image">
+                                        Image
                                     </th>
                                     <th>Action</th>
                                 </tr>
                             </thead>
                             <tbody></tbody>
-                            <tfoot>
-                                <tr>
-                                    <td colspan="3">Total:</td>
-                                    <td class="total-amount"></td>
-                                    <td></td>
-                                </tr>
-                            </tfoot>
                         </table>
                     </div>
                     <div class="footer">
                         <div class="column co-1">
-                            <div>Show <span class="first-row"></span> to <span class="last-row"></span> of <span class="total-rows"></span> entries</div>
+                            <div>Show <span class="first-row"></span> to <span class="last-row"></span> of <span
+                                    class="total-rows"></span> entries</div>
                         </div>
                         <div class="column co-2">
-                            <ul class="pagination idt-pagination"></ul>
+                            <ul class="pagination t-pagination"></ul>
                         </div>
                     </div>
                 </div>

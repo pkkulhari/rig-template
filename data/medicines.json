@@ -1,1201 +1,1201 @@
 [{
-    "name": "Atorvastatin",
-    "batch": 2305,
-    "expiry": "2024-08-27",
-    "qzantity": 147,
-    "price": 46
-}, {
-    "name": "Levothyroxine",
-    "batch": 9622,
-    "expiry": "2024-04-08",
-    "quantity": 133,
-    "price": 31
-}, {
-    "name": "Lisinopril",
-    "batch": 4641,
-    "expiry": "2024-12-29",
-    "quantity": 136,
-    "price": 36
-}, {
-    "name": "Metformin Hydrochloride",
-    "batch": 1934,
-    "expiry": "2024-12-21",
-    "quantity": 94,
-    "price": 81
-}, {
-    "name": "Amlodipine",
-    "batch": 2405,
-    "expiry": "2022-04-05",
-    "quantity": 67,
-    "price": 34
-}, {
-    "name": "Metoprolol",
-    "batch": 2183,
-    "expiry": "2023-05-01",
-    "quantity": 115,
-    "price": 93
-}, {
-    "name": "Albuterol",
-    "batch": 3128,
-    "expiry": "2022-05-15",
-    "quantity": 133,
-    "price": 26
-}, {
-    "name": "Omeprazole",
-    "batch": 3842,
-    "expiry": "2022-05-10",
-    "quantity": 118,
-    "price": 97
-}, {
-    "name": "Losartan Potassium",
-    "batch": 6216,
-    "expiry": "2022-12-08",
-    "quantity": 112,
-    "price": 56
-}, {
-    "name": "Simvastatin",
-    "batch": 5639,
-    "expiry": "2023-11-30",
-    "quantity": 58,
-    "price": 77
-}, {
-    "name": "Gabapentin",
-    "batch": 9518,
-    "expiry": "2024-01-05",
-    "quantity": 120,
-    "price": 40
-}, {
-    "name": "Acetaminophen Hydrocodone Bitartrate",
-    "batch": 7239,
-    "expiry": "2023-05-06",
-    "quantity": 123,
-    "price": 77
-}, {
-    "name": "Hydrochlorothiazide",
-    "batch": 4299,
-    "expiry": "2022-12-08",
-    "quantity": 55,
-    "price": 88
-}, {
-    "name": "Sertraline Hydrochloride",
-    "batch": 8678,
-    "expiry": "2023-12-28",
-    "quantity": 75,
-    "price": 35
-}, {
-    "name": "Montelukast",
-    "batch": 7529,
-    "expiry": "2024-01-01",
-    "quantity": 149,
-    "price": 15
-}, {
-    "name": "Fluticasone",
-    "batch": 3700,
-    "expiry": "2021-09-18",
-    "quantity": 98,
-    "price": 70
-}, {
-    "name": "Amoxicillin",
-    "batch": 8960,
-    "expiry": "2021-11-05",
-    "quantity": 55,
-    "price": 91
-}, {
-    "name": "Furosemide",
-    "batch": 5265,
-    "expiry": "2022-12-23",
-    "quantity": 137,
-    "price": 16
-}, {
-    "name": "Pantoprazole Sodium",
-    "batch": 1030,
-    "expiry": "2024-12-25",
-    "quantity": 53,
-    "price": 65
-}, {
-    "name": "Acetaminophen",
-    "batch": 7541,
-    "expiry": "2023-11-23",
-    "quantity": 58,
-    "price": 56
-}, {
-    "name": "Prednisone",
-    "batch": 3099,
-    "expiry": "2022-04-10",
-    "quantity": 77,
-    "price": 11
-}, {
-    "name": "Escitalopram Oxalate",
-    "batch": 7139,
-    "expiry": "2021-09-01",
-    "quantity": 142,
-    "price": 63
-}, {
-    "name": "Fluoxetine Hydrochloride",
-    "batch": 3817,
-    "expiry": "2023-01-13",
-    "quantity": 103,
-    "price": 98
-}, {
-    "name": "Dextroamphetamine Dextroamphetamine Saccharate Amphetamine Amphetamine Aspartate",
-    "batch": 9925,
-    "expiry": "2022-04-19",
-    "quantity": 64,
-    "price": 49
-}, {
-    "name": "Tramadol Hydrochloride",
-    "batch": 8105,
-    "expiry": "2024-06-16",
-    "quantity": 52,
-    "price": 14
-}, {
-    "name": "Insulin Glargine",
-    "batch": 5713,
-    "expiry": "2023-03-05",
-    "quantity": 108,
-    "price": 97
-}, {
-    "name": "Bupropion",
-    "batch": 3388,
-    "expiry": "2024-05-05",
-    "quantity": 86,
-    "price": 50
-}, {
-    "name": "Ibuprofen",
-    "batch": 3805,
-    "expiry": "2024-02-20",
-    "quantity": 133,
-    "price": 37
-}, {
-    "name": "Rosuvastatin",
-    "batch": 5176,
-    "expiry": "2021-10-10",
-    "quantity": 123,
-    "price": 74
-}, {
-    "name": "Pravastatin Sodium",
-    "batch": 8258,
-    "expiry": "2021-08-24",
-    "quantity": 110,
-    "price": 27
-}, {
-    "name": "Trazodone Hydrochloride",
-    "batch": 3312,
-    "expiry": "2024-12-19",
-    "quantity": 141,
-    "price": 49
-}, {
-    "name": "Tamsulosin Hydrochloride",
-    "batch": 2353,
-    "expiry": "2024-09-26",
-    "quantity": 72,
-    "price": 89
-}, {
-    "name": "Carvedilol",
-    "batch": 9590,
-    "expiry": "2023-11-16",
-    "quantity": 122,
-    "price": 54
-}, {
-    "name": "Meloxicam",
-    "batch": 2576,
-    "expiry": "2024-10-07",
-    "quantity": 65,
-    "price": 20
-}, {
-    "name": "Citalopram",
-    "batch": 6349,
-    "expiry": "2024-02-18",
-    "quantity": 129,
-    "price": 87
-}, {
-    "name": "Duloxetine",
-    "batch": 9867,
-    "expiry": "2023-05-23",
-    "quantity": 51,
-    "price": 82
-}, {
-    "name": "Alprazolam",
-    "batch": 7721,
-    "expiry": "2022-11-19",
-    "quantity": 121,
-    "price": 36
-}, {
-    "name": "Potassium",
-    "batch": 8916,
-    "expiry": "2023-01-31",
-    "quantity": 50,
-    "price": 38
-}, {
-    "name": "Clopidogrel Bisulfate",
-    "batch": 4835,
-    "expiry": "2022-12-15",
-    "quantity": 117,
-    "price": 75
-}, {
-    "name": "Aspirin",
-    "batch": 1020,
-    "expiry": "2024-07-17",
-    "quantity": 109,
-    "price": 38
-}, {
-    "name": "Ranitidine",
-    "batch": 5874,
-    "expiry": "2023-01-06",
-    "quantity": 99,
-    "price": 72
-}, {
-    "name": "Atenolol",
-    "batch": 7284,
-    "expiry": "2024-09-02",
-    "quantity": 139,
-    "price": 2
-}, {
-    "name": "Cyclobenzaprine",
-    "batch": 9693,
-    "expiry": "2023-07-11",
-    "quantity": 75,
-    "price": 35
-}, {
-    "name": "Glipizide",
-    "batch": 7094,
-    "expiry": "2024-02-08",
-    "quantity": 86,
-    "price": 23
-}, {
-    "name": "Methylphenidate",
-    "batch": 1883,
-    "expiry": "2023-07-06",
-    "quantity": 124,
-    "price": 64
-}, {
-    "name": "Azithromycin",
-    "batch": 1845,
-    "expiry": "2023-11-15",
-    "quantity": 98,
-    "price": 93
-}, {
-    "name": "Clonazepam",
-    "batch": 1313,
-    "expiry": "2024-12-21",
-    "quantity": 58,
-    "price": 99
-}, {
-    "name": "Oxycodone",
-    "batch": 6413,
-    "expiry": "2024-08-15",
-    "quantity": 127,
-    "price": 28
-}, {
-    "name": "Allopurinol",
-    "batch": 5532,
-    "expiry": "2024-11-09",
-    "quantity": 58,
-    "price": 37
-}, {
-    "name": "Venlafaxine",
-    "batch": 5362,
-    "expiry": "2023-04-23",
-    "quantity": 138,
-    "price": 65
-}, {
-    "name": "Hydrochlorothiazide Lisinopril",
-    "batch": 3493,
-    "expiry": "2024-10-22",
-    "quantity": 119,
-    "price": 7
-}, {
-    "name": "Warfarin",
-    "batch": 1657,
-    "expiry": "2023-09-28",
-    "quantity": 112,
-    "price": 74
-}, {
-    "name": "Propranolol Hydrochloride",
-    "batch": 4223,
-    "expiry": "2024-04-29",
-    "quantity": 70,
-    "price": 77
-}, {
-    "name": "Hydrochlorothiazide LosartanPotassium",
-    "batch": 5850,
-    "expiry": "2022-07-11",
-    "quantity": 107,
-    "price": 80
-}, {
-    "name": "Cetirizine",
-    "batch": 1010,
-    "expiry": "2024-07-13",
-    "quantity": 71,
-    "price": 14
-}, {
-    "name": "Estradiol",
-    "batch": 1845,
-    "expiry": "2022-04-21",
-    "quantity": 139,
-    "price": 14
-}, {
-    "name": "Ethinyl Estradiol Norethindrone",
-    "batch": 4240,
-    "expiry": "2022-03-04",
-    "quantity": 52,
-    "price": 22
-}, {
-    "name": "Lorazepam",
-    "batch": 9696,
-    "expiry": "2025-01-24",
-    "quantity": 108,
-    "price": 78
-}, {
-    "name": "Quetiapine Fumarate",
-    "batch": 8935,
-    "expiry": "2024-05-18",
-    "quantity": 98,
-    "price": 48
-}, {
-    "name": "Zolpidem Tartrate",
-    "batch": 7506,
-    "expiry": "2023-11-25",
-    "quantity": 60,
-    "price": 88
-}, {
-    "name": "Ergocalciferol",
-    "batch": 7939,
-    "expiry": "2023-12-06",
-    "quantity": 61,
-    "price": 65
-}, {
-    "name": "Budesonide Formoterol",
-    "batch": 5873,
-    "expiry": "2022-01-14",
-    "quantity": 126,
-    "price": 2
-}, {
-    "name": "Spironolactone",
-    "batch": 6206,
-    "expiry": "2024-03-10",
-    "quantity": 127,
-    "price": 75
-}, {
-    "name": "Ondansetron",
-    "batch": 6669,
-    "expiry": "2024-11-03",
-    "quantity": 95,
-    "price": 55
-}, {
-    "name": "Insulin Aspart",
-    "batch": 7547,
-    "expiry": "2021-10-02",
-    "quantity": 90,
-    "price": 53
-}, {
-    "name": "Apixaban",
-    "batch": 8589,
-    "expiry": "2022-10-19",
-    "quantity": 116,
-    "price": 46
-}, {
-    "name": "Naproxen",
-    "batch": 8906,
-    "expiry": "2021-08-29",
-    "quantity": 53,
-    "price": 61
-}, {
-    "name": "Lamotrigine",
-    "batch": 7667,
-    "expiry": "2024-10-02",
-    "quantity": 115,
-    "price": 26
-}, {
-    "name": "Fluticasone Propionate Salmeterol Xinafoate",
-    "batch": 5957,
-    "expiry": "2024-05-22",
-    "quantity": 99,
-    "price": 22
-}, {
-    "name": "Pregabalin",
-    "batch": 9412,
-    "expiry": "2024-07-23",
-    "quantity": 68,
-    "price": 46
-}, {
-    "name": "Glimepiride",
-    "batch": 3718,
-    "expiry": "2022-05-13",
-    "quantity": 126,
-    "price": 20
-}, {
-    "name": "Diclofenac",
-    "batch": 1467,
-    "expiry": "2021-08-30",
-    "quantity": 134,
-    "price": 86
-}, {
-    "name": "Fenofibrate",
-    "batch": 9402,
-    "expiry": "2023-08-15",
-    "quantity": 140,
-    "price": 62
-}, {
-    "name": "Paroxetine",
-    "batch": 1091,
-    "expiry": "2023-04-16",
-    "quantity": 144,
-    "price": 30
-}, {
-    "name": "Clonidine",
-    "batch": 3785,
-    "expiry": "2021-10-06",
-    "quantity": 75,
-    "price": 57
-}, {
-    "name": "Loratadine",
-    "batch": 6409,
-    "expiry": "2022-01-04",
-    "quantity": 59,
-    "price": 10
-}, {
-    "name": "Diltiazem Hydrochloride",
-    "batch": 1433,
-    "expiry": "2023-09-05",
-    "quantity": 111,
-    "price": 90
-}, {
-    "name": "Hydroxyzine",
-    "batch": 5066,
-    "expiry": "2023-05-19",
-    "quantity": 141,
-    "price": 27
-}, {
-    "name": "Amitriptyline",
-    "batch": 9798,
-    "expiry": "2024-09-19",
-    "quantity": 89,
-    "price": 24
-}, {
-    "name": "Doxycycline",
-    "batch": 4443,
-    "expiry": "2023-06-16",
-    "quantity": 110,
-    "price": 40
-}, {
-    "name": "Ethinyl Estradiol Norgestimate",
-    "batch": 6600,
-    "expiry": "2022-12-03",
-    "quantity": 102,
-    "price": 57
-}, {
-    "name": "Lisdexamfetamine Dimesylate",
-    "batch": 6288,
-    "expiry": "2024-05-12",
-    "quantity": 63,
-    "price": 38
-}, {
-    "name": "Sitagliptin Phosphate",
-    "batch": 8051,
-    "expiry": "2023-12-07",
-    "quantity": 138,
-    "price": 91
-}, {
-    "name": "Latanoprost",
-    "batch": 8395,
-    "expiry": "2023-09-26",
-    "quantity": 145,
-    "price": 60
-}, {
-    "name": "Cephalexin",
-    "batch": 6354,
-    "expiry": "2023-02-25",
-    "quantity": 77,
-    "price": 93
-}, {
-    "name": "Tizanidine",
-    "batch": 2166,
-    "expiry": "2024-01-25",
-    "quantity": 141,
-    "price": 95
-}, {
-    "name": "Finasteride",
-    "batch": 6092,
-    "expiry": "2022-01-30",
-    "quantity": 65,
-    "price": 23
-}, {
-    "name": "Lovastatin",
-    "batch": 4445,
-    "expiry": "2022-10-29",
-    "quantity": 148,
-    "price": 14
-}, {
-    "name": "Topiramate",
-    "batch": 6446,
-    "expiry": "2022-04-03",
-    "quantity": 121,
-    "price": 51
-}, {
-    "name": "InsulinLispro",
-    "batch": 6627,
-    "expiry": "2024-08-13",
-    "quantity": 138,
-    "price": 78
-}, {
-    "name": "Sulfamethoxazole Trimethoprim",
-    "batch": 3886,
-    "expiry": "2023-09-09",
-    "quantity": 88,
-    "price": 59
-}, {
-    "name": "Buspirone Hydrochloride",
-    "batch": 3706,
-    "expiry": "2023-03-03",
-    "quantity": 105,
-    "price": 61
-}, {
-    "name": "Oseltamivir Phosphate",
-    "batch": 6516,
-    "expiry": "2024-05-13",
-    "quantity": 75,
-    "price": 96
-}, {
-    "name": "Ferrous Sulfate",
-    "batch": 4960,
-    "expiry": "2022-05-24",
-    "quantity": 71,
-    "price": 73
-}, {
-    "name": "Amoxicillin Clavulanate Potassium",
-    "batch": 9749,
-    "expiry": "2022-06-16",
-    "quantity": 83,
-    "price": 19
-}, {
-    "name": "Valsartan",
-    "batch": 6880,
-    "expiry": "2024-03-09",
-    "quantity": 127,
-    "price": 14
-}, {
-    "name": "Levetiracetam",
-    "batch": 5457,
-    "expiry": "2024-02-09",
-    "quantity": 60,
-    "price": 60
-}, {
-    "name": "Hydralazine Hydrochloride",
-    "batch": 4300,
-    "expiry": "2023-12-08",
-    "quantity": 50,
-    "price": 21
-}, {
-    "name": "Mirtazapine",
-    "batch": 1349,
-    "expiry": "2024-04-24",
-    "quantity": 71,
-    "price": 77
-}, {
-    "name": "Rivaroxaban",
-    "batch": 8476,
-    "expiry": "2022-03-23",
-    "quantity": 119,
-    "price": 22
-}, {
-    "name": "Aripiprazole",
-    "batch": 6911,
-    "expiry": "2023-05-16",
-    "quantity": 121,
-    "price": 13
-}, {
-    "name": "Oxybutynin",
-    "batch": 8526,
-    "expiry": "2024-04-11",
-    "quantity": 133,
-    "price": 38
-}, {
-    "name": "Esomeprazole",
-    "batch": 9349,
-    "expiry": "2023-04-25",
-    "quantity": 116,
-    "price": 59
-}, {
-    "name": "Alendronate Sodium",
-    "batch": 8704,
-    "expiry": "2023-09-07",
-    "quantity": 101,
-    "price": 69
-}, {
-    "name": "FolicAcid",
-    "batch": 8346,
-    "expiry": "2021-09-24",
-    "quantity": 69,
-    "price": 80
-}, {
-    "name": "Triamcinolone",
-    "batch": 8003,
-    "expiry": "2023-03-09",
-    "quantity": 102,
-    "price": 14
-}, {
-    "name": "Tiotropium",
-    "batch": 7318,
-    "expiry": "2022-09-09",
-    "quantity": 60,
-    "price": 16
-}, {
-    "name": "Thyroid",
-    "batch": 2647,
-    "expiry": "2022-08-27",
-    "quantity": 61,
-    "price": 32
-}, {
-    "name": "Ciprofloxacin",
-    "batch": 6868,
-    "expiry": "2022-11-01",
-    "quantity": 97,
-    "price": 54
-}, {
-    "name": "Isosorbide Mononitrate",
-    "batch": 6869,
-    "expiry": "2024-08-31",
-    "quantity": 97,
-    "price": 51
-}, {
-    "name": "Sumatriptan",
-    "batch": 2716,
-    "expiry": "2024-02-12",
-    "quantity": 65,
-    "price": 5
-}, {
-    "name": "Insulin Detemir",
-    "batch": 9453,
-    "expiry": "2024-04-11",
-    "quantity": 116,
-    "price": 40
-}, {
-    "name": "Benzonatate",
-    "batch": 9697,
-    "expiry": "2023-02-28",
-    "quantity": 79,
-    "price": 0
-}, {
-    "name": "Famotidine",
-    "batch": 8373,
-    "expiry": "2024-12-11",
-    "quantity": 103,
-    "price": 23
-}, {
-    "name": "Diazepam",
-    "batch": 3794,
-    "expiry": "2024-05-22",
-    "quantity": 122,
-    "price": 63
-}, {
-    "name": "Ropinirole Hydrochloride",
-    "batch": 6742,
-    "expiry": "2021-12-04",
-    "quantity": 128,
-    "price": 18
-}, {
-    "name": "Hydrochlorothiazide Triamterene",
-    "batch": 6848,
-    "expiry": "2022-01-22",
-    "quantity": 124,
-    "price": 6
-}, {
-    "name": "Benazepril Hydrochloride",
-    "batch": 5921,
-    "expiry": "2024-05-29",
-    "quantity": 71,
-    "price": 54
-}, {
-    "name": "Metronidazole",
-    "batch": 2811,
-    "expiry": "2023-08-18",
-    "quantity": 81,
-    "price": 5
-}, {
-    "name": "Methocarbamol",
-    "batch": 1369,
-    "expiry": "2023-06-27",
-    "quantity": 99,
-    "price": 26
-}, {
-    "name": "Nifedipine",
-    "batch": 5581,
-    "expiry": "2023-09-18",
-    "quantity": 75,
-    "price": 8
-}, {
-    "name": "Baclofen",
-    "batch": 9752,
-    "expiry": "2021-08-07",
-    "quantity": 56,
-    "price": 17
-}, {
-    "name": "Methotrexate",
-    "batch": 2901,
-    "expiry": "2024-06-16",
-    "quantity": 126,
-    "price": 83
-}, {
-    "name": "Testosterone",
-    "batch": 5130,
-    "expiry": "2021-10-08",
-    "quantity": 82,
-    "price": 40
-}, {
-    "name": "Ezetimibe",
-    "batch": 3241,
-    "expiry": "2024-07-19",
-    "quantity": 93,
-    "price": 64
-}, {
-    "name": "Celecoxib",
-    "batch": 3216,
-    "expiry": "2022-06-30",
-    "quantity": 107,
-    "price": 45
-}, {
-    "name": "Guanfacine",
-    "batch": 1997,
-    "expiry": "2024-03-06",
-    "quantity": 92,
-    "price": 17
-}, {
-    "name": "Donepezil Hydrochloride",
-    "batch": 9757,
-    "expiry": "2022-10-05",
-    "quantity": 101,
-    "price": 98
-}, {
-    "name": "Hydroxychloroquine",
-    "batch": 5476,
-    "expiry": "2024-08-25",
-    "quantity": 73,
-    "price": 98
-}, {
-    "name": "Clindamycin",
-    "batch": 3419,
-    "expiry": "2024-08-04",
-    "quantity": 82,
-    "price": 12
-}, {
-    "name": "Divalproex Sodium",
+    "medicine_name": "Abacavir",
+    "generic_name": "alendronate tablet",
+    "strength": "500 mg + 200 IU",
+    "category": "Liquid",
+    "manufacturer": "Abacavir",
+    "shelf": "A-23",
+    "sell_price": 21,
+    "purchase_price": 16,
+    "batch": 2676,
+    "expiry": "2020-02-28",
+    "quantity": 31
+}, {
+    "medicine_name": "Abacavir / dolutegravir / lamivudine (Triumeq®)",
+    "generic_name": "Ciprofloxacin",
+    "strength": "1 gm",
+    "category": "Tablet",
+    "manufacturer": "Abacavir / dolutegravir / lamivudine (Triumeq®)",
+    "shelf": "G-43",
+    "sell_price": 37,
+    "purchase_price": 32,
+    "batch": 3078,
+    "expiry": "2021-01-11",
+    "quantity": 75
+}, {
+    "medicine_name": "Abacavir / lamivudine (Epzicom®)",
+    "generic_name": "Albendazole",
+    "strength": "10 gm/100 ml",
+    "category": "Capsules",
+    "manufacturer": "Abacavir / lamivudine (Epzicom®)",
+    "shelf": "T-22",
+    "sell_price": 13,
+    "purchase_price": 8,
+    "batch": 2468,
+    "expiry": "2018-06-08",
+    "quantity": 83
+}, {
+    "medicine_name": "Acyclovir",
+    "generic_name": "Snake Venom Antiserum",
+    "strength": "20 mg",
+    "category": "Topical medicines",
+    "manufacturer": "Acyclovir",
+    "shelf": "A-12",
+    "sell_price": 9,
+    "purchase_price": 4,
+    "batch": 4215,
+    "expiry": "2021-01-18",
+    "quantity": 98
+}, {
+    "medicine_name": "Alemtuzumab",
+    "generic_name": "Paracitamol",
+    "strength": "170 gm + 170 gm + 1 gm/KG",
+    "category": "Suppositories",
+    "manufacturer": "Alemtuzumab",
+    "shelf": "H-03",
+    "sell_price": 22,
+    "purchase_price": 17,
+    "batch": 7698,
+    "expiry": "2019-03-27",
+    "quantity": 122
+}, {
+    "medicine_name": "Alendronate",
+    "generic_name": "Gabapentin",
+    "strength": "600 mg",
+    "category": "Drops",
+    "manufacturer": "Alendronate",
+    "shelf": "L-54",
+    "sell_price": 36,
+    "purchase_price": 31,
+    "batch": 8299,
+    "expiry": "2018-05-26",
+    "quantity": 132
+}, {
+    "medicine_name": "Allopurinol",
+    "generic_name": "Azithromycin",
+    "strength": "25 gm + 1.5 gm + 1.5 gm + 7 gm + 65 gm/100 gm",
+    "category": "Inhalers",
+    "manufacturer": "Allopurinol",
+    "shelf": "O-06",
+    "sell_price": 22,
+    "purchase_price": 17,
+    "batch": 3344,
+    "expiry": "2018-06-21",
+    "quantity": 92
+}, {
+    "medicine_name": "Amifostine",
+    "generic_name": "Tramadol Hydrochloride",
+    "strength": "6.7 ml/vial",
+    "category": "Injections",
+    "manufacturer": "Amifostine",
+    "shelf": "P-98",
+    "sell_price": 50,
+    "purchase_price": 45,
+    "batch": 4161,
+    "expiry": "2018-01-28",
+    "quantity": 44
+}, {
+    "medicine_name": "Amikacin",
+    "generic_name": "Simvastatin",
+    "strength": "9.1 mg + 50 mg + 20 mg + 100 mg + 25 mg",
+    "category": "Liquid",
+    "manufacturer": "Amikacin",
+    "shelf": "B-22",
+    "sell_price": 26,
+    "purchase_price": 21,
+    "batch": 8810,
+    "expiry": "2021-01-07",
+    "quantity": 79
+}, {
+    "medicine_name": "Aminocaproic Acid",
+    "generic_name": "alendronate tablet",
+    "strength": ".1 gm + 2.5 gm/100 gm",
+    "category": "Tablet",
+    "manufacturer": "Aminocaproic Acid",
+    "shelf": "B-43",
+    "sell_price": 53,
+    "purchase_price": 48,
+    "batch": 9788,
+    "expiry": "2018-09-09",
+    "quantity": 54
+}, {
+    "medicine_name": "Amitriptyline",
+    "generic_name": "Ciprofloxacin",
+    "strength": "200 mg/ml",
+    "category": "Capsules",
+    "manufacturer": "Amitriptyline",
+    "shelf": "A-23",
+    "sell_price": 55,
+    "purchase_price": 50,
+    "batch": 4269,
+    "expiry": "2018-12-18",
+    "quantity": 12
+}, {
+    "medicine_name": "Amlodipine",
+    "generic_name": "Albendazole",
+    "strength": "600 mg",
+    "category": "Topical medicines",
+    "manufacturer": "Amlodipine",
+    "shelf": "G-43",
+    "sell_price": 50,
+    "purchase_price": 45,
+    "batch": 2927,
+    "expiry": "2020-12-30",
+    "quantity": 88
+}, {
+    "medicine_name": "Amoxicillin",
+    "generic_name": "Snake Venom Antiserum",
+    "strength": "600 mg",
+    "category": "Suppositories",
+    "manufacturer": "Amoxicillin",
+    "shelf": "T-22",
+    "sell_price": 22,
+    "purchase_price": 17,
     "batch": 7382,
-    "expiry": "2023-02-23",
-    "quantity": 56,
-    "price": 30
-}, {
-    "name": "Morphine",
-    "batch": 1922,
-    "expiry": "2023-10-05",
-    "quantity": 102,
-    "price": 90
-}, {
-    "name": "Ethinyl Estradiol Levonorgestrel",
-    "batch": 4791,
-    "expiry": "2024-09-03",
-    "quantity": 131,
-    "price": 38
-}, {
-    "name": "Prednisolone",
-    "batch": 1448,
-    "expiry": "2022-11-06",
-    "quantity": 88,
-    "price": 2
-}, {
-    "name": "Enalapril Maleate",
-    "batch": 2276,
-    "expiry": "2021-09-24",
-    "quantity": 149,
-    "price": 54
-}, {
-    "name": "Pioglitazone",
-    "batch": 1015,
-    "expiry": "2023-06-14",
-    "quantity": 93,
-    "price": 90
-}, {
-    "name": "Cyanocobalamin",
-    "batch": 9935,
-    "expiry": "2022-06-27",
-    "quantity": 93,
-    "price": 63
-}, {
-    "name": "Norethindrone",
-    "batch": 4527,
-    "expiry": "2022-01-29",
-    "quantity": 111,
-    "price": 89
-}, {
-    "name": "Meclizine Hydrochloride",
-    "batch": 8658,
-    "expiry": "2023-01-10",
-    "quantity": 144,
-    "price": 66
-}, {
-    "name": "Valacyclovir",
-    "batch": 8575,
-    "expiry": "2021-08-05",
-    "quantity": 121,
-    "price": 40
-}, {
-    "name": "Albuterol Sulfate Ipratropium Bromide",
-    "batch": 7982,
-    "expiry": "2023-06-08",
-    "quantity": 88,
-    "price": 86
-}, {
-    "name": "Docusate",
-    "batch": 2279,
-    "expiry": "2022-03-13",
-    "quantity": 124,
-    "price": 29
-}, {
-    "name": "Liraglutide",
-    "batch": 2527,
-    "expiry": "2022-09-19",
-    "quantity": 113,
-    "price": 78
-}, {
-    "name": "Hydrocortisone",
-    "batch": 8860,
-    "expiry": "2021-12-11",
-    "quantity": 133,
-    "price": 97
-}, {
-    "name": "Verapamil Hydrochloride",
-    "batch": 9407,
-    "expiry": "2025-01-24",
-    "quantity": 56,
-    "price": 53
-}, {
-    "name": "Cefdinir",
-    "batch": 9134,
-    "expiry": "2023-07-04",
-    "quantity": 113,
-    "price": 16
-}, {
-    "name": "Nortriptyline Hydrochloride",
-    "batch": 4233,
-    "expiry": "2023-02-01",
-    "quantity": 108,
-    "price": 33
-}, {
-    "name": "Timolol",
-    "batch": 4281,
-    "expiry": "2022-03-30",
-    "quantity": 76,
-    "price": 44
-}, {
-    "name": "Dulaglutide",
-    "batch": 9900,
-    "expiry": "2022-04-28",
-    "quantity": 116,
-    "price": 51
-}, {
-    "name": "Promethazine Hydrochloride",
-    "batch": 8023,
-    "expiry": "2022-08-27",
-    "quantity": 69,
-    "price": 1
-}, {
-    "name": "Acyclovir",
-    "batch": 9441,
-    "expiry": "2023-11-08",
-    "quantity": 123,
-    "price": 51
-}, {
-    "name": "Fluconazole",
-    "batch": 8562,
-    "expiry": "2023-11-09",
-    "quantity": 62,
-    "price": 20
-}, {
-    "name": "Methylprednisolone",
-    "batch": 5539,
-    "expiry": "2023-12-08",
-    "quantity": 105,
-    "price": 97
-}, {
-    "name": "Metformin Hydrochloride Sitagliptin Phosphate",
-    "batch": 6252,
-    "expiry": "2023-01-26",
-    "quantity": 98,
-    "price": 13
-}, {
-    "name": "Ramipril",
-    "batch": 3511,
-    "expiry": "2021-09-16",
-    "quantity": 63,
-    "price": 85
-}, {
-    "name": "Dexmethylphenidate Hydrochloride",
-    "batch": 4777,
-    "expiry": "2021-12-23",
-    "quantity": 119,
-    "price": 36
-}, {
-    "name": "Brimonidine Tartrate",
-    "batch": 2616,
-    "expiry": "2023-05-24",
-    "quantity": 86,
-    "price": 38
-}, {
-    "name": "Oxcarbazepine",
-    "batch": 3151,
-    "expiry": "2021-12-11",
-    "quantity": 52,
-    "price": 13
-}, {
-    "name": "Risperidone",
-    "batch": 3302,
-    "expiry": "2024-07-14",
-    "quantity": 64,
-    "price": 30
-}, {
-    "name": "Levofloxacin",
-    "batch": 7319,
-    "expiry": "2023-12-23",
-    "quantity": 103,
-    "price": 26
-}, {
-    "name": "Chlorthalidone",
-    "batch": 2512,
-    "expiry": "2023-12-18",
-    "quantity": 58,
-    "price": 76
-}, {
-    "name": "Atomoxetine Hydrochloride",
-    "batch": 2756,
-    "expiry": "2025-01-02",
-    "quantity": 84,
-    "price": 93
-}, {
-    "name": "Polyethylene Glycol",
-    "batch": 4051,
-    "expiry": "2024-09-01",
-    "quantity": 65,
-    "price": 66
-}, {
-    "name": "Calcium Cholecalciferol",
-    "batch": 2351,
-    "expiry": "2024-04-29",
-    "quantity": 72,
-    "price": 22
-}, {
-    "name": "Mupirocin",
-    "batch": 6178,
-    "expiry": "2024-04-01",
-    "quantity": 91,
-    "price": 66
-}, {
-    "name": "Ethinyl Estradiol Etonogestrel",
-    "batch": 1364,
-    "expiry": "2024-07-06",
-    "quantity": 113,
-    "price": 32
-}, {
-    "name": "Drospirenone Ethinyl Estradiol",
-    "batch": 5067,
-    "expiry": "2021-09-29",
-    "quantity": 141,
-    "price": 5
-}, {
-    "name": "Phentermine",
-    "batch": 5978,
-    "expiry": "2023-12-08",
-    "quantity": 143,
-    "price": 19
-}, {
-    "name": "CarbidopaLevodopa",
-    "batch": 8127,
-    "expiry": "2021-08-19",
-    "quantity": 62,
-    "price": 66
-}, {
-    "name": "Omegaacid Ethyl Esters",
-    "batch": 9949,
-    "expiry": "2024-03-10",
-    "quantity": 130,
-    "price": 54
-}, {
-    "name": "Desogestrel Ethinyl Estradiol",
-    "batch": 3962,
-    "expiry": "2024-08-05",
-    "quantity": 107,
-    "price": 0
-}, {
-    "name": "Guaifenesin",
-    "batch": 7128,
-    "expiry": "2025-01-04",
-    "quantity": 79,
-    "price": 65
-}, {
-    "name": "Rizatriptan Benzoate",
-    "batch": 1096,
-    "expiry": "2024-03-27",
-    "quantity": 116,
-    "price": 79
-}, {
-    "name": "Irbesartan",
-    "batch": 2981,
-    "expiry": "2022-08-30",
-    "quantity": 98,
-    "price": 99
-}, {
-    "name": "Progesterone",
-    "batch": 7931,
-    "expiry": "2023-11-12",
-    "quantity": 90,
-    "price": 60
-}, {
-    "name": "Doxazosin Mesylate",
-    "batch": 9441,
-    "expiry": "2022-08-19",
-    "quantity": 75,
-    "price": 55
-}, {
-    "name": "Linagliptin",
-    "batch": 1649,
-    "expiry": "2021-10-16",
-    "quantity": 69,
-    "price": 44
-}, {
-    "name": "Adalimumab",
-    "batch": 9192,
-    "expiry": "2022-09-05",
-    "quantity": 103,
-    "price": 89
-}, {
-    "name": "Nitrofurantoin",
-    "batch": 7835,
-    "expiry": "2021-08-11",
-    "quantity": 51,
-    "price": 29
-}, {
-    "name": "Budesonide",
-    "batch": 2469,
-    "expiry": "2025-01-11",
-    "quantity": 97,
-    "price": 15
-}, {
-    "name": "Amlodipine Besylate Benazepril Hydrochloride",
-    "batch": 8474,
-    "expiry": "2022-02-09",
-    "quantity": 133,
-    "price": 56
-}, {
-    "name": "Hydrochlorothiazide Valsartan",
-    "batch": 5892,
-    "expiry": "2024-01-05",
-    "quantity": 111,
-    "price": 71
-}, {
-    "name": "Digoxin",
-    "batch": 3774,
-    "expiry": "2025-01-16",
-    "quantity": 76,
-    "price": 78
-}, {
-    "name": "Acetaminophen Butalbital",
-    "batch": 6710,
-    "expiry": "2022-07-07",
-    "quantity": 108,
-    "price": 1
-}, {
-    "name": "Insulin Degludec",
-    "batch": 1071,
-    "expiry": "2025-01-25",
-    "quantity": 103,
-    "price": 47
-}, {
-    "name": "Ketoconazole",
-    "batch": 2642,
-    "expiry": "2023-08-14",
-    "quantity": 104,
-    "price": 62
-}, {
-    "name": "Nitroglycerin",
-    "batch": 1696,
-    "expiry": "2021-12-27",
-    "quantity": 142,
-    "price": 24
-}, {
-    "name": "Temazepam",
-    "batch": 9466,
-    "expiry": "2023-06-24",
-    "quantity": 108,
-    "price": 15
-}, {
-    "name": "Amiodarone Hydrochloride",
-    "batch": 7730,
-    "expiry": "2022-01-11",
-    "quantity": 130,
-    "price": 2
-}, {
-    "name": "Memantine Hydrochloride",
-    "batch": 4848,
-    "expiry": "2022-05-01",
-    "quantity": 140,
-    "price": 46
-}, {
-    "name": "Canagliflozin",
-    "batch": 2059,
-    "expiry": "2023-05-15",
-    "quantity": 98,
-    "price": 53
-}, {
-    "name": "Ketorolac Tromethamine",
-    "batch": 3619,
-    "expiry": "2022-12-09",
-    "quantity": 147,
-    "price": 94
-}, {
-    "name": "Liothyronine Sodium",
-    "batch": 7761,
-    "expiry": "2021-09-08",
-    "quantity": 67,
-    "price": 95
-}, {
-    "name": "Lithium",
-    "batch": 5667,
-    "expiry": "2023-06-10",
-    "quantity": 101,
-    "price": 12
-}, {
-    "name": "Dicyclomine Hydrochloride",
-    "batch": 4672,
-    "expiry": "2021-10-01",
-    "quantity": 131,
-    "price": 83
-}, {
-    "name": "Pramipexole Dihydrochloride",
-    "batch": 9082,
-    "expiry": "2024-03-16",
-    "quantity": 132,
-    "price": 25
-}, {
-    "name": "Nebivolol Hydrochloride",
-    "batch": 7246,
-    "expiry": "2024-02-22",
-    "quantity": 142,
-    "price": 70
-}, {
-    "name": "Terazosin",
-    "batch": 1908,
-    "expiry": "2024-01-04",
-    "quantity": 133,
-    "price": 77
-}, {
-    "name": "Magnesium",
-    "batch": 5094,
-    "expiry": "2022-07-29",
-    "quantity": 123,
-    "price": 88
-}, {
-    "name": "Colchicine",
-    "batch": 3624,
-    "expiry": "2024-04-06",
-    "quantity": 131,
-    "price": 37
+    "expiry": "2019-04-26",
+    "quantity": 141
+}, {
+    "medicine_name": "Amoxicillin / clavulanic acid",
+    "generic_name": "Paracitamol",
+    "strength": "500ml",
+    "category": "Drops",
+    "manufacturer": "Amoxicillin / clavulanic acid",
+    "shelf": "A-12",
+    "sell_price": 6,
+    "purchase_price": 1,
+    "batch": 3492,
+    "expiry": "2018-03-12",
+    "quantity": 42
+}, {
+    "medicine_name": "Amphotericin B",
+    "generic_name": "Gabapentin",
+    "strength": "600 mg",
+    "category": "Inhalers",
+    "manufacturer": "Amphotericin B",
+    "shelf": "H-03",
+    "sell_price": 32,
+    "purchase_price": 27,
+    "batch": 7654,
+    "expiry": "2020-08-27",
+    "quantity": 93
+}, {
+    "medicine_name": "Ampicillin",
+    "generic_name": "Azithromycin",
+    "strength": "5 gm/100 gm",
+    "category": "Injections",
+    "manufacturer": "Ampicillin",
+    "shelf": "L-54",
+    "sell_price": 29,
+    "purchase_price": 24,
+    "batch": 8031,
+    "expiry": "2020-01-15",
+    "quantity": 26
+}, {
+    "medicine_name": "Anti-Inhibitor Coagulant Complex (FEIBA)",
+    "generic_name": "Tramadol Hydrochloride",
+    "strength": "500 mg + 200 IU",
+    "category": "Liquid",
+    "manufacturer": "Anti-Inhibitor Coagulant Complex (FEIBA)",
+    "shelf": "O-06",
+    "sell_price": 42,
+    "purchase_price": 37,
+    "batch": 5289,
+    "expiry": "2019-02-16",
+    "quantity": 95
+}, {
+    "medicine_name": "Anti-thymocyte globulin",
+    "generic_name": "Simvastatin",
+    "strength": "1 gm",
+    "category": "Tablet",
+    "manufacturer": "Anti-thymocyte globulin",
+    "shelf": "P-98",
+    "sell_price": 47,
+    "purchase_price": 42,
+    "batch": 4189,
+    "expiry": "2018-11-19",
+    "quantity": 51
+}, {
+    "medicine_name": "Aprepitant",
+    "generic_name": "alendronate tablet",
+    "strength": "10 gm/100 ml",
+    "category": "Capsules",
+    "manufacturer": "Aprepitant",
+    "shelf": "B-22",
+    "sell_price": 32,
+    "purchase_price": 27,
+    "batch": 2964,
+    "expiry": "2020-12-24",
+    "quantity": 28
+}, {
+    "medicine_name": "Asparaginase",
+    "generic_name": "Ciprofloxacin",
+    "strength": "20 mg",
+    "category": "Topical medicines",
+    "manufacturer": "Asparaginase",
+    "shelf": "B-43",
+    "sell_price": 15,
+    "purchase_price": 10,
+    "batch": 5649,
+    "expiry": "2018-06-25",
+    "quantity": 140
+}, {
+    "medicine_name": "Atazanavir (Reyataz®)",
+    "generic_name": "Albendazole",
+    "strength": "170 gm + 170 gm + 1 gm/KG",
+    "category": "Suppositories",
+    "manufacturer": "Atazanavir (Reyataz®)",
+    "shelf": "A-23",
+    "sell_price": 46,
+    "purchase_price": 41,
+    "batch": 8419,
+    "expiry": "2019-07-02",
+    "quantity": 30
+}, {
+    "medicine_name": "Atenolol",
+    "generic_name": "Snake Venom Antiserum",
+    "strength": "600 mg",
+    "category": "Drops",
+    "manufacturer": "Atenolol",
+    "shelf": "G-43",
+    "sell_price": 28,
+    "purchase_price": 23,
+    "batch": 6542,
+    "expiry": "2018-01-23",
+    "quantity": 143
+}, {
+    "medicine_name": "Atovaquone",
+    "generic_name": "Paracitamol",
+    "strength": "25 gm + 1.5 gm + 1.5 gm + 7 gm + 65 gm/100 gm",
+    "category": "Inhalers",
+    "manufacturer": "Atovaquone",
+    "shelf": "T-22",
+    "sell_price": 14,
+    "purchase_price": 9,
+    "batch": 2983,
+    "expiry": "2020-08-08",
+    "quantity": 108
+}, {
+    "medicine_name": "Azithromycin",
+    "generic_name": "Gabapentin",
+    "strength": "6.7 ml/vial",
+    "category": "Injections",
+    "manufacturer": "Azithromycin",
+    "shelf": "A-12",
+    "sell_price": 42,
+    "purchase_price": 37,
+    "batch": 2958,
+    "expiry": "2018-11-10",
+    "quantity": 112
+}, {
+    "medicine_name": "Baclofen",
+    "generic_name": "Azithromycin",
+    "strength": "9.1 mg + 50 mg + 20 mg + 100 mg + 25 mg",
+    "category": "Liquid",
+    "manufacturer": "Baclofen",
+    "shelf": "H-03",
+    "sell_price": 40,
+    "purchase_price": 35,
+    "batch": 8787,
+    "expiry": "2020-03-26",
+    "quantity": 104
+}, {
+    "medicine_name": "Bleomycin",
+    "generic_name": "Tramadol Hydrochloride",
+    "strength": ".1 gm + 2.5 gm/100 gm",
+    "category": "Tablet",
+    "manufacturer": "Bleomycin",
+    "shelf": "L-54",
+    "sell_price": 47,
+    "purchase_price": 42,
+    "batch": 8349,
+    "expiry": "2020-01-12",
+    "quantity": 40
+}, {
+    "medicine_name": "Bortezomib",
+    "generic_name": "Simvastatin",
+    "strength": "200 mg/ml",
+    "category": "Capsules",
+    "manufacturer": "Bortezomib",
+    "shelf": "O-06",
+    "sell_price": 23,
+    "purchase_price": 18,
+    "batch": 9038,
+    "expiry": "2018-05-23",
+    "quantity": 74
+}, {
+    "medicine_name": "Bosentan",
+    "generic_name": "alendronate tablet",
+    "strength": "600 mg",
+    "category": "Topical medicines",
+    "manufacturer": "Bosentan",
+    "shelf": "P-98",
+    "sell_price": 50,
+    "purchase_price": 45,
+    "batch": 2016,
+    "expiry": "2018-05-05",
+    "quantity": 18
+}, {
+    "medicine_name": "Busulfan",
+    "generic_name": "Ciprofloxacin",
+    "strength": "600 mg",
+    "category": "Suppositories",
+    "manufacturer": "Busulfan",
+    "shelf": "B-22",
+    "sell_price": 10,
+    "purchase_price": 5,
+    "batch": 6100,
+    "expiry": "2020-09-04",
+    "quantity": 37
+}, {
+    "medicine_name": "Calcium",
+    "generic_name": "Albendazole",
+    "strength": "500ml",
+    "category": "Drops",
+    "manufacturer": "Calcium",
+    "shelf": "B-43",
+    "sell_price": 18,
+    "purchase_price": 13,
+    "batch": 3214,
+    "expiry": "2019-12-28",
+    "quantity": 101
+}, {
+    "medicine_name": "Captopril",
+    "generic_name": "Snake Venom Antiserum",
+    "strength": "600 mg",
+    "category": "Inhalers",
+    "manufacturer": "Captopril",
+    "shelf": "A-23",
+    "sell_price": 46,
+    "purchase_price": 41,
+    "batch": 1153,
+    "expiry": "2020-12-18",
+    "quantity": 72
+}, {
+    "medicine_name": "Carbamazepine",
+    "generic_name": "Paracitamol",
+    "strength": "5 gm/100 gm",
+    "category": "Injections",
+    "manufacturer": "Carbamazepine",
+    "shelf": "G-43",
+    "sell_price": 55,
+    "purchase_price": 50,
+    "batch": 9093,
+    "expiry": "2020-03-26",
+    "quantity": 65
+}, {
+    "medicine_name": "Carboplatin",
+    "generic_name": "Gabapentin",
+    "strength": "500 mg + 200 IU",
+    "category": "Liquid",
+    "manufacturer": "Carboplatin",
+    "shelf": "T-22",
+    "sell_price": 55,
+    "purchase_price": 50,
+    "batch": 5935,
+    "expiry": "2019-02-20",
+    "quantity": 94
+}, {
+    "medicine_name": "Carmustine",
+    "generic_name": "Azithromycin",
+    "strength": "1 gm",
+    "category": "Tablet",
+    "manufacturer": "Carmustine",
+    "shelf": "A-12",
+    "sell_price": 21,
+    "purchase_price": 16,
+    "batch": 8016,
+    "expiry": "2020-02-02",
+    "quantity": 92
+}, {
+    "medicine_name": "Cefaclor",
+    "generic_name": "Tramadol Hydrochloride",
+    "strength": "10 gm/100 ml",
+    "category": "Capsules",
+    "manufacturer": "Cefaclor",
+    "shelf": "H-03",
+    "sell_price": 6,
+    "purchase_price": 1,
+    "batch": 8582,
+    "expiry": "2018-12-21",
+    "quantity": 20
+}, {
+    "medicine_name": "Cefepime",
+    "generic_name": "Simvastatin",
+    "strength": "20 mg",
+    "category": "Topical medicines",
+    "manufacturer": "Cefepime",
+    "shelf": "L-54",
+    "sell_price": 16,
+    "purchase_price": 11,
+    "batch": 8399,
+    "expiry": "2021-01-21",
+    "quantity": 115
+}, {
+    "medicine_name": "Cefixime",
+    "generic_name": "alendronate tablet",
+    "strength": "170 gm + 170 gm + 1 gm/KG",
+    "category": "Suppositories",
+    "manufacturer": "Cefixime",
+    "shelf": "O-06",
+    "sell_price": 38,
+    "purchase_price": 33,
+    "batch": 9392,
+    "expiry": "2020-11-21",
+    "quantity": 148
+}, {
+    "medicine_name": "Ceftazidime",
+    "generic_name": "Ciprofloxacin",
+    "strength": "600 mg",
+    "category": "Drops",
+    "manufacturer": "Ceftazidime",
+    "shelf": "P-98",
+    "sell_price": 53,
+    "purchase_price": 48,
+    "batch": 2577,
+    "expiry": "2020-08-29",
+    "quantity": 61
+}, {
+    "medicine_name": "Cefuroxime",
+    "generic_name": "Albendazole",
+    "strength": "25 gm + 1.5 gm + 1.5 gm + 7 gm + 65 gm/100 gm",
+    "category": "Inhalers",
+    "manufacturer": "Cefuroxime",
+    "shelf": "B-22",
+    "sell_price": 41,
+    "purchase_price": 36,
+    "batch": 4692,
+    "expiry": "2018-07-08",
+    "quantity": 91
+}, {
+    "medicine_name": "Celecoxib",
+    "generic_name": "Snake Venom Antiserum",
+    "strength": "6.7 ml/vial",
+    "category": "Injections",
+    "manufacturer": "Celecoxib",
+    "shelf": "B-43",
+    "sell_price": 48,
+    "purchase_price": 43,
+    "batch": 3283,
+    "expiry": "2020-05-10",
+    "quantity": 51
+}, {
+    "medicine_name": "Cephalexin",
+    "generic_name": "Paracitamol",
+    "strength": "9.1 mg + 50 mg + 20 mg + 100 mg + 25 mg",
+    "category": "Liquid",
+    "manufacturer": "Cephalexin",
+    "shelf": "A-23",
+    "sell_price": 44,
+    "purchase_price": 39,
+    "batch": 4747,
+    "expiry": "2018-04-30",
+    "quantity": 85
+}, {
+    "medicine_name": "Cidofovir",
+    "generic_name": "Gabapentin",
+    "strength": ".1 gm + 2.5 gm/100 gm",
+    "category": "Tablet",
+    "manufacturer": "Cidofovir",
+    "shelf": "G-43",
+    "sell_price": 39,
+    "purchase_price": 34,
+    "batch": 2692,
+    "expiry": "2020-05-16",
+    "quantity": 124
+}, {
+    "medicine_name": "Cisplatin",
+    "generic_name": "Azithromycin",
+    "strength": "200 mg/ml",
+    "category": "Capsules",
+    "manufacturer": "Cisplatin",
+    "shelf": "T-22",
+    "sell_price": 28,
+    "purchase_price": 23,
+    "batch": 4473,
+    "expiry": "2019-03-28",
+    "quantity": 146
+}, {
+    "medicine_name": "Cladribine",
+    "generic_name": "Tramadol Hydrochloride",
+    "strength": "600 mg",
+    "category": "Topical medicines",
+    "manufacturer": "Cladribine",
+    "shelf": "A-12",
+    "sell_price": 13,
+    "purchase_price": 8,
+    "batch": 4185,
+    "expiry": "2020-06-23",
+    "quantity": 130
+}, {
+    "medicine_name": "Clarithromycin",
+    "generic_name": "Simvastatin",
+    "strength": "600 mg",
+    "category": "Suppositories",
+    "manufacturer": "Clarithromycin",
+    "shelf": "H-03",
+    "sell_price": 47,
+    "purchase_price": 42,
+    "batch": 8262,
+    "expiry": "2019-09-01",
+    "quantity": 69
+}, {
+    "medicine_name": "Clindamycin",
+    "generic_name": "Paracitamol",
+    "strength": "500ml",
+    "category": "Drops",
+    "manufacturer": "Clindamycin",
+    "shelf": "L-54",
+    "sell_price": 13,
+    "purchase_price": 8,
+    "batch": 7707,
+    "expiry": "2018-07-20",
+    "quantity": 41
+}, {
+    "medicine_name": "Clobazam",
+    "generic_name": "Gabapentin",
+    "strength": "600 mg",
+    "category": "Inhalers",
+    "manufacturer": "Clobazam",
+    "shelf": "O-06",
+    "sell_price": 12,
+    "purchase_price": 7,
+    "batch": 1010,
+    "expiry": "2020-08-15",
+    "quantity": 22
+}, {
+    "medicine_name": "Clofarabine",
+    "generic_name": "Azithromycin",
+    "strength": "5 gm/100 gm",
+    "category": "Injections",
+    "manufacturer": "Clofarabine",
+    "shelf": "P-98",
+    "sell_price": 19,
+    "purchase_price": 14,
+    "batch": 5755,
+    "expiry": "2018-08-08",
+    "quantity": 143
+}, {
+    "medicine_name": "Codeine",
+    "generic_name": "Tramadol Hydrochloride",
+    "strength": "500 mg + 200 IU",
+    "category": "Liquid",
+    "manufacturer": "Codeine",
+    "shelf": "B-22",
+    "sell_price": 26,
+    "purchase_price": 21,
+    "batch": 4391,
+    "expiry": "2020-01-14",
+    "quantity": 29
+}, {
+    "medicine_name": "Crizanlizumab",
+    "generic_name": "Simvastatin",
+    "strength": "1 gm",
+    "category": "Tablet",
+    "manufacturer": "Crizanlizumab",
+    "shelf": "B-43",
+    "sell_price": 40,
+    "purchase_price": 35,
+    "batch": 5495,
+    "expiry": "2019-07-01",
+    "quantity": 118
+}, {
+    "medicine_name": "Crizotinib",
+    "generic_name": "alendronate tablet",
+    "strength": "10 gm/100 ml",
+    "category": "Capsules",
+    "manufacturer": "Crizotinib",
+    "shelf": "A-23",
+    "sell_price": 27,
+    "purchase_price": 22,
+    "batch": 7478,
+    "expiry": "2018-04-18",
+    "quantity": 63
+}, {
+    "medicine_name": "Cyclobenzaprine",
+    "generic_name": "Ciprofloxacin",
+    "strength": "20 mg",
+    "category": "Topical medicines",
+    "manufacturer": "Cyclobenzaprine",
+    "shelf": "G-43",
+    "sell_price": 43,
+    "purchase_price": 38,
+    "batch": 6926,
+    "expiry": "2018-08-16",
+    "quantity": 47
+}, {
+    "medicine_name": "Cyclophosphamide",
+    "generic_name": "Albendazole",
+    "strength": "170 gm + 170 gm + 1 gm/KG",
+    "category": "Suppositories",
+    "manufacturer": "Cyclophosphamide",
+    "shelf": "T-22",
+    "sell_price": 6,
+    "purchase_price": 1,
+    "batch": 9381,
+    "expiry": "2019-04-13",
+    "quantity": 112
+}, {
+    "medicine_name": "Cyclosporine",
+    "generic_name": "Snake Venom Antiserum",
+    "strength": "600 mg",
+    "category": "Drops",
+    "manufacturer": "Cyclosporine",
+    "shelf": "A-12",
+    "sell_price": 25,
+    "purchase_price": 20,
+    "batch": 8717,
+    "expiry": "2020-04-11",
+    "quantity": 83
+}, {
+    "medicine_name": "Cyproheptadine",
+    "generic_name": "Paracitamol",
+    "strength": "25 gm + 1.5 gm + 1.5 gm + 7 gm + 65 gm/100 gm",
+    "category": "Inhalers",
+    "manufacturer": "Cyproheptadine",
+    "shelf": "H-03",
+    "sell_price": 28,
+    "purchase_price": 23,
+    "batch": 7637,
+    "expiry": "2018-03-06",
+    "quantity": 62
+}, {
+    "medicine_name": "Cytarabine",
+    "generic_name": "Gabapentin",
+    "strength": "6.7 ml/vial",
+    "category": "Injections",
+    "manufacturer": "Cytarabine",
+    "shelf": "L-54",
+    "sell_price": 13,
+    "purchase_price": 8,
+    "batch": 2797,
+    "expiry": "2019-01-19",
+    "quantity": 132
+}, {
+    "medicine_name": "Dacarbazine",
+    "generic_name": "Azithromycin",
+    "strength": "25 gm + 1.5 gm + 1.5 gm + 7 gm + 65 gm/100 gm",
+    "category": "Liquid",
+    "manufacturer": "Dacarbazine",
+    "shelf": "O-06",
+    "sell_price": 45,
+    "purchase_price": 40,
+    "batch": 3583,
+    "expiry": "2019-10-08",
+    "quantity": 74
+}, {
+    "medicine_name": "Dactinomycin",
+    "generic_name": "Tramadol Hydrochloride",
+    "strength": "6.7 ml/vial",
+    "category": "Tablet",
+    "manufacturer": "Dactinomycin",
+    "shelf": "P-98",
+    "sell_price": 42,
+    "purchase_price": 37,
+    "batch": 5330,
+    "expiry": "2019-05-19",
+    "quantity": 135
+}, {
+    "medicine_name": "Dapsone",
+    "generic_name": "Simvastatin",
+    "strength": "9.1 mg + 50 mg + 20 mg + 100 mg + 25 mg",
+    "category": "Capsules",
+    "manufacturer": "Dapsone",
+    "shelf": "B-22",
+    "sell_price": 13,
+    "purchase_price": 8,
+    "batch": 4714,
+    "expiry": "2018-01-09",
+    "quantity": 106
+}, {
+    "medicine_name": "Darunavir (Prezista®)",
+    "generic_name": "alendronate tablet",
+    "strength": ".1 gm + 2.5 gm/100 gm",
+    "category": "Topical medicines",
+    "manufacturer": "Darunavir (Prezista®)",
+    "shelf": "B-43",
+    "sell_price": 12,
+    "purchase_price": 7,
+    "batch": 7462,
+    "expiry": "2019-12-15",
+    "quantity": 71
+}, {
+    "medicine_name": "Dasatinib",
+    "generic_name": "Ciprofloxacin",
+    "strength": "200 mg/ml",
+    "category": "Suppositories",
+    "manufacturer": "Dasatinib",
+    "shelf": "A-23",
+    "sell_price": 28,
+    "purchase_price": 23,
+    "batch": 6318,
+    "expiry": "2019-04-07",
+    "quantity": 148
+}, {
+    "medicine_name": "Daunorubicin",
+    "generic_name": "Albendazole",
+    "strength": "600 mg",
+    "category": "Drops",
+    "manufacturer": "Daunorubicin",
+    "shelf": "G-43",
+    "sell_price": 48,
+    "purchase_price": 43,
+    "batch": 4316,
+    "expiry": "2020-02-13",
+    "quantity": 75
+}, {
+    "medicine_name": "Deferasirox (Exjade®)",
+    "generic_name": "Snake Venom Antiserum",
+    "strength": "600 mg",
+    "category": "Inhalers",
+    "manufacturer": "Deferasirox (Exjade®)",
+    "shelf": "T-22",
+    "sell_price": 29,
+    "purchase_price": 24,
+    "batch": 8704,
+    "expiry": "2020-05-19",
+    "quantity": 59
+}, {
+    "medicine_name": "Desmopressin (Stimate®)",
+    "generic_name": "Paracitamol",
+    "strength": "500ml",
+    "category": "Injections",
+    "manufacturer": "Desmopressin (Stimate®)",
+    "shelf": "A-12",
+    "sell_price": 30,
+    "purchase_price": 25,
+    "batch": 6040,
+    "expiry": "2019-02-25",
+    "quantity": 103
+}, {
+    "medicine_name": "Dexamethasone",
+    "generic_name": "Gabapentin",
+    "strength": "600 mg",
+    "category": "Liquid",
+    "manufacturer": "Dexamethasone",
+    "shelf": "H-03",
+    "sell_price": 37,
+    "purchase_price": 32,
+    "batch": 5613,
+    "expiry": "2020-05-25",
+    "quantity": 125
+}, {
+    "medicine_name": "Diclofenac",
+    "generic_name": "Azithromycin",
+    "strength": "5 gm/100 gm",
+    "category": "Tablet",
+    "manufacturer": "Diclofenac",
+    "shelf": "L-54",
+    "sell_price": 12,
+    "purchase_price": 7,
+    "batch": 4387,
+    "expiry": "2018-06-13",
+    "quantity": 51
+}, {
+    "medicine_name": "Didanosine",
+    "generic_name": "Tramadol Hydrochloride",
+    "strength": "500 mg + 200 IU",
+    "category": "Capsules",
+    "manufacturer": "Didanosine",
+    "shelf": "O-06",
+    "sell_price": 23,
+    "purchase_price": 18,
+    "batch": 4744,
+    "expiry": "2020-07-24",
+    "quantity": 35
+}, {
+    "medicine_name": "Dinutuximab",
+    "generic_name": "Simvastatin",
+    "strength": "1 gm",
+    "category": "Topical medicines",
+    "manufacturer": "Dinutuximab",
+    "shelf": "P-98",
+    "sell_price": 40,
+    "purchase_price": 35,
+    "batch": 9178,
+    "expiry": "2019-09-06",
+    "quantity": 36
+}, {
+    "medicine_name": "Dobutamine",
+    "generic_name": "alendronate tablet",
+    "strength": "10 gm/100 ml",
+    "category": "Suppositories",
+    "manufacturer": "Dobutamine",
+    "shelf": "B-22",
+    "sell_price": 25,
+    "purchase_price": 20,
+    "batch": 7936,
+    "expiry": "2018-10-26",
+    "quantity": 32
+}, {
+    "medicine_name": "Dopamine",
+    "generic_name": "Ciprofloxacin",
+    "strength": "20 mg",
+    "category": "Drops",
+    "manufacturer": "Dopamine",
+    "shelf": "B-43",
+    "sell_price": 43,
+    "purchase_price": 38,
+    "batch": 9748,
+    "expiry": "2021-01-08",
+    "quantity": 14
+}, {
+    "medicine_name": "Dornase alfa",
+    "generic_name": "Albendazole",
+    "strength": "170 gm + 170 gm + 1 gm/KG",
+    "category": "Inhalers",
+    "manufacturer": "Dornase alfa",
+    "shelf": "A-23",
+    "sell_price": 49,
+    "purchase_price": 44,
+    "batch": 2567,
+    "expiry": "2020-02-03",
+    "quantity": 21
+}, {
+    "medicine_name": "Doxorubicin",
+    "generic_name": "Snake Venom Antiserum",
+    "strength": "600 mg",
+    "category": "Injections",
+    "manufacturer": "Doxorubicin",
+    "shelf": "G-43",
+    "sell_price": 42,
+    "purchase_price": 37,
+    "batch": 9283,
+    "expiry": "2019-04-07",
+    "quantity": 44
+}, {
+    "medicine_name": "Dronabinol",
+    "generic_name": "Paracitamol",
+    "strength": "25 gm + 1.5 gm + 1.5 gm + 7 gm + 65 gm/100 gm",
+    "category": "Liquid",
+    "manufacturer": "Dronabinol",
+    "shelf": "T-22",
+    "sell_price": 14,
+    "purchase_price": 9,
+    "batch": 2997,
+    "expiry": "2020-10-27",
+    "quantity": 90
+}, {
+    "medicine_name": "Efavirenz",
+    "generic_name": "Gabapentin",
+    "strength": "6.7 ml/vial",
+    "category": "Tablet",
+    "manufacturer": "Efavirenz",
+    "shelf": "A-12",
+    "sell_price": 15,
+    "purchase_price": 10,
+    "batch": 7007,
+    "expiry": "2019-09-14",
+    "quantity": 122
+}, {
+    "medicine_name": "Efavirenz / emtricitabine / tenofovir (Atripla®)",
+    "generic_name": "Azithromycin",
+    "strength": "9.1 mg + 50 mg + 20 mg + 100 mg + 25 mg",
+    "category": "Capsules",
+    "manufacturer": "Efavirenz / emtricitabine / tenofovir (Atripla®)",
+    "shelf": "H-03",
+    "sell_price": 23,
+    "purchase_price": 18,
+    "batch": 1988,
+    "expiry": "2018-08-30",
+    "quantity": 11
+}, {
+    "medicine_name": "Eltrombopag",
+    "generic_name": "Tramadol Hydrochloride",
+    "strength": ".1 gm + 2.5 gm/100 gm",
+    "category": "Topical medicines",
+    "manufacturer": "Eltrombopag",
+    "shelf": "L-54",
+    "sell_price": 18,
+    "purchase_price": 13,
+    "batch": 1229,
+    "expiry": "2020-01-30",
+    "quantity": 41
+}, {
+    "medicine_name": "Elvitegravir / cobicistat / emtricitabine / tenofovir (Stribild®)",
+    "generic_name": "Simvastatin",
+    "strength": "200 mg/ml",
+    "category": "Suppositories",
+    "manufacturer": "Elvitegravir / cobicistat / emtricitabine / tenofovir (Stribild®)",
+    "shelf": "O-06",
+    "sell_price": 19,
+    "purchase_price": 14,
+    "batch": 2818,
+    "expiry": "2020-06-18",
+    "quantity": 73
+}, {
+    "medicine_name": "Elvitegravir / cobicistat / emtricitabine / tenofovir alafenamide (Genvoya®)",
+    "generic_name": "alendronate tablet",
+    "strength": "600 mg",
+    "category": "Drops",
+    "manufacturer": "Elvitegravir / cobicistat / emtricitabine / tenofovir alafenamide (Genvoya®)",
+    "shelf": "P-98",
+    "sell_price": 51,
+    "purchase_price": 46,
+    "batch": 8971,
+    "expiry": "2019-09-21",
+    "quantity": 56
+}, {
+    "medicine_name": "Emicizumab",
+    "generic_name": "Ciprofloxacin",
+    "strength": "600 mg",
+    "category": "Inhalers",
+    "manufacturer": "Emicizumab",
+    "shelf": "B-22",
+    "sell_price": 48,
+    "purchase_price": 43,
+    "batch": 4760,
+    "expiry": "2019-11-30",
+    "quantity": 31
+}, {
+    "medicine_name": "Emtricitabine (Emtriva®)",
+    "generic_name": "Albendazole",
+    "strength": "500ml",
+    "category": "Injections",
+    "manufacturer": "Emtricitabine (Emtriva®)",
+    "shelf": "B-43",
+    "sell_price": 14,
+    "purchase_price": 9,
+    "batch": 1740,
+    "expiry": "2018-12-07",
+    "quantity": 118
+}, {
+    "medicine_name": "Emtricitabine / rilpivirine / tenofovir alafenamide (Odefsey®)",
+    "generic_name": "Snake Venom Antiserum",
+    "strength": "600 mg",
+    "category": "Liquid",
+    "manufacturer": "Emtricitabine / rilpivirine / tenofovir alafenamide (Odefsey®)",
+    "shelf": "A-23",
+    "sell_price": 9,
+    "purchase_price": 4,
+    "batch": 6471,
+    "expiry": "2021-01-24",
+    "quantity": 120
+}, {
+    "medicine_name": "Emtricitabine / tenofovir (Truvada®)",
+    "generic_name": "Paracitamol",
+    "strength": "5 gm/100 gm",
+    "category": "Tablet",
+    "manufacturer": "Emtricitabine / tenofovir (Truvada®)",
+    "shelf": "G-43",
+    "sell_price": 11,
+    "purchase_price": 6,
+    "batch": 1893,
+    "expiry": "2020-05-24",
+    "quantity": 69
+}, {
+    "medicine_name": "Emtricitabine / tenofovir alafenamide (Descovy®)",
+    "generic_name": "Gabapentin",
+    "strength": "500 mg + 200 IU",
+    "category": "Capsules",
+    "manufacturer": "Emtricitabine / tenofovir alafenamide (Descovy®)",
+    "shelf": "T-22",
+    "sell_price": 37,
+    "purchase_price": 32,
+    "batch": 8782,
+    "expiry": "2020-05-04",
+    "quantity": 116
+}, {
+    "medicine_name": "Enalapril",
+    "generic_name": "Azithromycin",
+    "strength": "1 gm",
+    "category": "Topical medicines",
+    "manufacturer": "Enalapril",
+    "shelf": "A-12",
+    "sell_price": 20,
+    "purchase_price": 15,
+    "batch": 2626,
+    "expiry": "2018-01-28",
+    "quantity": 27
+}, {
+    "medicine_name": "Enoxaparin",
+    "generic_name": "Tramadol Hydrochloride",
+    "strength": "10 gm/100 ml",
+    "category": "Suppositories",
+    "manufacturer": "Enoxaparin",
+    "shelf": "H-03",
+    "sell_price": 22,
+    "purchase_price": 17,
+    "batch": 7673,
+    "expiry": "2019-11-03",
+    "quantity": 13
+}, {
+    "medicine_name": "Erlotinib",
+    "generic_name": "Simvastatin",
+    "strength": "20 mg",
+    "category": "Drops",
+    "manufacturer": "Erlotinib",
+    "shelf": "L-54",
+    "sell_price": 13,
+    "purchase_price": 8,
+    "batch": 6177,
+    "expiry": "2019-03-27",
+    "quantity": 126
+}, {
+    "medicine_name": "Erythromycin",
+    "generic_name": "Paracitamol",
+    "strength": "170 gm + 170 gm + 1 gm/KG",
+    "category": "Inhalers",
+    "manufacturer": "Erythromycin",
+    "shelf": "O-06",
+    "sell_price": 35,
+    "purchase_price": 30,
+    "batch": 6423,
+    "expiry": "2018-12-03",
+    "quantity": 129
+}, {
+    "medicine_name": "Erythropoietin",
+    "generic_name": "Gabapentin",
+    "strength": "600 mg",
+    "category": "Injections",
+    "manufacturer": "Erythropoietin",
+    "shelf": "P-98",
+    "sell_price": 14,
+    "purchase_price": 9,
+    "batch": 7759,
+    "expiry": "2018-01-27",
+    "quantity": 133
+}, {
+    "medicine_name": "Etonogestrel (Nexplanon®)",
+    "generic_name": "Azithromycin",
+    "strength": "25 gm + 1.5 gm + 1.5 gm + 7 gm + 65 gm/100 gm",
+    "category": "Liquid",
+    "manufacturer": "Etonogestrel (Nexplanon®)",
+    "shelf": "B-22",
+    "sell_price": 45,
+    "purchase_price": 40,
+    "batch": 7549,
+    "expiry": "2019-09-09",
+    "quantity": 67
+}, {
+    "medicine_name": "Etoposide",
+    "generic_name": "Tramadol Hydrochloride",
+    "strength": "6.7 ml/vial",
+    "category": "Tablet",
+    "manufacturer": "Etoposide",
+    "shelf": "B-43",
+    "sell_price": 15,
+    "purchase_price": 10,
+    "batch": 9394,
+    "expiry": "2019-01-23",
+    "quantity": 84
+}, {
+    "medicine_name": "Etravirine (Intelence®)",
+    "generic_name": "Simvastatin",
+    "strength": "9.1 mg + 50 mg + 20 mg + 100 mg + 25 mg",
+    "category": "Capsules",
+    "manufacturer": "Etravirine (Intelence®)",
+    "shelf": "A-23",
+    "sell_price": 41,
+    "purchase_price": 36,
+    "batch": 4721,
+    "expiry": "2019-05-06",
+    "quantity": 144
+}, {
+    "medicine_name": "Factor IX complex",
+    "generic_name": "alendronate tablet",
+    "strength": ".1 gm + 2.5 gm/100 gm",
+    "category": "Topical medicines",
+    "manufacturer": "Factor IX complex",
+    "shelf": "G-43",
+    "sell_price": 35,
+    "purchase_price": 30,
+    "batch": 3304,
+    "expiry": "2018-06-11",
+    "quantity": 108
+}, {
+    "medicine_name": "Factor IX concentrate",
+    "generic_name": "Ciprofloxacin",
+    "strength": "200 mg/ml",
+    "category": "Suppositories",
+    "manufacturer": "Factor IX concentrate",
+    "shelf": "T-22",
+    "sell_price": 39,
+    "purchase_price": 34,
+    "batch": 3960,
+    "expiry": "2020-05-18",
+    "quantity": 123
+}, {
+    "medicine_name": "Factor VIIa (Recombinant)",
+    "generic_name": "Albendazole",
+    "strength": "600 mg",
+    "category": "Drops",
+    "manufacturer": "Factor VIIa (Recombinant)",
+    "shelf": "A-12",
+    "sell_price": 17,
+    "purchase_price": 12,
+    "batch": 7018,
+    "expiry": "2019-11-09",
+    "quantity": 38
+}, {
+    "medicine_name": "Factor VIII (Human) and von Willebrand Factor",
+    "generic_name": "Snake Venom Antiserum",
+    "strength": "600 mg",
+    "category": "Inhalers",
+    "manufacturer": "Factor VIII (Human) and von Willebrand Factor",
+    "shelf": "H-03",
+    "sell_price": 34,
+    "purchase_price": 29,
+    "batch": 6455,
+    "expiry": "2018-03-04",
+    "quantity": 75
+}, {
+    "medicine_name": "Factor VIII (Recombinant)",
+    "generic_name": "Paracitamol",
+    "strength": "500ml",
+    "category": "Injections",
+    "manufacturer": "Factor VIII (Recombinant)",
+    "shelf": "L-54",
+    "sell_price": 13,
+    "purchase_price": 8,
+    "batch": 6384,
+    "expiry": "2020-03-03",
+    "quantity": 28
+}, {
+    "medicine_name": "Famciclovir",
+    "generic_name": "Gabapentin",
+    "strength": "600 mg",
+    "category": "Liquid",
+    "manufacturer": "Famciclovir",
+    "shelf": "O-06",
+    "sell_price": 13,
+    "purchase_price": 8,
+    "batch": 3556,
+    "expiry": "2018-07-10",
+    "quantity": 43
+}, {
+    "medicine_name": "Famotidine",
+    "generic_name": "Azithromycin",
+    "strength": "5 gm/100 gm",
+    "category": "Tablet",
+    "manufacturer": "Famotidine",
+    "shelf": "P-98",
+    "sell_price": 35,
+    "purchase_price": 30,
+    "batch": 4576,
+    "expiry": "2019-04-29",
+    "quantity": 149
+}, {
+    "medicine_name": "Fidaxomicin",
+    "generic_name": "Tramadol Hydrochloride",
+    "strength": "500 mg + 200 IU",
+    "category": "Capsules",
+    "manufacturer": "Fidaxomicin",
+    "shelf": "B-22",
+    "sell_price": 53,
+    "purchase_price": 48,
+    "batch": 1393,
+    "expiry": "2020-10-27",
+    "quantity": 135
+}, {
+    "medicine_name": "Fluconazole",
+    "generic_name": "Simvastatin",
+    "strength": "1 gm",
+    "category": "Topical medicines",
+    "manufacturer": "Fluconazole",
+    "shelf": "B-43",
+    "sell_price": 14,
+    "purchase_price": 9,
+    "batch": 4815,
+    "expiry": "2018-07-29",
+    "quantity": 97
 }]

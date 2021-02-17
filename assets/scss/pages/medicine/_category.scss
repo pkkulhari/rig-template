@@ -7,29 +7,69 @@
 
 // Row 1
 .r-1 {
-    justify-content: flex-start;
-    margin: 10px;
-
-    a {
-        border: 1px solid $brightBlue;
-        color: $white;
-        background: $brightBlue;
-        padding: 6px 12px;
-        margin: 0;
-        margin-right: 10px;
+    .column {
+        display: flex;
+        position: relative;
+        flex-wrap: wrap;
+        justify-content: space-around;
+        margin: 10px;
+        border: 1px solid $lightGray;
         border-radius: 2px;
-        display: inline-block;
-        transition: all 0.2s;
-
-        &:active {
-            background-color: $darkBlue;
-        }
-
-        i {
-            padding-right: 10px;
-        }
     }
 
+    .c-1 {
+        background-color: $white;
+        width: 100%;
+
+        .column-head {
+            display: flex;
+            background-color: $white;
+            width: 100%;
+            height: 45px;
+            align-items: center;
+            padding: 0 15px;
+            border-bottom: 1px solid $lightGray;
+
+            h4 {
+                font-size: 18px;
+                font-weight: 500;
+                margin: 0;
+            }
+        }
+
+
+        .column-body {
+            padding: 15px;
+            width: 100%;
+
+            form {
+                display: flex;
+                justify-content: flex-start;
+                width: max-content;
+
+                .input {
+                    margin-right: 25px;
+                    display: flex;
+                    align-items: center;
+
+                    label {
+                        font-size: 14px;
+                        font-weight: 600;                                               
+                    }
+
+                    input {                        
+                        padding: 4px 10px;                       
+                        margin: 0 10px;
+                    }
+
+                    button {                       
+                        padding: 4.7px 10px;
+                        letter-spacing: 0.7px;
+                    }
+                }
+            }
+        }
+    }
 }
 
 // Row 2
@@ -126,7 +166,7 @@
             .body {
                 margin: 15px 0;
 
-                #medicine-data {
+                #category-data {
                     a.table-action-btn {
                         background-color: $brightBlue;
                         color: $white;
@@ -139,7 +179,7 @@
                             background-color: #4CAF50;
                         }
 
-                        &.btn-4 {
+                        &.btn-2 {
                             background-color: #E5343D;
                         }                       
                     }
