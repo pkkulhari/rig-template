@@ -249,12 +249,12 @@
                         <ul class="tree-menu tree-menu-1">
                             <li>
                                 <a href="#">
-                                    <span>Add Menufacturer</span>
+                                    <span>Add Manufacturer</span>
                                 </a>
                             </li>
                             <li>
                                 <a href="#">
-                                    <span>Manage Menufacturer</span>
+                                    <span>Manage Manufacturer</span>
                                 </a>
                             </li>
                             <li>
@@ -990,8 +990,8 @@
                     <i class="icon-note"></i>
                 </div>
                 <div class="title">
-                    <h2>Medicine</h2>
-                    <small>Category</small>
+                    <h2>Manufacturer</h2>
+                    <small>Manage Manufacturer</small>
                 </div>
                 <ol class="nav-breadcrumb">
                     <li>
@@ -1001,10 +1001,10 @@
                         </a>
                     </li>
                     <li>
-                        <span>Medicine</span>
+                        <span>Manufacturer</span>
                     </li>
                     <li class="active">
-                        <span>Category</span>
+                        <span>Manage Manufacturer</span>
                     </li>
                 </ol>
             </div>
@@ -1012,32 +1012,24 @@
             <!-- Main content -->
             <div class="content">
 
-                <!-- Add Medicine Category -->
+                <!-- Quick Buttons -->
                 <div class="content-row r-1">
-                    <div class="column c-1 nouch">
-                        <div class="column-head">
-                            <div class="title">
-                                <h4>Add Category</h4>
-                            </div>
-                        </div>
-                        <div class="column-body">
-                            <form action="" method="POST">                               
-                                <div class="input i-1">
-                                    <label for="category-name">Category Name</label>
-                                    <input type="text" name="#" id="category-name">
-                                    <button type="submit">Add</button>
-                                </div>
-                            </form>
-                        </div>
-                    </div>
+                    <a href="#" class="quick-btn">
+                        <i class="icon-plus"></i>
+                        <span>Add Manufacturer</span>
+                    </a>
+                    <a href="#" class="quick-btn">
+                        <i class="icon-align-justify"></i>
+                        <span>Manufacturer Ledger</span>
+                    </a>
                 </div>
 
-                <!-- Categories Data -->
+                <!-- Manufacturer Data -->
                 <div class="content-row r-2">
                     <div class="column c-1 nouch">
                         <div class="column-head">
                             <div class="title">
-                                <h4>Medicine Data</h4>
+                                <h4>Manufacturer Data</h4>
                             </div>
                         </div>
                         <div class="column-body">
@@ -1068,17 +1060,45 @@
                                 </div>
                             </div>
                             <div class="body">
-                                <table class="data-table" id="category-data"> 
+                                <table class="data-table" id="manufacturer-data">
                                     <thead>
                                         <tr>
-                                            <th class="category">
-                                                Category
+                                            <th class="manufacturer-name">
+                                                Manufacturer Name
+                                                <i class="icon-sort-amount-down"></i>
+                                            </th>
+                                            <th class="email">
+                                                Email                                                
+                                            </th>
+                                            <th class="mobile">
+                                                Mobile                                                
+                                            </th>
+                                            <th class="address">
+                                                Address                                                
+                                            </th>
+                                            <th class="city">
+                                                City
                                                 <i class="icon-sort"></i>
+                                            </th>
+                                            <th class="country">
+                                                Country
+                                                <i class="icon-sort"></i>                                              
+                                            </th>
+                                            <th class="balance">
+                                               Balance
+                                               <i class="icon-sort"></i>
                                             </th>                                            
                                             <th>Action</th>
                                         </tr>
                                     </thead>
-                                    <tbody></tbody>                                   
+                                    <tbody></tbody>
+                                    <tfoot>
+                                        <tr>
+                                            <td colspan="6">Total:</td>
+                                            <td class="balance"></td>
+                                            <td></td>
+                                        </tr>
+                                    </tfoot>
                                 </table>
                             </div>
                             <div class="footer">
@@ -1128,7 +1148,8 @@
     <!-- <script src="assets/js/pages/customer/new-customer.js"></script> -->
     <!-- <script src="assets/js/pages/medicine/new-medicine.js"></script> -->
     <!-- <script src="assets/js/pages/medicine/manage-medicine.js"></script> -->
-    <script src="assets/js/pages/medicine/category.js"></script>
+    <!-- <script src="assets/js/pages/medicine/category.js"></script> -->
+    <script src="assets/js/pages/manufacturer/manage-manufacturer.js"></script>
 
     <!-- <script src="assets/js/helpers/date-picker.js"></script> -->
     <!-- <script src="assets/js/helpers/autocomplete.js"></script> -->

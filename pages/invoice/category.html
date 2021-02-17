@@ -1,0 +1,119 @@
+  <!-- Start Content -->
+  <div id="content-wrapper">
+
+      <!-- Content header -->
+      <div class="content-header">
+          <div class="icon">
+              <i class="icon-note"></i>
+          </div>
+          <div class="title">
+              <h2>Medicine</h2>
+              <small>Category</small>
+          </div>
+          <ol class="nav-breadcrumb">
+              <li>
+                  <a href="index.html">
+                      <i class="icon-home-alt"></i>
+                      <span>Home</span>
+                  </a>
+              </li>
+              <li>
+                  <span>Medicine</span>
+              </li>
+              <li class="active">
+                  <span>Category</span>
+              </li>
+          </ol>
+      </div>
+
+      <!-- Main content -->
+      <div class="content">
+
+          <!-- Add Medicine Category -->
+          <div class="content-row r-1">
+              <div class="column c-1 nouch">
+                  <div class="column-head">
+                      <div class="title">
+                          <h4>Add Category</h4>
+                      </div>
+                  </div>
+                  <div class="column-body">
+                      <form action="" method="POST">
+                          <div class="input i-1">
+                              <label for="category-name">Category Name</label>
+                              <input type="text" name="#" id="category-name">
+                              <button type="submit">Add</button>
+                          </div>
+                      </form>
+                  </div>
+              </div>
+          </div>
+
+          <!-- Categories Data -->
+          <div class="content-row r-2">
+              <div class="column c-1 nouch">
+                  <div class="column-head">
+                      <div class="title">
+                          <h4>Medicine Data</h4>
+                      </div>
+                  </div>
+                  <div class="column-body">
+                      <div class="head">
+                          <div class="column co-1">
+                              <span>SHOW</span>
+                              <select id="show-data-entries">
+                                  <option value="10" selected>10</option>
+                                  <option value="25">25</option>
+                                  <option value="50">50</option>
+                                  <option value="100">100</option>
+                                  <option value="250">250</option>
+                                  <option value="500">500</option>
+                                  <option value="all">All</option>
+                              </select>
+                              <span>ENTRIES</span>
+                          </div>
+                          <div class="column co-2">
+                              <button type="button" class="table-copy">Copy</button>
+                              <button type="button" class="table-export-excel">Exel</button>
+                              <button type="button" class="table-export-csv">CSV</button>
+                              <button type="button">PDF</button>
+                              <button type="button" class="print-table">Print</button>
+                          </div>
+                          <div class="column co-3">
+                              <label for="sort-table-data">SEARCH:</label>
+                              <input type="text" id="sort-table-data">
+                          </div>
+                      </div>
+                      <div class="body">
+                          <table class="data-table" id="category-data">
+                              <thead>
+                                  <tr>
+                                      <th class="category">
+                                          Category
+                                          <i class="icon-sort"></i>
+                                      </th>
+                                      <th>Action</th>
+                                  </tr>
+                              </thead>
+                              <tbody></tbody>
+                          </table>
+                      </div>
+                      <div class="footer">
+                          <div class="column co-1">
+                              <div>Show <span class="first-row"></span> to <span class="last-row"></span> of <span
+                                      class="total-rows"></span> entries</div>
+                          </div>
+                          <div class="column co-2">
+                              <ul class="pagination t-pagination"></ul>
+                          </div>
+                      </div>
+                  </div>
+              </div>
+          </div>
+
+
+      </div>
+      <!-- End Content -->
+
+  </div>
+  <!-- End Content -->

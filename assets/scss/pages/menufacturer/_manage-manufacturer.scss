@@ -1,0 +1,254 @@
+.content-row {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+
+// Row 1
+.r-1 {
+    justify-content: flex-start;
+    margin: 10px;
+
+    a {
+        border: 1px solid $brightBlue;
+        color: $white;
+        background: $brightBlue;
+        padding: 6px 12px;
+        margin: 0;
+        margin-right: 10px;
+        border-radius: 2px;
+        display: inline-block;
+        transition: all 0.2s;
+
+        &:active {
+            background-color: $darkBlue;
+        }
+
+        i {
+            padding-right: 10px;
+        }
+    }
+
+}
+
+// Row 2
+.r-2 {
+    .column {
+        display: flex;
+        position: relative;
+        flex-wrap: wrap;
+        justify-content: space-around;
+        margin: 10px;
+        border: 1px solid $lightGray;
+        border-radius: 2px;
+    }
+
+    .c-1 {
+        background-color: $white;
+        width: 100%;
+
+        .column-head {
+            display: flex;
+            background-color: $white;
+            width: 100%;
+            height: 45px;
+            align-items: center;
+            padding: 0 15px;
+            border-bottom: 1px solid $lightGray;
+
+            h4 {
+                font-size: 18px;
+                font-weight: 500;
+                margin: 0;
+            }
+        }
+
+        .column-body {
+            padding: 15px;
+            width: 100%;
+
+            .head {
+                display: flex;
+                justify-content: space-between;
+
+                .column {
+                    display: flex;
+                    align-items: center;
+                    border: none;
+                    margin: 0;
+                    font-size: 13px;
+                }
+
+                .co-1 {
+                    select {
+                        padding: 3px 10px;
+                        margin: 0 5px;
+                    }
+                }
+
+                .co-2 {
+                    button {
+                        padding: 6px 10px;
+                        font-size: 12px;
+                        background-color: transparent;
+                        color: inherit;
+                        font-weight: 600;
+                        border-left: 0px;
+                        border-radius: 0%;
+
+                        &:first-child {
+                            border-left: 1px solid $lightGray;
+                            border-top-left-radius: 2px;
+                            border-bottom-left-radius: 2px;
+                        }
+
+                        &:last-child {
+                            border-top-right-radius: 2px;
+                            border-bottom-right-radius: 2px;
+                        }
+
+                        &:active {
+                            background-color: #f2f2f2 !important;
+                        }
+                    }
+                }
+
+                .co-3 {
+                    input {
+                        padding: 4px 10px;
+                        margin-left: 5px;
+                        max-width: 150px;
+                    }
+                }
+            }
+
+            .body {
+                margin: 15px 0;
+
+                #manufacturer-data {
+                    a.table-action-btn {
+                        background-color: $brightBlue;
+                        color: $white;
+                        padding: 5px 7.5px;
+                        border-radius: 2px;
+                        margin-right: 5px;
+                        font-size: 12px;
+
+                        &.btn-1 {                            
+                            background-color: #4CAF50;
+                        }
+
+                        &.btn-2 {
+                            background-color: #E5343D;
+                        }                       
+                    }
+
+                    thead {
+                        tr {
+                            th:not(:last-child) {
+                                cursor: pointer;
+
+                                i {
+                                    float: right;
+                                    margin-left: 5px;                                                                        
+                                }
+                            }
+                        }
+                    } 
+                    
+                    tbody {
+                        tr {
+                            td.action {                               
+                                white-space: nowrap;
+                            }
+                        }
+                    }
+
+                    tfoot {
+                        tr {
+                            td:first-child {
+                                text-align: right;
+                            }
+                        }
+                    }
+                }
+            }
+
+            .footer {
+                display: flex;
+
+                .column {
+                    display: flex;
+                    flex-direction: row;
+                    margin: 0;
+                    font-size: 14px;
+                }
+
+                .co-1 {
+                    border: none;
+                }
+
+                .co-2 {
+                    margin-left: auto;
+                    border: none;
+
+                    ul {
+                        margin: 0;
+                        padding: 0;
+                        display: flex;
+
+                        li {
+                            a {                                                               
+                                border: 1px solid $lightGray;
+                                border-right: none;
+                                padding: 5px 11px;                               
+                            }
+                        }
+
+                        a.previous {
+                            border-top-left-radius: 2px;
+                            border-bottom-left-radius: 2px;
+
+                        }
+
+                        a.next {
+                            border-right: 1px solid $lightGray;
+                            border-top-right-radius: 2px;
+                            border-bottom-right-radius: 2px;
+                        }
+
+                        a.active {
+                            background-color: $brightBlue;
+                            border-color: $brightBlue;
+                            color: $white;
+                            cursor: default;
+                        }
+
+                        a.disable {
+                            color: #797979;
+                            cursor: not-allowed;
+                        }
+
+                        a.dots {
+                            cursor: default;
+                        }
+
+                        a:not(.active):not(.disable):not(.dots):hover {
+                            background-color: $veryLightBlue;                           
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+
+// Tool Tip
+.tool-tip-parent {
+    position: relative;    
+}
+
+.tool-tip-parent:hover .tooltipRight {
+    display: block;
+}
