@@ -1,0 +1,146 @@
+<!-- Start Content -->
+<div id="content-wrapper">
+
+    <!-- Content header -->
+    <div class="content-header">
+        <div class="icon">
+            <i class="icon-note"></i>
+        </div>
+        <div class="title">
+            <h2>Manufacturer</h2>
+            <small>Add New Manufacturer</small>
+        </div>
+        <ol class="nav-breadcrumb">
+            <li>
+                <a href="index.html">
+                    <i class="icon-home-alt"></i>
+                    <span>Home</span>
+                </a>
+            </li>
+            <li>
+                <span>Manufacturer</span>
+            </li>
+            <li class="active">
+                <span>Add Manufacturer</span>
+            </li>
+        </ol>
+    </div>
+
+    <!-- Main content -->
+    <div class="content">
+
+        <!-- Quick Buttons -->
+        <div class="content-row r-1">
+            <a href="#" class="quick-btn">
+                <i class="icon-align-justify"></i>
+                <span>Manage Manufacturer</span>
+            </a>
+            <a href="#" class="quick-btn">
+                <i class="icon-align-justify"></i>
+                <span>Manufacturer Ledger</span>
+            </a>
+            <a href="javascript:void(0)" class="quick-btn upload-m-csv-btn">
+                <i class="icon-plus"></i>
+                <span>Upload Manufacturer CSV</span>
+            </a>
+        </div>
+
+        <!-- Add Manufacturer -->
+        <div class="content-row r-2">
+            <div class="column c-1 nouch">
+                <div class="column-head">
+                    <div class="title">
+                        <h4>Add Manufacturer</h4>
+                    </div>
+                </div>
+                <div class="column-body">
+                    <form action="" method="POST">
+                        <div class="body">
+                            <div class="column co-1">
+                                <div class="input">
+                                    <label for="manufacturer-name">Manufacturer Name <i class="required">*</i></label>
+                                    <input type="text" name="" id="manufacturer-name" required>
+                                </div>
+                                <div class="input">
+                                    <label for="email">Email</label>
+                                    <input type="email" name="" id="email">
+                                </div>
+                                <div class="input">
+                                    <label for="mobile">Mobile</label>
+                                    <input type="text" name="" id="mobile">
+                                </div>
+                                <div class="input">
+                                    <label for="address">Address</label>
+                                    <textarea name="#" id="address" rows="5"></textarea>
+                                </div>
+                                <div class="input">
+                                    <label for="country">Country</label>
+                                    <select name="" id="country">
+                                        <option selected hidden disabled>Select Country</option>
+                                        <option value="India">India</option>
+                                        <option value="USA">USA</option>
+                                        <option value="Brazil">Brazil</option>
+                                        <option value="Nepal">Nepal</option>
+                                        <option value="Australia">Australia</option>
+                                    </select>
+                                </div>
+                            </div>
+                            <div class="column co-2">
+                                <div class="input">
+                                    <label for="state">State</label>
+                                    <input type="text" name="" id="state">
+                                </div>
+                                <div class="input">
+                                    <label for="city">City</label>
+                                    <input type="text" name="" id="city">
+                                </div>
+                                <div class="input">
+                                    <label for="zip-code">Zip Code</label>
+                                    <input type="text" name="" id="zip-code">
+                                </div>
+                                <div class="input">
+                                    <label for="previous-balance">Previous Balance</label>
+                                    <input type="text" name="" id="previous-balance">
+                                </div>
+                                <div class="input">
+                                    <label for="manufacturer-details">Manufacturer Details</label>
+                                    <textarea name="#" id="manufacturer-details" rows="5"></textarea>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="footer">
+                            <div class="column co-1">
+                                <button type="submit">Save</button>
+                            </div>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+
+        <!-- Pop up Boxes -->
+        <div id="am-csv-pop-up-box" class="pop-up-box">
+            <div class="inner nouch">
+                <div class="head">
+                    <h4>Upload Manufacturer CSV</h4>
+                    <i class="icon-times pop-up-box-close"></i>
+                </div>
+                <form action="#" method="POST" id="am-form" onsubmit="return false">
+                    <div class="body">
+                        <div class="input">
+                            <label for="manufacturer-csv">Upload CSV File <i class="required">*</i></label>
+                            <input type="file" name="#" id="manufacturer-csv" required>
+                        </div>
+                    </div>
+                    <div class="footer">
+                        <button type="button" class="pop-up-box-close">Cancle</button>
+                        <button type="submit" class="pop-up-box-close">Submit</button>
+                    </div>
+                </form>
+            </div>
+        </div>
+
+    </div>
+
+</div>
+<!-- End Content -->

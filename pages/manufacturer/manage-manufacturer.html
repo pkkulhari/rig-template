@@ -1,0 +1,139 @@
+<!-- Start Content -->
+<div id="content-wrapper">
+
+    <!-- Content header -->
+    <div class="content-header">
+        <div class="icon">
+            <i class="icon-note"></i>
+        </div>
+        <div class="title">
+            <h2>Manufacturer</h2>
+            <small>Manage Manufacturer</small>
+        </div>
+        <ol class="nav-breadcrumb">
+            <li>
+                <a href="index.html">
+                    <i class="icon-home-alt"></i>
+                    <span>Home</span>
+                </a>
+            </li>
+            <li>
+                <span>Manufacturer</span>
+            </li>
+            <li class="active">
+                <span>Manage Manufacturer</span>
+            </li>
+        </ol>
+    </div>
+
+    <!-- Main content -->
+    <div class="content">
+
+        <!-- Quick Buttons -->
+        <div class="content-row r-1">
+            <a href="#" class="quick-btn">
+                <i class="icon-plus"></i>
+                <span>Add Manufacturer</span>
+            </a>
+            <a href="#" class="quick-btn">
+                <i class="icon-align-justify"></i>
+                <span>Manufacturer Ledger</span>
+            </a>
+        </div>
+
+        <!-- Manufacturer Data -->
+        <div class="content-row r-2">
+            <div class="column c-1 nouch">
+                <div class="column-head">
+                    <div class="title">
+                        <h4>Manufacturer Data</h4>
+                    </div>
+                </div>
+                <div class="column-body">
+                    <div class="head">
+                        <div class="column co-1">
+                            <span>SHOW</span>
+                            <select id="show-data-entries">
+                                <option value="10" selected>10</option>
+                                <option value="25">25</option>
+                                <option value="50">50</option>
+                                <option value="100">100</option>
+                                <option value="250">250</option>
+                                <option value="500">500</option>
+                                <option value="all">All</option>
+                            </select>
+                            <span>ENTRIES</span>
+                        </div>
+                        <div class="column co-2">
+                            <button type="button" class="table-copy">Copy</button>
+                            <button type="button" class="table-export-excel">Exel</button>
+                            <button type="button" class="table-export-csv">CSV</button>
+                            <button type="button">PDF</button>
+                            <button type="button" class="print-table">Print</button>
+                        </div>
+                        <div class="column co-3">
+                            <label for="sort-table-data">SEARCH:</label>
+                            <input type="text" id="sort-table-data">
+                        </div>
+                    </div>
+                    <div class="body">
+                        <table class="data-table" id="manufacturer-data">
+                            <thead>
+                                <tr>
+                                    <th class="manufacturer-name">
+                                        Manufacturer Name
+                                        <i class="icon-sort-amount-down"></i>
+                                    </th>
+                                    <th class="email">
+                                        Email                                                
+                                    </th>
+                                    <th class="mobile">
+                                        Mobile                                                
+                                    </th>
+                                    <th class="address">
+                                        Address                                                
+                                    </th>
+                                    <th class="city">
+                                        City
+                                        <i class="icon-sort"></i>
+                                    </th>
+                                    <th class="country">
+                                        Country
+                                        <i class="icon-sort"></i>                                              
+                                    </th>
+                                    <th class="balance">
+                                       Balance
+                                       <i class="icon-sort"></i>
+                                    </th>                                            
+                                    <th>Action</th>
+                                </tr>
+                            </thead>
+                            <tbody></tbody>
+                            <tfoot>
+                                <tr>
+                                    <td colspan="6">Total:</td>
+                                    <td class="balance"></td>
+                                    <td></td>
+                                </tr>
+                            </tfoot>
+                        </table>
+                    </div>
+                    <div class="footer">
+                        <div class="column co-1">
+                            <div>Show <span class="first-row"></span> to <span class="last-row"></span> of <span
+                                    class="total-rows"></span> entries</div>
+                        </div>
+                        <div class="column co-2">
+                            <ul class="pagination t-pagination"></ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+
+    </div>
+    <!-- End Content -->
+
+</div>
+<!-- End Content -->
