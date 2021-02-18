@@ -45,13 +45,19 @@ document.addEventListener('click', function (e) {
 document.querySelector('a.sidebar-toggle').addEventListener('click', function () {
     if (document.querySelector('#sidebar').classList.contains('shrinked')) {
         document.querySelector('#sidebar').classList.remove('shrinked');
-        document.querySelector('#sidebar .logo a img').setAttribute('src', 'assets/images/logo.png');
+
+        document.querySelector('#sidebar .logo .logoSVG').classList.add('show');
+        document.querySelector('#sidebar .logo .logoSVG-sm').classList.remove('show');
+
         document.querySelector('#navbar').classList.remove('full-nav');
         document.querySelector('#sidebar').removeEventListener('scroll', scrollTarget);
         _setTop();
     } else {
         document.querySelector('#sidebar').classList.add('shrinked');
-        document.querySelector('#sidebar .logo a img').setAttribute('src', 'assets/images/logo-sm.png');
+
+        document.querySelector('#sidebar .logo .logoSVG').classList.remove('show');
+        document.querySelector('#sidebar .logo .logoSVG-sm').classList.add('show');
+
         document.querySelector('#navbar').classList.add('full-nav');
         _setTop();
         targetOffsetTop_find();

@@ -1,3 +1,6 @@
+/*------------------------------------------------------------------------------
+    Global 
+-------------------------------------------------------------------------------*/
 /* Google Font */
 @import url("https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;500;700;900&display=swap");
 html {
@@ -318,6 +321,9 @@ button:active {
   background-color: #f2f2f2 !important;
 }
 
+/*------------------------------------------------------------------------------
+    Navbar 
+-------------------------------------------------------------------------------*/
 #navbar {
   position: relative;
   z-index: 1;
@@ -469,6 +475,9 @@ button:active {
   padding-left: 50px;
 }
 
+/*------------------------------------------------------------------------------
+    Sidebar 
+-------------------------------------------------------------------------------*/
 #sidebar {
   position: fixed;
   z-index: 2;
@@ -501,6 +510,9 @@ button:active {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
   height: 60px;
 }
 
@@ -508,9 +520,17 @@ button:active {
   line-height: 0;
 }
 
-#sidebar .logo a img {
-  width: 35%;
-  height: 35%;
+#sidebar .logo a svg {
+  width: 150px;
+  display: none;
+}
+
+#sidebar .logo a svg.logoSVG-sm {
+  width: 30px;
+}
+
+#sidebar .logo a svg.show {
+  display: block;
 }
 
 #sidebar .user-detail {
@@ -791,6 +811,9 @@ div#sidebar.shrinked ul.tree-menu-1 li a i.icon-angle-left {
   display: block;
 }
 
+/*------------------------------------------------------------------------------
+    Content 
+-------------------------------------------------------------------------------*/
 #content-wrapper {
   display: block;
   min-height: calc(100vh - 110px);
@@ -891,6 +914,9 @@ div#sidebar.shrinked ul.tree-menu-1 li a i.icon-angle-left {
   padding: 10px;
 }
 
+/*------------------------------------------------------------------------------
+    Footer 
+-------------------------------------------------------------------------------*/
 #footer {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -914,6 +940,9 @@ div#sidebar.shrinked ul.tree-menu-1 li a i.icon-angle-left {
   padding-left: 50px;
 }
 
+/*------------------------------------------------------------------------------
+    Add Manufacturer 
+-------------------------------------------------------------------------------*/
 .content-row {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -1087,6 +1116,9 @@ div#sidebar.shrinked ul.tree-menu-1 li a i.icon-angle-left {
   color: red;
 }
 
+/*------------------------------------------------------------------------------
+    Date Picker 
+-------------------------------------------------------------------------------*/
 .date-picker {
   position: absolute;
   top: 0;

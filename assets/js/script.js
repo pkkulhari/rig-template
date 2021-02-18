@@ -1,19 +1,32 @@
-/*<--- toggle.js --->*/
-var script_toggle = document.createElement('script');
-script_toggle.setAttribute('src', 'assets/js/toggle.js');
-document.querySelector('body').appendChild(script_toggle);
+/*
+*   Content - 
+    1. Load Files
+    2. Notify Boxes
+    3. Pop Up Box
+*/
 
-/*<--- sidebar.js --->*/
-var script_sidebar = document.createElement('script');
-script_sidebar.setAttribute('src', 'assets/js/sidebar.js');
-document.querySelector('body').appendChild(script_sidebar);
 
-/*<--- force-desktop.js --->*/
-var script_forceDesktop = document.createElement('script');
-script_forceDesktop.setAttribute('src', 'assets/js/force-desktop.js');
-document.querySelector('body').appendChild(script_forceDesktop);
+/*------------------------------------------------------------------------
+    1. Load Files
+-------------------------------------------------------------------------*/
+// toggle.js
+load('assets/js/toggle.js');
 
-/*<--- Notify Boxes --->*/
+// sidebar.js
+load('assets/js/sidebar.js');
+
+// force-desktop.js
+load('assets/js/force-desktop.js');
+
+/*<--- HELPERS FUNCTIONS --->*/
+function load(src) {
+    document.writeln("<script src='" + src + "'></script>");
+}
+
+
+/*------------------------------------------------------------------------
+    2. Notify Boxes
+-------------------------------------------------------------------------*/
 function createNotify(el_parent, msg, msgType = 'info') {
     const div = document.createElement('div');
     const span = document.createElement('span');
@@ -37,7 +50,10 @@ function closeNotify(e) {
     e.target.parentNode.remove();
 }
 
-// Pop Up Box
+
+/*------------------------------------------------------------------------
+    3. Pop Up Box
+-------------------------------------------------------------------------*/
 document.querySelectorAll('.pop-up-box-close').forEach( (e) => {
     e.addEventListener('click', () => {
         document.querySelectorAll('.pop-up-box').forEach((e) => {
