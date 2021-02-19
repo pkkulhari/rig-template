@@ -185,9 +185,21 @@ button:active {
 }
 
 .notify.notify-success {
-  background-color: #dff0d8;
-  color: #3c763d;
-  border-color: #d6e9c6;
+  color: #0f5132;
+  background-color: #d1e7dd;
+  border-color: #badbcc;
+}
+
+.notify.notify-danger {
+  color: #842029;
+  background-color: #f8d7da;
+  border-color: #f5c2c7;
+}
+
+.notify.notify-info {
+  color: #055160;
+  background-color: #cff4fc;
+  border-color: #b6effb;
 }
 
 .pop-up-box {
@@ -941,75 +953,29 @@ div#sidebar.shrinked ul.tree-menu-1 li a i.icon-angle-left {
 }
 
 /*------------------------------------------------------------------------------
-    Add Manufacturer 
+    Password Recovery 
 -------------------------------------------------------------------------------*/
-.content-row {
+#main-container {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -webkit-box-orient: horizontal;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: row;
-          flex-direction: row;
-  -ms-flex-wrap: wrap;
-      flex-wrap: wrap;
-  -ms-flex-pack: distribute;
-      justify-content: space-around;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  background-color: #f1f3f6;
+  margin-top: 10%;
 }
 
-.r-1 {
-  -webkit-box-pack: start;
-      -ms-flex-pack: start;
-          justify-content: flex-start;
-  margin: 10px;
-}
-
-.r-1 a {
-  border: 1px solid #3366CC;
-  color: #ffffff;
-  background: #3366CC;
-  padding: 6px 12px;
-  margin: 0;
-  margin-right: 10px;
-  border-radius: 2px;
-  display: inline-block;
-  -webkit-transition: all 0.2s;
-  transition: all 0.2s;
-}
-
-.r-1 a:active {
-  background-color: #03338f;
-}
-
-.r-1 a i {
-  padding-right: 10px;
-}
-
-.r-2 .column {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
+#reset-password {
+  background-color: #ffffff;
   position: relative;
-  -ms-flex-wrap: wrap;
-      flex-wrap: wrap;
-  -ms-flex-pack: distribute;
-      justify-content: space-around;
-  margin: 10px;
-  border: 1px solid #e1e6ef;
-  border-radius: 2px;
+  width: 350px;
 }
 
-.r-2 .c-1 {
-  background-color: #ffffff;
-  width: 100%;
-}
-
-.r-2 .c-1 .column-head {
+#reset-password .head {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  background-color: #ffffff;
-  width: 100%;
   height: 45px;
   -webkit-box-align: center;
       -ms-flex-align: center;
@@ -1018,205 +984,55 @@ div#sidebar.shrinked ul.tree-menu-1 li a i.icon-angle-left {
   border-bottom: 1px solid #e1e6ef;
 }
 
-.r-2 .c-1 .column-head h4 {
+#reset-password .head h4 {
   font-size: 18px;
   font-weight: 500;
   margin: 0;
 }
 
-.r-2 .c-1 .column-body {
+#reset-password .body {
   padding: 15px;
-  width: 100%;
 }
 
-.r-2 .c-1 .column-body form .body {
+#reset-password .body .notify {
+  font-size: 13px;
+}
+
+#reset-password .body .input {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-}
-
-.r-2 .c-1 .column-body form .body .column {
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
-  border: none;
-  width: 100%;
-}
-
-.r-2 .c-1 .column-body form .body .column .input {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
+  position: relative;
   -webkit-box-orient: vertical;
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
 }
 
-.r-2 .c-1 .column-body form .body .column .input label {
+#reset-password .body .input label {
   font-size: 14px;
   font-weight: 600;
   margin-top: 10px;
   margin-bottom: 7px;
 }
 
-.r-2 .c-1 .column-body form .body .column .input label i {
+#reset-password .body .input label i {
   font-size: 12px;
   color: red;
 }
 
-.r-2 .c-1 .column-body form .body .column .input input {
+#reset-password .body .input input {
   margin-bottom: 5px;
 }
 
-.r-2 .c-1 .column-body form .body .co-1 {
-  height: -webkit-max-content;
-  height: -moz-max-content;
-  height: max-content;
+#reset-password .body .input span.error {
+  font-size: 13px;
+  color: #E5343D;
 }
 
-.r-2 .c-1 .column-body form .body .co-2 {
-  height: -webkit-max-content;
-  height: -moz-max-content;
-  height: max-content;
-}
-
-.r-2 .c-1 .column-body form .footer .column.co-1 {
-  border: none;
-  -webkit-box-pack: start;
-      -ms-flex-pack: start;
-          justify-content: flex-start;
-}
-
-.r-2 .c-1 .column-body form .footer .column.co-1 button {
-  padding: 7px 13px;
-  font-weight: 500;
-  letter-spacing: .7px;
-}
-
-#am-csv-pop-up-box .body .input {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
-}
-
-#am-csv-pop-up-box .body .input label {
-  font-size: 14px;
-  font-weight: 600;
-  margin-bottom: 7px;
-}
-
-#am-csv-pop-up-box .body .input label i {
-  font-size: 12px;
-  color: red;
-}
-
-/*------------------------------------------------------------------------------
-    Date Picker 
--------------------------------------------------------------------------------*/
-.date-picker {
-  position: absolute;
-  top: 0;
-  left: 0;
-  right: 0;
-  z-index: 3;
-  width: -webkit-fit-content;
-  width: -moz-fit-content;
-  width: fit-content;
-  height: -webkit-max-content;
-  height: -moz-max-content;
-  height: max-content;
-  background-color: #ffffff;
-  font-size: 12px;
-}
-
-.date-picker .dates {
-  border: 1px solid #e1e6ef;
-  border-top: none;
-  border-radius: 2px;
-  display: none;
-}
-
-.date-picker .dates.active {
-  display: block;
-}
-
-.date-picker .dates .year {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  border-bottom: 1px solid #e1e6ef;
-}
-
-.date-picker .dates .year .arrow {
-  width: 30px;
-  height: 30px;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  cursor: pointer;
-  border-radius: 50px;
-  line-height: 0px;
-  -webkit-user-select: none;
-     -moz-user-select: none;
-      -ms-user-select: none;
-          user-select: none;
-}
-
-.date-picker .dates .year .arrow:hover {
-  background-color: #DAE6FD;
-}
-
-.date-picker .dates .year .arrow:active {
-  background-color: #6A6DDE;
-}
-
-.date-picker .dates .months {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: space-evenly;
-      -ms-flex-pack: space-evenly;
-          justify-content: space-evenly;
-  -ms-flex-wrap: wrap;
-      flex-wrap: wrap;
-}
-
-.date-picker .dates .months .month {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  width: 40px;
-  height: 30px;
-  border-radius: 2px;
-  margin: 5px;
-  cursor: context-menu;
-}
-
-.date-picker .dates .months .month:hover, .date-picker .dates .months .month.active {
-  background-color: #DAE6FD;
+#reset-password .body .input button {
+  padding: 8px 16px;
+  letter-spacing: 0.7px;
+  margin-top: 10px;
 }
 /*# sourceMappingURL=style.css.map */
