@@ -953,29 +953,75 @@ div#sidebar.shrinked ul.tree-menu-1 li a i.icon-angle-left {
 }
 
 /*------------------------------------------------------------------------------
-    Password Recovery 
+    Add Manufacturer 
 -------------------------------------------------------------------------------*/
-#main-container {
+.content-row {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  background-color: #f1f3f6;
-  margin-top: 10%;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
 }
 
-#reset-password {
-  background-color: #ffffff;
+.r-1 {
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
+  margin: 10px;
+}
+
+.r-1 a {
+  border: 1px solid #3366CC;
+  color: #ffffff;
+  background: #3366CC;
+  padding: 6px 12px;
+  margin: 0;
+  margin-right: 10px;
+  border-radius: 2px;
+  display: inline-block;
+  -webkit-transition: all 0.2s;
+  transition: all 0.2s;
+}
+
+.r-1 a:active {
+  background-color: #03338f;
+}
+
+.r-1 a i {
+  padding-right: 10px;
+}
+
+.r-2 .column {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
   position: relative;
-  width: 350px;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  margin: 10px;
+  border: 1px solid #e1e6ef;
+  border-radius: 2px;
 }
 
-#reset-password .head {
+.r-2 .c-1 {
+  background-color: #ffffff;
+  width: 100%;
+}
+
+.r-2 .c-1 .column-head {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  background-color: #ffffff;
+  width: 100%;
   height: 45px;
   -webkit-box-align: center;
       -ms-flex-align: center;
@@ -984,55 +1030,101 @@ div#sidebar.shrinked ul.tree-menu-1 li a i.icon-angle-left {
   border-bottom: 1px solid #e1e6ef;
 }
 
-#reset-password .head h4 {
+.r-2 .c-1 .column-head h4 {
   font-size: 18px;
   font-weight: 500;
   margin: 0;
 }
 
-#reset-password .body {
+.r-2 .c-1 .column-body {
   padding: 15px;
+  width: 100%;
 }
 
-#reset-password .body .notify {
-  font-size: 13px;
-}
-
-#reset-password .body .input {
+.r-2 .c-1 .column-body form .body {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  position: relative;
+}
+
+.r-2 .c-1 .column-body form .body .column {
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  border: none;
+  width: 100%;
+}
+
+.r-2 .c-1 .column-body form .body .column .input {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
   -webkit-box-orient: vertical;
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
 }
 
-#reset-password .body .input label {
+.r-2 .c-1 .column-body form .body .column .input label {
   font-size: 14px;
   font-weight: 600;
   margin-top: 10px;
   margin-bottom: 7px;
 }
 
-#reset-password .body .input label i {
+.r-2 .c-1 .column-body form .body .column .input label i {
   font-size: 12px;
   color: red;
 }
 
-#reset-password .body .input input {
+.r-2 .c-1 .column-body form .body .column .input input {
   margin-bottom: 5px;
 }
 
-#reset-password .body .input span.error {
-  font-size: 13px;
-  color: #E5343D;
+.r-2 .c-1 .column-body form .body .co-1 {
+  height: -webkit-max-content;
+  height: -moz-max-content;
+  height: max-content;
 }
 
-#reset-password .body .input button {
-  padding: 8px 16px;
-  letter-spacing: 0.7px;
-  margin-top: 10px;
+.r-2 .c-1 .column-body form .body .co-2 {
+  height: -webkit-max-content;
+  height: -moz-max-content;
+  height: max-content;
+}
+
+.r-2 .c-1 .column-body form .footer .column.co-1 {
+  border: none;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
+}
+
+.r-2 .c-1 .column-body form .footer .column.co-1 button {
+  padding: 7px 13px;
+  font-weight: 500;
+  letter-spacing: .7px;
+}
+
+#am-csv-pop-up-box .body .input {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+#am-csv-pop-up-box .body .input label {
+  font-size: 14px;
+  font-weight: 600;
+  margin-bottom: 7px;
+}
+
+#am-csv-pop-up-box .body .input label i {
+  font-size: 12px;
+  color: red;
 }
 /*# sourceMappingURL=style.css.map */
