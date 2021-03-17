@@ -7,7 +7,7 @@
 @import "content";
 @import "footer";
 
-// @import "pages/dashboard";
+@import "pages/dashboard";
 // @import "pages/invoice/new-invoice";
 // @import "pages/invoice/manage-invoice";
 // @import "pages/customer/manage-customer";
@@ -16,10 +16,10 @@
 // @import "pages/medicine/manage-medicine";
 // @import "pages/medicine/category";
 // @import "pages/menufacturer/manage-manufacturer";
-@import "pages/menufacturer/add-manufacturer";
+// @import "pages/menufacturer/add-manufacturer";
 // @import "pages/users/login";
 // @import "pages/users/account-recovery";
 // @import "pages/users/reset-password";
 
-// @import "helpers/date-picker";
+@import "helpers/date-picker";
 // @import "helpers/autocomplete";

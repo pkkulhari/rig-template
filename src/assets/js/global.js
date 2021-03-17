@@ -1,31 +1,11 @@
 /*
-*   Content - 
-    1. Load Files
-    2. Notify Boxes
-    3. Pop Up Box
+*   Content -     
+    1. Notify Boxes
+    2. Pop Up Box
 */
 
-
 /*------------------------------------------------------------------------
-    1. Load Files
--------------------------------------------------------------------------*/
-// toggle.js
-load('assets/js/toggle.js');
-
-// sidebar.js
-load('assets/js/sidebar.js');
-
-// force-desktop.js
-load('assets/js/force-desktop.js');
-
-/*<--- HELPERS FUNCTIONS --->*/
-function load(src) {
-    document.writeln("<script src='" + src + "'></script>");
-}
-
-
-/*------------------------------------------------------------------------
-    2. Notify Boxes
+    1. Notify Boxes
 -------------------------------------------------------------------------*/
 function createNotify(el_parent, msg, msgType = 'info') {
     const div = document.createElement('div');
@@ -52,7 +32,7 @@ function closeNotify(e) {
 
 
 /*------------------------------------------------------------------------
-    3. Pop Up Box
+    2. Pop Up Box
 -------------------------------------------------------------------------*/
 document.querySelectorAll('.pop-up-box-close').forEach( (e) => {
     e.addEventListener('click', () => {

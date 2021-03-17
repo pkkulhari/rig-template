@@ -6,19 +6,20 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Rig - Pharamacy Management System</title>
 
-    <link rel="shortcut icon" href="assets/images/favicon.png" type="image/x-icon">
+    <link rel="shortcut icon" href="../src/assets/images/favicon.png" type="image/x-icon">
 
     <!-- Main Style CSS -->
-    <link rel="stylesheet" href="dist/style.css" type="text/css">
+    <link rel="stylesheet" href="style.min.css?cb=1615981410864" type="text/css">
 
     <!-- Icon -->
-    <link rel="stylesheet" href="assets/css/vendor/icon.css" type="text/css">
+    <link rel="stylesheet" href="../src/assets/css/vendor/icon.css" type="text/css">
 
     <!-- Morris Chart CSS -->
-    <link rel="stylesheet" href="assets/css/vendor/morris.css" type="text/css">
+    <link rel="stylesheet" href="../src/assets/css/vendor/morris.css" type="text/css">
 </head>
 
 <body>
+
     <!-- Start main-container -->
     <div id="main-container">
 
@@ -160,7 +161,7 @@
                 <!-- User-detail -->
                 <div class="user-detail">
                     <div class="avator">
-                        <img src="assets/images/user-admin.jpg" alt="User Avatar">
+                        <img src="../src/assets/images/user-admin.jpg" alt="User Avatar">
                     </div>
                     <div class="info">
                         <h4>ADMIN USER</h4>
@@ -291,7 +292,7 @@
                             </li>
                             <li>
                                 <a href="#">
-                                    <span>Manage </span>
+                                    <span>Manage Medicine</span>
                                 </a>
                             </li>
                         </ul>
@@ -305,12 +306,12 @@
                         <ul class="tree-menu tree-menu-1">
                             <li>
                                 <a href="#">
-                                    <span>Add Manufacturer</span>
+                                    <span>Add Menufacturer</span>
                                 </a>
                             </li>
                             <li>
                                 <a href="#">
-                                    <span>Manage Manufacturer</span>
+                                    <span>Manage Menufacturer</span>
                                 </a>
                             </li>
                             <li>
@@ -426,7 +427,7 @@
                             </li>
                             <li>
                                 <a href="#">
-                                    <span>Sales Report ( Wise)</span>
+                                    <span>Sales Report (Medicine Wise)</span>
                                 </a>
                             </li>
                             <li>
@@ -447,7 +448,7 @@
                                     </li>
                                     <li>
                                         <a href="#">
-                                            <span> Wise</span>
+                                            <span>Medicine Wise</span>
                                         </a>
                                     </li>
                                 </ul>
@@ -906,7 +907,7 @@
                         <ul class="tree-menu tree-menu-1">
                             <li>
                                 <a href="#">
-                                    <span></span>
+                                    <span>Medicine</span>
                                 </a>
                             </li>
                             <li>
@@ -1043,11 +1044,11 @@
             <!-- Content header -->
             <div class="content-header">
                 <div class="icon">
-                    <i class="icon-note"></i>
+                    <i class="icon-world"></i>
                 </div>
                 <div class="title">
-                    <h2>Manufacturer</h2>
-                    <small>Add New Manufacturer</small>
+                    <h2>Dashboard</h2>
+                    <small>Home</small>
                 </div>
                 <ol class="nav-breadcrumb">
                     <li>
@@ -1056,11 +1057,8 @@
                             <span>Home</span>
                         </a>
                     </li>
-                    <li>
-                        <span>Manufacturer</span>
-                    </li>
                     <li class="active">
-                        <span>Add Manufacturer</span>
+                        <span>Dashboard</span>
                     </li>
                 </ol>
             </div>
@@ -1068,115 +1066,182 @@
             <!-- Main content -->
             <div class="content">
 
-                <!-- Quick Buttons -->
+                <!-- Media-box -->
                 <div class="content-row r-1">
-                    <a href="#" class="quick-btn">
-                        <i class="icon-align-justify"></i>
-                        <span>Manage Manufacturer</span>
-                    </a>
-                    <a href="#" class="quick-btn">
-                        <i class="icon-align-justify"></i>
-                        <span>Manufacturer Ledger</span>
-                    </a>
-                    <a href="javascript:void(0)" class="quick-btn upload-m-csv-btn">
-                        <i class="icon-plus"></i>
-                        <span>Upload Manufacturer CSV</span>
-                    </a>
-                </div>
-
-                <!-- Add Manufacturer -->
-                <div class="content-row r-2">
-                    <div class="column c-1 nouch">
-                        <div class="column-head">
-                            <div class="title">
-                                <h4>Add Manufacturer</h4>
-                            </div>
+                    <div class="media-box nouch">
+                        <div class="icon">
+                            <i class="icon-medkit"></i>
                         </div>
-                        <div class="column-body">
-                            <form action="" method="POST">
-                                <div class="body">
-                                    <div class="column co-1">
-                                        <div class="input">
-                                            <label for="manufacturer-name">Manufacturer Name <i
-                                                    class="required">*</i></label>
-                                            <input type="text" name="" id="manufacturer-name" required>
-                                        </div>
-                                        <div class="input">
-                                            <label for="email">Email</label>
-                                            <input type="email" name="" id="email">
-                                        </div>
-                                        <div class="input">
-                                            <label for="mobile">Mobile</label>
-                                            <input type="text" name="" id="mobile">
-                                        </div>
-                                        <div class="input">
-                                            <label for="address">Address</label>
-                                            <textarea name="#" id="address" rows="5"></textarea>
-                                        </div>
-                                        <div class="input">
-                                            <label for="country">Country</label>
-                                            <select name="" id="country">
-                                                <option selected hidden disabled>Select Country</option>
-                                                <option value="India">India</option>
-                                                <option value="USA">USA</option>
-                                                <option value="Brazil">Brazil</option>
-                                                <option value="Nepal">Nepal</option>
-                                                <option value="Australia">Australia</option>
-                                            </select>
-                                        </div>
-                                    </div>
-                                    <div class="column co-2">
-                                        <div class="input">
-                                            <label for="state">State</label>
-                                            <input type="text" name="" id="state">
-                                        </div>
-                                        <div class="input">
-                                            <label for="city">City</label>
-                                            <input type="text" name="" id="city">
-                                        </div>
-                                        <div class="input">
-                                            <label for="zip-code">Zip Code</label>
-                                            <input type="text" name="" id="zip-code">
-                                        </div>
-                                        <div class="input">
-                                            <label for="previous-balance">Previous Balance</label>
-                                            <input type="text" name="" id="previous-balance">
-                                        </div>
-                                        <div class="input">
-                                            <label for="manufacturer-details">Manufacturer Details</label>
-                                            <textarea name="#" id="manufacturer-details" rows="5"></textarea>
-                                        </div>
-                                    </div>
-                                </div>
-                                <div class="footer">
-                                    <div class="column co-1">
-                                        <button type="submit">Save</button>
-                                    </div>
-                                </div>
-                            </form>
+                        <div class="data">
+                            <h4>Total Medicine</h4>
+                            <h4>250</h4>
+                        </div>
+                    </div>
+                    <div class="media-box nouch">
+                        <div class="icon">
+                            <i class="icon-stack-overflow"></i>
+                        </div>
+                        <div class="data">
+                            <h4>Out of Stock</h4>
+                            <h4>10</h4>
+                        </div>
+                    </div>
+                    <div class="media-box nouch">
+                        <div class="icon">
+                            <i class="icon-expired"></i>
+                        </div>
+                        <div class="data">
+                            <h4>Expired</h4>
+                            <h4>6</h4>
+                        </div>
+                    </div>
+                    <div class="media-box nouch">
+                        <div class="icon">
+                            <i class="icon-invoice"></i>
+                        </div>
+                        <div class="data">
+                            <h4>Total Invoice</h4>
+                            <h4>135</h4>
                         </div>
                     </div>
                 </div>
 
-                <!-- Pop up Boxes -->
-                <div id="am-csv-pop-up-box" class="pop-up-box">
-                    <div class="inner nouch">
-                        <div class="head">
-                            <h4>Upload Manufacturer CSV</h4>
-                            <i class="icon-times pop-up-box-close"></i>
+                <!-- Monthly Progress Report -->
+                <div class="content-row r-2">
+                    <div class="column c-1 nouch">
+                        <div class="column-head">
+                            <div class="title">
+                                <h4>Monthly Progress Report</h4>
+                            </div>
+                            <form action="#" method="post" class="form-horizontal">
+                                <div class="date-picker dp-1">
+                                    <input type="text" name="" class="selected-date" readonly>
+                                    <div class="dates">
+                                        <div class="year">
+                                            <div class="arrow pre-yr">&lt;</div>
+                                            <div class="yr"></div>
+                                            <div class="arrow next-yr">&gt;</div>
+                                        </div>
+                                        <div class="months"></div>
+                                    </div>
+                                </div>
+                                <button type="submit">
+                                    <i class="icon-search-alt"></i>
+                                </button>
+                            </form>
                         </div>
-                        <form action="#" method="POST" id="am-form" onsubmit="return false">
-                            <div class="body">
-                                <div class="input">
-                                    <label for="manufacturer-csv">Upload CSV File <i class="required">*</i></label>
-                                    <input type="file" name="#" id="manufacturer-csv" required>
+                        <div class="column-body">
+                            <div class="labels">
+                                <div class="sales">
+                                    <i class="icon-circle"></i>
+                                    <span>Sale</span>
+                                </div>
+                                <div class="purchase">
+                                    <i class="icon-circle"></i>
+                                    <span>Purchases</span>
                                 </div>
                             </div>
-                            <div class="footer">
-                                <button type="button" class="pop-up-box-close">Cancle</button>
-                                <button type="submit" class="pop-up-box-close">Submit</button>
+                            <div id="multi-line-mp"></div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Monthly Income Expense Statement and Today Report-->
+                <div class="content-row r-3">
+
+                    <!-- Monthly Income Expense Statement-->
+                    <div class="column c-1 nouch">
+                        <div class="column-head">
+                            <div class="title">
+                                <h4>Monthly Income Expense Statement</h4>
                             </div>
-                        </form>
+                            <form action="#" method="post" class="form-horizontal">
+                                <div class="date-picker dp-2">
+                                    <input type="text" name="" class="selected-date" readonly>
+                                    <div class="dates">
+                                        <div class="year">
+                                            <div class="arrow pre-yr">&lt;</div>
+                                            <div class="yr"></div>
+                                            <div class="arrow next-yr">&gt;</div>
+                                        </div>
+                                        <div class="months"></div>
+                                    </div>
+                                </div>
+                                <button type="submit">
+                                    <i class="icon-search-alt"></i>
+                                </button>
+                            </form>
+                        </div>
+                        <div class="column-body">
+                            <div class="labels">
+                                <div class="total-expense">
+                                    <i class="icon-circle"></i>
+                                    <span>Total Expense</span>
+                                </div>
+                                <div class="total-purchase">
+                                    <i class="icon-circle"></i>
+                                    <span>Total Purchase</span>
+                                </div>
+                                <div class="employee-salary">
+                                    <i class="icon-circle"></i>
+                                    <span>Employee Salary</span>
+                                </div>
+                                <div class="service">
+                                    <i class="icon-circle"></i>
+                                    <span>Service</span>
+                                </div>
+                                <div class="total-sale">
+                                    <i class="icon-circle"></i>
+                                    <span>Total Sale</span>
+                                </div>
+                            </div>
+                            <div id="donut-mie"></div>
+                        </div>
+                    </div>
+
+                    <!-- Today Report -->
+                    <div class="column c-2 nouch">
+                        <div class="column-head">
+                            <div class="title">
+                                <h4>Todays Report</h4>
+                            </div>
+                        </div>
+                        <div class="column-body">
+                            <table class="data-table today-report">
+                                <thead>
+                                    <tr>
+                                        <th>Todays Report</th>
+                                        <th>Amount</th>
+                                    </tr>
+                                </thead>
+                                <tbody>
+                                    <tr>
+                                        <td>Total Sales</td>
+                                        <td>$ 126.18</td>
+                                    </tr>
+                                    <tr>
+                                        <td>Total Purchase</td>
+                                        <td>$ 0</td>
+                                    </tr>
+                                    <tr>
+                                        <td>Cash Received</td>
+                                        <td>$ 126.18</td>
+                                    </tr>
+                                    <tr>
+                                        <td>Bank Received</td>
+                                        <td>$ 0</td>
+                                    </tr>
+                                    <tr>
+                                        <td>Invoice Due</td>
+                                        <td>$ 0</td>
+                                    </tr>
+                                    <tr>
+                                        <td>Total Service</td>
+                                        <td>$ 0</td>
+                                    </tr>
+                                </tbody>
+                            </table>
+                        </div>
                     </div>
                 </div>
 
@@ -1192,32 +1257,11 @@
             </div>
         </footer>
         <!-- End Footer -->
-
     </div>
     <!-- END main-container -->
 
-    <!-- Scripts -->
-    <!-- <script src="assets/js/vendor/jquery.js"></script> -->
-    <!-- <script src="assets/js/vendor/raphael.js"></script> -->
-    <!-- <script src="assets/js/vendor/morris.js"></script> -->
-
-    <script src="assets/js/script.js"></script>
-    <script src="assets/js/helpers/xhr.js"></script>
-    <script src="assets/js/helpers/table-exporter.js"></script>
-
-    <!-- <script src="assets/js/pages/dashboard.js"></script> -->
-    <!-- <script src="assets/js/pages/invoice/new-invoice.js"></script> -->
-    <!-- <script src="assets/js/pages/invoice/manage-invoice.js"></script> -->
-    <!-- <script src="assets/js/pages/customer/manage-customer.js"></script> -->
-    <!-- <script src="assets/js/pages/customer/new-customer.js"></script> -->
-    <!-- <script src="assets/js/pages/medicine/new-medicine.js"></script> -->
-    <!-- <script src="assets/js/pages/medicine/manage-medicine.js"></script> -->
-    <!-- <script src="assets/js/pages/medicine/category.js"></script> -->
-    <!-- <script src="assets/js/pages/manufacturer/manage-manufacturer.js"></script> -->
-    <script src="assets/js/pages/manufacturer/add-manufacturer.js"></script>
-
-    <!-- <script src="assets/js/helpers/date-picker.js"></script> -->
-    <!-- <script src="assets/js/helpers/autocomplete.js"></script> -->
+    <!-- Script Bundle -->
+    <script type="module" src="bundle.min.js?cb=1615981410864"></script>
 </body>
 
 </html>
