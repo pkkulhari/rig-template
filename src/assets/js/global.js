@@ -1,11 +1,12 @@
 /*
-*   Content -     
-    1. Notify Boxes
-    2. Pop Up Box
+*   Content - 
+    1. Load Files
+    2. Notify Boxes
+    3. Pop Up Box
 */
 
 /*------------------------------------------------------------------------
-    1. Notify Boxes
+    2. Notify Boxes
 -------------------------------------------------------------------------*/
 function createNotify(el_parent, msg, msgType = 'info') {
     const div = document.createElement('div');
@@ -19,7 +20,7 @@ function createNotify(el_parent, msg, msgType = 'info') {
 
     i.classList.add('icon-times');
     i.addEventListener('click', closeNotify);
-
+    
     div.appendChild(span);
     div.appendChild(i);
 
@@ -32,7 +33,7 @@ function closeNotify(e) {
 
 
 /*------------------------------------------------------------------------
-    2. Pop Up Box
+    3. Pop Up Box
 -------------------------------------------------------------------------*/
 document.querySelectorAll('.pop-up-box-close').forEach( (e) => {
     e.addEventListener('click', () => {

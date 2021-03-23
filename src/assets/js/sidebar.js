@@ -1,4 +1,8 @@
 /*<--- Set top(style) to ul.tree-menu-1 --->*/
+let target_offsetTop;
+let target;
+let main_scrolled;
+
 function _setTop() {
     document.querySelectorAll('#sidebar a.tree').forEach(function (e) {
         if (e.closest('li').querySelector('ul')) {
@@ -27,8 +31,8 @@ if (document.querySelector('#sidebar').classList.contains('shrinked')) {
 const main = document.querySelector('#sidebar');
 
 function targetOffsetTop_find() {
-    if (document.querySelector('a.tree.active')) {
-        target = document.querySelector('a.tree.active').closest('li').querySelector('ul.tree-menu-1');
+    if (document.querySelector('a.tree.active')) {        
+        target = document.querySelector('a.tree.active').closest('li').querySelector('ul.tree-menu-1');        
     }
     target_offsetTop = 0;
     if (target) {

@@ -39,7 +39,7 @@ const tState = {
     maxButtons: 5
 }
 
-createInvoiceDataTable('http://127.0.0.1:5501/data/medicines.json');
+createInvoiceDataTable('http://127.0.0.1:5500/data/medicines.json');
 
 /*----- FUNCTIONS -----*/
 function createInvoiceDataTable(url) {
@@ -66,7 +66,7 @@ function refreshTable(e) {
         tState.page = Number(e.target.getAttribute('data-page'));
     }
 
-    createInvoiceDataTable('http://127.0.0.1:5501/data/medicines.json');
+    createInvoiceDataTable('http://127.0.0.1:5500/data/medicines.json');
 }
 
 /*----- HELPER FUNCTIONS -----*/
@@ -327,7 +327,7 @@ mm_select_showDataEntries.addEventListener('change', (e) => {
     tState.page = 1;
 
     // Recreate Table
-    createInvoiceDataTable('http://127.0.0.1:5501/data/medicines.json');
+    createInvoiceDataTable('http://127.0.0.1:5500/data/medicines.json');
 });
 
 
