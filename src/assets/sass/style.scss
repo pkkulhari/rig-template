@@ -2,12 +2,14 @@
 @import "mixins";
 @import "global";
 
-@import "vandor/icon";
+@import "vendor/icon";
 
 @import "navbar";
 @import "sidebar";
 @import "content";
 @import "footer";
+
+@import "vendor/plugins/simplebar";
 
 @import "pages/dashboard";
 // @import "pages/invoice/new-invoice";

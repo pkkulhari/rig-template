@@ -1,7 +1,8 @@
 const scripts = [
   'global',
   'sidebar',
-  'toggle'
+  'toggle',
+  'vendor/plugins/simplebar'
 ]
 
 scripts.forEach((script) => {
